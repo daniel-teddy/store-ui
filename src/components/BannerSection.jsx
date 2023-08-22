@@ -68,7 +68,7 @@ const BannerSection = () => {
                 <div className="row banner-content p-5">
                   <div className="content-wrapper col-md-7">
                     <div className="categories sale mb-3 pb-3">15% off</div>
-                    <h3 className="item-title">Semconductors Products</h3>
+                    <h3 className="item-title">Sensors &amp; modules</h3>
                     <a href="https://teddy-webdev.click" className="d-flex align-items-center nav-link">
                       shop collection <svg width="24" height="24"><use xlinkHref="#arrow-right"></use></svg>
                     </a>

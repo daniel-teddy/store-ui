@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillAmazonSquare } from 'react-icons/ai';
-import Logo from '../images/logo.png'
+import Logo from '../images/logo1.png'
 const Footer = () => (
   <footer className="py-5">
     <div className="container-fluid">
@@ -134,7 +134,7 @@ const FooterBottom = () => (
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-6 copyright">
-          <p>© 2023 Foodmart. All rights reserved.</p>
+          <p>© 2023 alemdar teknik ltd. All rights reserved.</p>
         </div>
         <div className="col-md-6 credit-link text-end">
           <p>made by <a href="https://templatesjungle.com/">teddy-webdev</a></p>

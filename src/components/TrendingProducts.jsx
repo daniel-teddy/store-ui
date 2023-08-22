@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "./productCard";
 import Data from "../assets/item"
+import { Link } from "react-router-dom";
 
 const randomItems = Data.sort(() => Math.random() - 0.5);
 let selectedElementsRandom = randomItems.slice(0, 20);
@@ -61,8 +62,8 @@ const TrendingProducts = () => {
                     
                     {selectedElementsRandom.map((item, index) => {
                       return(
+                        <Link to={`/explore/${item.id}`} key={index}>
                         <ProductCard
-                        key={index}
                       title={item.ItemName}
                       imageUrl={item.pic}
                       category={item.category}
@@ -71,6 +72,7 @@ const TrendingProducts = () => {
                       price={item.price}
                       initialQuantity="1"
                     />
+                        </Link>
                       )
                     })}
                     
