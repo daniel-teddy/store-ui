@@ -1,9 +1,9 @@
-import React from 'react';
-import { AiOutlineArrowRight, AiOutlineHeart, AiOutlinePlus, AiOutlineMinus, AiFillStar, } from 'react-icons/ai';
+import React, { useState } from 'react';
+import { AiOutlineArrowRight, AiOutlineHeart, AiOutlinePlus, AiOutlineMinus, AiFillStar, AiOutlineArrowLeft, } from 'react-icons/ai';
 import Data from "../assets/item"
 
-const randomItems = Data.sort(() => Math.random() - 0.5);
-let selectedElementsRandom = randomItems.slice(0, 12);
+const productsPerPage = 12;
+// const randomItems = Data.slice(0, productsPerPage);
 
 const ProductItem = ({ imageUrl, title, unit, rating, price, initialQuantity, setInitialQuantity, category }) => {
   return (
@@ -68,6 +68,25 @@ const ProductItem = ({ imageUrl, title, unit, rating, price, initialQuantity, se
 };
 
 const ProductsPageSmall = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalProducts = Data.length;
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+    }
+  };
+
+  const range = 5; // Number of page numbers to display on each side of the current page
+  const startPage = Math.max(1, currentPage - range);
+  const endPage = Math.min(totalPages, currentPage + range);
+
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const displayedProducts = Data.slice(startIndex, endIndex);
+
+
   return (
     <div className="shopify-grid">
       <div className="container-fluid">
@@ -181,10 +200,11 @@ const ProductsPageSmall = () => {
         </select>
       </div>
     </div>
-            <div className="product-grid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
-            {selectedElementsRandom.map((item, index) => {
+            <div className="product-grid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+            {displayedProducts.map((item, index) => {
                       return(
                         <ProductItem
+                        key={index}
                       title={item.ItemName}
                       imageUrl={item.pic}
                       category={item.category}
@@ -198,22 +218,23 @@ const ProductsPageSmall = () => {
               {/* Repeat the above lines to add more product items */}
             </div>
             <nav className="navigation paging-navigation text-center padding-medium" role="navigation">
-      <div className="pagination loop-pagination d-flex justify-content-center align-items-center">
-        <a href="https">
-          <svg className="chevron-left pe-3">
-            <use xlinkHref="#chevron-left"></use>
-          </svg>
-        </a>
-        <span aria-current="page" className="page-numbers current pe-3">1</span>
-        <a className="page-numbers pe-3" href="https">2</a>
-        <a className="page-numbers pe-3" href="https">3</a>
-        <a className="page-numbers pe-3" href="https">4</a>
-        <a className="page-numbers" href="https">5</a>
-        <a href="https">
-          <AiOutlineArrowRight className="chevron-right ps-3" />
-        </a>
-      </div>
-    </nav>
+        <div className="pagination loop-pagination d-flex justify-content-center align-items-center">
+          
+            <AiOutlineArrowLeft  className="chevron-left pe-3"  onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}/>
+          
+          {Array.from({ length: endPage - startPage + 1 }, (_, index) => (
+            <span
+              key={startPage + index}
+              className={`page-numbers nav-link ${currentPage === startPage + index ? 'current' : ''}  pe-3`}
+              onClick={() => handlePageChange(startPage + index)}
+            >
+              {startPage + index}
+            </span>
+          ))}
+            <AiOutlineArrowRight className="chevron-right ps-3" onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}/>
+          
+        </div>
+      </nav>
           </main>
         </div>
       </div>

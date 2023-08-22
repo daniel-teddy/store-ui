@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/style.css'
 import './styles/vendor.css'
+import './index.css'
 
 import Header from './components/Header';
 import { Footer, FooterBottom } from './components/Footer';

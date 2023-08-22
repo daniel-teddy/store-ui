@@ -264,6 +264,7 @@ function ProductPage() {
                   {selectedElementsRandom.map((item, index) => {
                       return(
                         <ProductCard
+                        key={index}
                       title={item.ItemName}
                       imageUrl={item.pic}
                       category={item.category}

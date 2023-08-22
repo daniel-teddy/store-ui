@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import bgLeaves from "../images/bg-leaves-img-pattern.png";
 
 const ApplyDiscount = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    isChecked: false, // Initialize checkbox state
+  });
+
+
+  // Step 3: Event handlers to update the state on input change
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+
+    // Use a conditional to handle checkboxes differently
+    const newValue = type === 'checkbox' ? checked : value;
+
+    setFormData({
+      ...formData,
+      [name]: newValue,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+    // console.log('Name:', formData.name);
+    // console.log('Email:', formData.email);
+    // console.log('Checkbox:', formData.isChecked);
+    console.log('Data:', formData);
+    const data={
+      Name: formData.name,
+      Email: formData.email,
+      Subscribe: "subscribed",
+    }
+    const url = 'https://sheet.best/api/sheets/8a536518-c9c8-4983-a978-70c1480a6b98'
+    axios.post(url,data).then((response)=>{
+       console.log(response);
+       setFormData('');
+       
+    })
+  };
+
  
+
 
   return (
     <section className="py-5">
@@ -27,7 +68,7 @@ const ApplyDiscount = () => {
                 </p>
               </div>
               <div className="col-md-6 p-5">
-                <form  method="post" id="subscribe-us" name="subscribe-us" >
+                <form  method="post" id="subscribe-us" name="subscribe-us" onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="name" className="form-label">
                       Name
@@ -35,8 +76,9 @@ const ApplyDiscount = () => {
                     <input
                       type="text"
                       className="form-control form-control-lg"
-                      name="uname"
-                      id="uname"
+                      name="name"
+            value={formData.name}
+            onChange={handleInputChange}
                       placeholder="Name"
                       
                     />
@@ -48,8 +90,9 @@ const ApplyDiscount = () => {
                     <input
                       type="email"
                       className="form-control form-control-lg"
-                      name="uemail"
-                      id="uemail"
+                      name="email"
+            value={formData.email}
+            onChange={handleInputChange}
                       placeholder="abc@mail.com"
                       
                       required
@@ -61,8 +104,9 @@ const ApplyDiscount = () => {
                         className="form-check-input"
                         type="checkbox"
                         id="subscribe"
-                        name="subscribe"
-                        
+                        name="isChecked"
+              checked={formData.isChecked}
+              onChange={handleInputChange}
                       />
                       Subscribe to the newsletter
                     </label>
