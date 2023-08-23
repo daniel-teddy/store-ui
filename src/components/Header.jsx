@@ -1,14 +1,28 @@
-import React from 'react';
-import Logo from '../images/logo1.png'
-import giftIcon from '../images/gift.svg'
-
-import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai'
+import React, { useState } from 'react';
+import Logo from '../images/logo1.png';
+import giftIcon from '../images/gift.svg';
+import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ items }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  //const [filteredItems, setFilteredItems] = useState(items);
+  const setFilteredItems = items;
+
+  const handleSearch = (event) => {
+    const searchTerm = event.target.value;
+    setSearchTerm(searchTerm);
+
+    const filtered = items.filter((item) =>
+      item.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setFilteredItems(filtered);
+  };
+
   return (
     <header>
-      <div className="container-fluid">
+         <div className="container-fluid">
         <div className="row py-3 border-bottom">
           <div className="col-sm-4 col-lg-3 text-center text-sm-start">
             <div className="main-logo">
@@ -22,9 +36,13 @@ const Header = () => {
               <div className="col-md-4 d-none d-md-block">
                 <select className="form-select border-0 bg-transparent">
                   <option>All Categories</option>
-                  <option>Groceries</option>
-                  <option>Drinks</option>
-                  <option>Chocolates</option>
+                  <option>Arduino</option>
+                  <option>Adaptors</option>
+                  <option>Raspberry</option>
+                  <option>Accessories</option>
+                  <option>Solar</option>
+                  <option>Modules</option>
+                  <option>IC</option>
                 </select>
               </div>
               <div className="col-11 col-md-7">
@@ -33,6 +51,8 @@ const Header = () => {
                     type="text"
                     className="form-control border-0 bg-transparent"
                     placeholder="Search for more than 20,000 products"
+                    value={searchTerm}
+                    onChange={handleSearch}
                   />
                 </form>
               </div>
