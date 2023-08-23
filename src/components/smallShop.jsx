@@ -91,6 +91,7 @@ const ProductsPageSmall = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
+  const [selectedPriceRange, setSelectedPriceRange] = useState('');
   const totalProducts = Data.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
 
@@ -136,6 +137,12 @@ const ProductsPageSmall = () => {
     setSelectedBrand(brand);
     setSelectedCategory('All');
     setSelectedTag(''); 
+  };
+  const handlePriceRangeClick = (priceRange) => {
+    setSelectedPriceRange(priceRange);
+    setSelectedCategory('All'); 
+    setSelectedTag(''); 
+    setSelectedBrand(''); 
   };
   return (
     <div className="shopify-grid">
@@ -245,37 +252,38 @@ const ProductsPageSmall = () => {
               </ul>
               {selectedBrand && <p>Selected Brand: {selectedBrand}</p>}
             </div>
-              <div className="widget-price-filter pt-3">
-                <h5 className="widget-title">Filter By Price</h5>
-                <ul className="product-tags sidebar-list list-unstyled">
-                  <li className="tags-item">
-                    <a href="https" className="nav-link">
-                      Less than $10
+            <div className="widget-price-filter pt-3">
+              <h5 className="widget-title">Filter By Price</h5>
+              <ul className="product-tags sidebar-list list-unstyled">
+                {[
+                  { min: 0, max: 10 },
+                  { min: 10, max: 20 },
+                  { min: 20, max: 30 },
+                  { min: 30, max: 40 },
+                  { min: 40, max: 50 },
+                ].map((priceRange) => (
+                  <li className="tags-item" key={priceRange.min}>
+                    <a
+                      href="#"
+                      className={`nav-link ${
+                        selectedPriceRange === priceRange ? "active" : ""
+                      }`}
+                      onClick={() => handlePriceRangeClick(priceRange)}
+                    >
+                      {`$${priceRange.min} - $${priceRange.max}`}
                     </a>
                   </li>
-                  <li className="tags-item">
-                    <a href="https" className="nav-link">
-                      $10 - $20
-                    </a>
-                  </li>
-                  <li className="tags-item">
-                    <a href="https" className="nav-link">
-                      $20 - $30
-                    </a>
-                  </li>
-                  <li className="tags-item">
-                    <a href="https" className="nav-link">
-                      $30 - $40
-                    </a>
-                  </li>
-                  <li className="tags-item">
-                    <a href="https" className="nav-link">
-                      $40 - $50
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                ))}
+              </ul>
+              {selectedPriceRange && (
+                <p>
+                  Selected Price Range: ${selectedPriceRange.min} - $
+                  {selectedPriceRange.max}
+                </p>
+              )}
             </div>
+          </div>
+          
           </aside>
           <main className="col-md-9">
             <div className="filter-shop d-flex justify-content-between">
@@ -300,6 +308,7 @@ const ProductsPageSmall = () => {
                   <option value="">Model (Z - A)</option>
                 </select>
               </div>
+            </div>
             </div>
             <div className="product-grid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
               {displayedProducts.map((item, index) => {
