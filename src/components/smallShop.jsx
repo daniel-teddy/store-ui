@@ -124,11 +124,13 @@ const ProductsPageSmall = () => {
     setSelectedTag('');
   };
 
-  const displayedProducts = filteredProducts.filter((item) =>
+  const displayedProducts = filteredProducts
+  .filter((item) =>
     (selectedCategory === 'All' || item.category === selectedCategory) &&
     (!selectedTag || (item.tags && item.tags.includes(selectedTag))) && 
-    (!selectedBrand || (item.brand && item.brand.includes(selectedBrand)))
-  ).slice(startIndex, endIndex);
+    (!selectedBrand || (item.brand && item.brand.includes(selectedBrand))) &&
+    (!selectedPriceRange || (item.price >= selectedPriceRange.min && item.price <= selectedPriceRange.max)))
+    .slice(startIndex, endIndex);
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag);
@@ -243,6 +245,7 @@ const ProductsPageSmall = () => {
                       className={`nav-link ${
                         selectedBrand === brand ? "active" : ""
                       }`}
+                      style={{ cursor: "pointer" }}
                       onClick={() => handleBrandClick(brand)}
                     >
                       {brand}
@@ -264,11 +267,12 @@ const ProductsPageSmall = () => {
                 ].map((priceRange) => (
                   <li className="tags-item" key={priceRange.min}>
                     <a
-                      href="#"
+                      href
                       className={`nav-link ${
                         selectedPriceRange === priceRange ? "active" : ""
                       }`}
                       onClick={() => handlePriceRangeClick(priceRange)}
+                      style={{ cursor: "pointer" }}
                     >
                       {`$${priceRange.min} - $${priceRange.max}`}
                     </a>
@@ -309,7 +313,7 @@ const ProductsPageSmall = () => {
                 </select>
               </div>
             </div>
-            </div>
+            
             <div className="product-grid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
               {displayedProducts.map((item, index) => {
                 if (selectedCategory === "All") {
