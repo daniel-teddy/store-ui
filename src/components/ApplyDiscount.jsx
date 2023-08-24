@@ -46,7 +46,7 @@ const ApplyDiscount = () => {
 
 
   return (
-    <section className="py-5">
+    <section className="py-5" id="discount">
       <div className="container-fluid">
         <div
           className="bg-secondary py-5 my-5 rounded-5"

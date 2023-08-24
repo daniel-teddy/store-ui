@@ -67,7 +67,7 @@ function CartPage() {
                               <svg width="16" height="16"><use xlinkHref="#minus"></use></svg>
                             </button>
                           </span>
-                          <input type="text" id="quantity" name="quantity" className="form-control input-number text-center" value="1" min="1" max="100" />
+                          <input type="text" id="quantity" name="quantity" className="form-control input-number text-center" value="1" min="1" max="100" /> {/* add event listener */}
                           <span className="input-group-btn">
                             <button type="button" className="quantity-right-plus btn btn-light btn-number" data-type="plus" data-field="">
                               <svg width="16" height="16"><use xlinkHref="#plus"></use></svg>

@@ -8,6 +8,7 @@ import {
   AiOutlineArrowLeft,
 } from "react-icons/ai";
 import Data from "../assets/item";
+import { Link } from "react-router-dom";
 
 const productsPerPage = 12;
 // const randomItems = Data.slice(0, productsPerPage);
@@ -318,6 +319,7 @@ const ProductsPageSmall = () => {
               {displayedProducts.map((item, index) => {
                 if (selectedCategory === "All") {
                   return (
+                    <Link  to={`/explore/${item.id}`} key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}
@@ -328,12 +330,14 @@ const ProductsPageSmall = () => {
                       price={item.price}
                       initialQuantity="1"
                     />
+                    </Link>
                   );
                 } else if (
                   selectedCategory === "Phones" &&
                   item.category === "Phones"
                 ) {
                   return (
+                    <Link  to={`/explore/${item.id}`} key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}
@@ -344,12 +348,14 @@ const ProductsPageSmall = () => {
                       price={item.price}
                       initialQuantity="1"
                     />
+                    </Link>
                   );
                 } else if (
                   selectedCategory === "Accessories" &&
                   item.category === "Accessories"
                 ) {
                   return (
+                    <Link  to={`/explore/${item.id}`} key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}
@@ -360,6 +366,7 @@ const ProductsPageSmall = () => {
                       price={item.price}
                       initialQuantity="1"
                     />
+                    </Link>
                   );
                 }
                 return null;

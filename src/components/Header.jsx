@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../images/logo1.png';
 import giftIcon from '../images/gift.svg';
-import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 const Header = ({ items }) => {
@@ -20,15 +20,21 @@ const Header = ({ items }) => {
     setFilteredItems(filtered);
   };
 
+
+  const handlePath = () => {
+    // Replace '/your-desired-route' with the actual route you want to navigate to
+    window.location.href = '/cart';
+  };
+
   return (
     <header>
          <div className="container-fluid">
         <div className="row py-3 border-bottom">
           <div className="col-sm-4 col-lg-3 text-center text-sm-start">
             <div className="main-logo">
-              <a href="index.html">
+              <Link to="/">
                 <img src={Logo} alt="logo" className="img-fluid" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
@@ -73,16 +79,16 @@ const Header = ({ items }) => {
             </div> */}
             <ul className="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="htps://teddy-webdev.click" className="rounded-circle bg-light p-2 mx-1">
+                <Link to="cart" className="rounded-circle bg-light p-2 mx-1">
                   <AiOutlineUser height="24" width="24"/>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="htps://teddy-webdev.click" className="rounded-circle bg-light p-2 mx-1">
+                <Link to="cart" className="rounded-circle bg-light p-2 mx-1">
                   <AiOutlineHeart height="24" width="24"/>
-                </a>
+                </Link>
               </li>
-              <li className="d-lg-none">
+              {/* <li className="d-lg-none">
                 <a
                   href="htps://teddy-webdev.click"
                   className="rounded-circle bg-light p-2 mx-1"
@@ -94,8 +100,8 @@ const Header = ({ items }) => {
                     <use xlinkHref="#cart" />
                   </svg>
                 </a>
-              </li>
-              <li className="d-lg-none">
+              </li> */}
+              {/* <li className="d-lg-none">
                 <a
                   href="htps://teddy-webdev.click"
                   className="rounded-circle bg-light p-2 mx-1"
@@ -107,10 +113,11 @@ const Header = ({ items }) => {
                     <use xlinkHref="#search" />
                   </svg>
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div className="cart text-end d-none d-lg-block dropdown">
-              <button
+              <button 
+              onClick={handlePath}
                 className="border-0 bg-transparent"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -151,48 +158,19 @@ const Header = ({ items }) => {
                     <option>Security System</option>
                   </select>
                   <ul className="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
-                    <li className="nav-item active">
-                      <Link href="#women" className="nav-link">
-                        Arduino
-                      </Link>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <Link href="#men" className="nav-link">
-                        Adaptors
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="#kids" className="nav-link">
-                        Raspberry
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="#accessories" className="nav-link">
-                        Accessories
-                      </Link>
-                    </li>
-                    
-                    <li className="nav-item">
-                      <Link href="#brand" className="nav-link">
-                        Solar
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="#sale" className="nav-link">
-                        Modules
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="#blog" className="nav-link">
-                        IC
-                      </Link>
-                    </li>
+                  <CustomLink to="/shop">Arduino</CustomLink>
+                  <CustomLink to="/shop">Adaptors</CustomLink>
+                  <CustomLink to="/shop">Raspberry</CustomLink>
+                  <CustomLink to="/shop">Accessories</CustomLink>
+                  <CustomLink to="/shop">Solar</CustomLink>
+                  <CustomLink to="/shop">Modules</CustomLink>
+                  <CustomLink to="/shop">IC</CustomLink>
                   </ul>
                 </div>
               </div>
             </nav>
             <div className="d-none d-lg-block">
-              <a href="htps://teddy-webdev.click" className="nav-link btn-coupon-code">
+              <a href='#discount' className="nav-link btn-coupon-code">
                 <img src={giftIcon} alt="Gift Icon" />
                 <strong className="ms-2">Get your coupon code</strong>
               </a>
@@ -206,4 +184,14 @@ const Header = ({ items }) => {
 
 export default Header;
 
+function CustomLink({ to, children, ...props }){
 
+  return (
+    <li className="nav-item">
+    <Link className="nav-link" to={to} {...props}> {children}
+    </Link>
+  </li>
+      
+  );
+
+}

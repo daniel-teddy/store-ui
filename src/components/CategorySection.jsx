@@ -17,8 +17,15 @@ const CategorySection = () => {
               <div className="d-flex align-items-center">
                 <a href="https://teddy-webdev.click" className="btn-link text-decoration-none">View All Categories →</a>
                 <div className="swiper-buttons">
-                  <button className="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                  <button className="swiper-next category-carousel-next btn btn-yellow">❯</button>
+                  <button
+                    className="swiper-prev products-carousel-prev btn btn-primary"
+                    style={{marginRight: "1rem"}}
+                  >
+                    ❮
+                  </button>
+                  <button className="swiper-next products-carousel-next btn btn-primary">
+                    ❯
+                  </button>
                 </div>
               </div>
             </div>

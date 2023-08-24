@@ -11,22 +11,22 @@ const Footer = () => (
             <div className="social-links mt-5">
               <ul className="d-flex list-unstyled gap-2">
                 <li>
-                  <a href="hhtps" className="btn btn-outline-light">
+                  <a href="faceboook.com" className="btn btn-outline-light">
                     <AiFillFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="hhtps" className="btn btn-outline-light">
+                  <a href="x.com" className="btn btn-outline-light">
                     <AiFillTwitterSquare />
                   </a>
                 </li>
                 <li>
-                  <a href="hhtps" className="btn btn-outline-light">
+                  <a href="instagram.com" className="btn btn-outline-light">
                       <AiFillInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="hhtps" className="btn btn-outline-light">
+                  <a href="amazon.com" className="btn btn-outline-light">
                     <AiFillAmazonSquare />
                   </a>
                 </li>
@@ -38,17 +38,8 @@ const Footer = () => (
 
         <div className="col-md-2 col-sm-6">
           <div className="footer-menu">
-            <h5 className="widget-title">Ultras</h5>
+            <h5 className="widget-title">Related</h5>
             <ul className="menu-list list-unstyled">
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">About us</a>
-                </li>
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">Conditions </a>
-                </li>
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">Our Journals</a>
-                </li>
                 <li className="menu-item">
                   <a href="httpd" className="nav-link">Careers</a>
                 </li>
@@ -62,7 +53,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="col-md-2 col-sm-6">
+        {/* <div className="col-md-2 col-sm-6">
           <div className="footer-menu">
             <h5 className="widget-title">Customer Service</h5>
             <ul className="menu-list list-unstyled">
@@ -86,29 +77,20 @@ const Footer = () => (
                 </li>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         <div className="col-md-2 col-sm-6">
           <div className="footer-menu">
             <h5 className="widget-title">Customer Service</h5>
             <ul className="menu-list list-unstyled">
               <li className="menu-item">
-                  <a href="httpd" className="nav-link">About us</a>
+                  <a href="about us" className="nav-link">About us</a>
                 </li>
                 <li className="menu-item">
-                  <a href="httpd" className="nav-link">Conditions </a>
+                  <a href="conditions" className="nav-link">Conditions </a>
                 </li>
                 <li className="menu-item">
-                  <a href="httpd" className="nav-link">Our Journals</a>
-                </li>
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">Careers</a>
-                </li>
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">Affiliate Programme</a>
-                </li>
-                <li className="menu-item">
-                  <a href="httpd" className="nav-link">Ultras Press</a>
+                  <a href="posts" className="nav-link">Our Journals</a>
                 </li>
             </ul>
           </div>
