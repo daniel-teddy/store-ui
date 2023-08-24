@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/logo.png'
+import Logo from '../images/logo1.png'
 import giftIcon from '../images/gift.svg'
 
 import { AiOutlineUser, AiOutlineHeart } from 'react-icons/ai'
@@ -47,10 +47,10 @@ const Header = () => {
             </div>
           </div>
           <div className="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-            <div className="support-box text-end d-none d-xl-block">
+            {/* <div className="support-box text-end d-none d-xl-block">
               <span className="fs-6 text-muted">For Support?</span>
               <h5 className="mb-0">+980-34984089</h5>
-            </div>
+            </div> */}
             <ul className="d-flex justify-content-end list-unstyled m-0">
               <li>
                 <a href="htps://teddy-webdev.click" className="rounded-circle bg-light p-2 mx-1">
@@ -143,7 +143,7 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                       <Link href="#kids" className="nav-link">
-                        Components
+                        Raspberry
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -151,68 +151,7 @@ const Header = () => {
                         Accessories
                       </Link>
                     </li>
-                    <li className="nav-item dropdown">
-                      <Link to="/shop" className="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">
-                        Shop
-                      </Link>
-                      <ul className="dropdown-menu" aria-labelledby="pages">
-                        <li>
-                          <Link href="about.html" className="dropdown-item">
-                            About Us
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="shop.html" className="dropdown-item">
-                            Shop
-                            <span className="badge bg-success text-dark ms-2">PRO</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="single-product.html" className="dropdown-item">
-                            Single Product
-                            <span className="badge bg-success text-dark ms-2">PRO</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/cart" className="dropdown-item">
-                            Cart
-                            <span className="badge bg-success text-dark ms-2">PRO</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="checkout.html" className="dropdown-item">
-                            Checkout
-                            <span className="badge bg-success text-dark ms-2">PRO</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="blog.html" className="dropdown-item">
-                            Blog
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="single-post.html" className="dropdown-item">
-                            Single Post
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="styles.html" className="dropdown-item">
-                            Styles
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="contact.html" className="dropdown-item">
-                            Contact
-                            <span className="badge bg-success text-dark ms-2">PRO</span>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="thank-you.html" className="dropdown-item">
-                            Thank You
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
+                    
                     <li className="nav-item">
                       <Link href="#brand" className="nav-link">
                         Solar
@@ -220,12 +159,12 @@ const Header = () => {
                     </li>
                     <li className="nav-item">
                       <Link href="#sale" className="nav-link">
-                        Audio & Videos
+                        Modules
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link href="#blog" className="nav-link">
-                        Integrated Circuits
+                        IC
                       </Link>
                     </li>
                   </ul>

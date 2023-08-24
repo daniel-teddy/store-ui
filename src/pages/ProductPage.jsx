@@ -4,13 +4,18 @@ import {
     AiOutlinePlus,
     AiOutlineMinus,
   } from "react-icons/ai";
-import IMg from '../images/post-thumb-2.jpg'
+  import { useParams } from 'react-router-dom';
+// import IMg from '../images/post-thumb-2.jpg'
 import ProductCard from '../components/productCard';
 import Data from "../assets/item";
 
 const randomItems = Data.sort(() => Math.random() - 0.5);
 let selectedElementsRandom = randomItems.slice(0, 5);
 function ProductPage() {
+  const { id } = useParams();
+  const item = Data.find((item) => {
+    return item.id === parseInt(id);
+  })
   return (
     <div className="">
       <section id="selling-product" className="single-product padding-xlarge">
@@ -18,37 +23,33 @@ function ProductPage() {
           <div className="row mt-5">
             <div className="col-lg-6">
               <div className="product-preview mb-3">
-                <img src={IMg} alt="single-product" className="img-fluid" />
+                <img src={item.pic} alt="single-product" className="img-fluid" />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="product-info">
                 <div className="element-header">
                   <h2 itemProp="name" className="display-6">
-                    Cashew Butter 500mg CBD
+                    {item.ItemName}
                   </h2>
                   <div className="rating-container d-flex align-items-center">
                     <div className="rating" data-rating="1">
                       <AiFillStar width="36" height="36" class="text-primary" />
-                      <span className="rating-count ps-2">4.2</span>
+                      <span className="rating-count ps-2">{item.ratings || "4.2"}</span>
                     </div>
                   </div>
                 </div>
                 <div className="product-price pt-3 pb-3">
                   <strong className="text-primary display-6 fw-bold">
-                    $870.00
+                    {"$" + item.price||"$870.00"}
                   </strong>
-                  <del className="ms-2">$940.00</del>
+                  <del className="ms-2">{item.discount || "$940.00"}</del>
                 </div>
                 <p>
-                  Justo, cum feugiat imperdiet nulla molestie ac vulputate
-                  scelerisque amet. Bibendum adipiscing platea blandit sit sed
-                  quam semper rhoncus. Diam ultrices maecenas consequat eu
-                  tortor orci, cras lectus mauris, cras egestas quam venenatis
-                  neque.
+                  {item.description || "Justo, cum feugiat imperdiet nulla molestie ac vulputatescelerisque amet. Bibendum adipiscing platea blandit sit sedquam semper rhoncus. Diam ultrices maecenas consequat eutortor orci, cras lectus mauris, cras egestas quam venenatisneque."}
                 </p>
                 <div className="cart-wrap py-5">
-                  <div className="color-options product-select">
+                  {/* <div className="color-options product-select">
                     <div className="color-toggle" data-option-index="0">
                       <h6 className="item-title text-uppercase text-dark text-decoration-underline">
                         Color:
@@ -75,7 +76,7 @@ function ProductPage() {
                         >
                           <a href="https">Green</a>
                         </li>
-                        {/* Add other color options here */}
+                        
                       </ul>
                     </div>
                   </div>
@@ -96,11 +97,11 @@ function ProductPage() {
                       <li data-value="S" className="select-item pe-3">
                         <a href="https">XL</a>
                       </li>
-                      {/* Add other size options here */}
+                      
                     </ul>
-                  </div>
+                  </div> */}
                   <div className="product-quantity">
-                    <div className="stock-number text-dark">2 in stock</div>
+                    <div className="stock-number text-dark">{item.quantity || "5"} in stock</div>
                     <div className="stock-button-wrap pt-3">
                       <div
                         className="input-group product-qty"
@@ -174,13 +175,13 @@ function ProductPage() {
             <div className="tab-content" id="nav-tabContent">
               <div className="tab-pane fade show active border-top border-bottom py-5" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h5>Product Description</h5>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio...</p>
+                {/* <p>{item.description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio..."}</p> */}
                 <ul style={{ listStyleType: 'disc' }} className="list-unstyled ps-4">
                   <li>Donec nec justo eget felis facilisis fermentum.</li>
                   <li>Suspendisse urna viverra non, semper suscipit pede.</li>
                   <li>Aliquam porttitor mauris sit amet orci.</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio...</p>
+                {/* <p>{item.description || "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio..."}</p> */}
               </div>
               <div className="tab-pane fade border-top border-bottom py-5" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
                 <p>It is Comfortable and Best</p>
@@ -243,7 +244,7 @@ function ProductPage() {
               <h2 className="section-title">Related Products</h2>
               <div className="d-flex align-items-center">
                 <div className="swiper-buttons">
-                  <button className="swiper-prev products-carousel-prev btn btn-primary">❮</button>
+                  <button className="swiper-prev products-carousel-prev btn btn-primary"  style={{ marginRight: "1rem" }}>❮</button>
                   <button className="swiper-next products-carousel-next btn btn-primary">❯</button>
                 </div>
               </div>
