@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineHeart, AiFillStar, AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import { Link } from 'react-router-dom'
+
 
 function ProductCard(props) {
   const { imageUrl, title, unit, rating, price, initialQuantity, setInitialQuantity, category } = props;
@@ -8,13 +8,13 @@ function ProductCard(props) {
   return (
     <div className="col">
       <div className="product-item">
-        <Link to="/product" className="btn-wishlist">
+        <button className="btn-wishlist">
           <AiOutlineHeart />
-        </Link>
+        </button>
         <figure>
-          <Link href="product-single.html" title={title}  className="overflow-none">
+          <div title={title}  className="overflow-none">
             <img src={imageUrl} className="tab-image" alt="Product Thumbnail" />
-          </Link>
+          </div>
         </figure>
         <h3>{title}</h3>
         <h5 className="qty">{category}</h5>
@@ -56,9 +56,9 @@ function ProductCard(props) {
               </button>
             </span>
           </div>
-          <Link to='/cart' className="nav-link">
+          <button className="rfces">
             Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon>
-          </Link>
+          </button>
         </div>
       </div>
     </div>

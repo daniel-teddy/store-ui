@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import backgroundpattern from '../images/background-pattern.jpg'
 
 function CheckOut() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <section className="py-5 mb-5" style={{

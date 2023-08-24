@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
     AiFillStar,
     AiOutlinePlus,
     AiOutlineMinus,
   } from "react-icons/ai";
-  import { useParams } from 'react-router-dom';
+  import { Link, useParams } from 'react-router-dom';
 // import IMg from '../images/post-thumb-2.jpg'
 import ProductCard from '../components/productCard';
 import Data from "../assets/item";
 
 const randomItems = Data.sort(() => Math.random() - 0.5);
 let selectedElementsRandom = randomItems.slice(0, 5);
+
 function ProductPage() {
-  const { id } = useParams();
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
+  const { name } = useParams();
   const item = Data.find((item) => {
-    return item.id === parseInt(id);
+    return item.ItemName === name;
   })
   return (
     <div className="">
@@ -264,8 +270,8 @@ function ProductPage() {
                   <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                   {selectedElementsRandom.map((item, index) => {
                       return(
+                        <Link to={`/explore/${item.ItemName}`} key={index}>
                         <ProductCard
-                        key={index}
                       title={item.ItemName}
                       imageUrl={item.pic}
                       category={item.category}
@@ -274,6 +280,7 @@ function ProductPage() {
                       price={item.price}
                       initialQuantity="1"
                     />
+                        </Link>
                       )
                     })}
                   </div>

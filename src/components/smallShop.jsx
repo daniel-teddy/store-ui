@@ -319,7 +319,7 @@ const ProductsPageSmall = () => {
               {displayedProducts.map((item, index) => {
                 if (selectedCategory === "All") {
                   return (
-                    <Link  to={`/explore/${item.id}`} key={index}>
+                    <Link  to={`/explore/${item.ItemName}`}key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}
@@ -337,7 +337,7 @@ const ProductsPageSmall = () => {
                   item.category === "Phones"
                 ) {
                   return (
-                    <Link  to={`/explore/${item.id}`} key={index}>
+                    <Link  to={`/explore/${item.ItemName}`}key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}
@@ -355,7 +355,7 @@ const ProductsPageSmall = () => {
                   item.category === "Accessories"
                 ) {
                   return (
-                    <Link  to={`/explore/${item.id}`} key={index}>
+                    <Link  to={`/explore/${item.ItemName}`}key={index}>
                     <ProductItem
                       key={index}
                       title={item.ItemName}

@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function EditPrductPage() {
+    useEffect(() => {
+        // Scroll to the top of the page when the component mounts
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <section className="w-full h-full flex flex-col items-start justify-start bg-gray-100 p-4">
         <div className="w-full flex items-start justify-start">
