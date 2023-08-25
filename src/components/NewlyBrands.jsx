@@ -15,14 +15,14 @@ const NewlyArrivedBrands = () => {
                 <a href="https://" className="btn-link text-decoration-none">
                   View All Categories →
                 </a>
-                <div class="swiper-buttons">
+                <div className="swiper-buttons">
                   <button
-                    class="swiper-prev products-carousel-prev btn btn-primary"
+                    className="swiper-prev products-carousel-prev btn btn-primary"
                     style={{marginRight: "1rem"}}
                   >
                     ❮
                   </button>
-                  <button class="swiper-next products-carousel-next btn btn-primary">
+                  <button className="swiper-next products-carousel-next btn btn-primary">
                     ❯
                   </button>
                 </div>

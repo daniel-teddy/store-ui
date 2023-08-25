@@ -1,14 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineHeart, AiFillStar, AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 
 function ProductCard(props) {
-  const { imageUrl, title, unit, rating, price, initialQuantity, setInitialQuantity, category } = props;
+  const { imageUrl, title, unit, rating, price, category } = props;
+  
+  const [initialQuantity, setInitialQuantity] = useState(1);
 
+  const handleIncrement = (e) => {
+    
+    e.preventDefault();
+    setInitialQuantity(initialQuantity + 1);
+  };
+
+  const handleDecrement = (e) => {
+    
+    e.preventDefault();
+    if (initialQuantity > 1) {
+      setInitialQuantity(initialQuantity - 1);
+    }
+  };
+const addToFavorite = (e)=>{
+  e.preventDefault();
+  const favoriteItem = {
+    name: title,
+  };
+
+  
+  const existingfavoriteItems = JSON.parse(localStorage.getItem("favoritesItems")) || [];
+
+  
+  existingfavoriteItems.push(favoriteItem);
+
+  
+  localStorage.setItem("favoritesItems", JSON.stringify(existingfavoriteItems));
+
+ 
+  alert(`${title} added to favorite`);
+  
+}
+const handleAddtoCart = (e)=>{
+  e.preventDefault();
+  const cartItem = {
+    name: title,
+    quantity: initialQuantity,
+    price: price,
+  };
+
+  
+  const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  
+  existingCartItems.push(cartItem);
+
+  
+  localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
+
+ 
+  alert(`${title} added to cart`);
+  
+}
   return (
     <div className="col">
       <div className="product-item">
-        <button className="btn-wishlist">
+        <button className="btn-wishlist" onClick={addToFavorite}>
           <AiOutlineHeart />
         </button>
         <figure>
@@ -22,7 +77,7 @@ function ProductCard(props) {
         <span className="rating">
           <AiFillStar className="text-primary" /> {rating}
         </span>
-        <span className="price">${price}</span>
+        <span className="price">{price} TL</span>
         <div className="d-flex align-items-center justify-content-between">
           <div className="input-group product-qty">
             <span className="input-group-btn">
@@ -30,7 +85,7 @@ function ProductCard(props) {
                 type="button"
                 className="quantity-left-minus btn btn-danger btn-number"
                 data-type="minus"
-                data-field=""
+                onClick={handleDecrement}
               >
                 <AiOutlineMinus height="16" width="16" />
               </button>
@@ -50,13 +105,13 @@ function ProductCard(props) {
                 type="button"
                 className="quantity-right-plus btn btn-success btn-number"
                 data-type="plus"
-                data-field=""
+                onClick={handleIncrement}
               >
                 <AiOutlinePlus height="16" width="16" />
               </button>
             </span>
           </div>
-          <button className="rfces">
+          <button className="rfces" onClick={handleAddtoCart}>
             Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon>
           </button>
         </div>

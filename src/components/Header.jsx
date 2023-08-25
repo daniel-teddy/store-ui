@@ -3,7 +3,7 @@ import Logo from '../images/logo1.png';
 import giftIcon from '../images/gift.svg';
 import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Popup from '../pages/PopUp';
+import Popup from './PopUp';
 
 const Header = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');

@@ -14,3 +14,9 @@
   padding: none !important;
   text-decoration: none !important;
 }
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
