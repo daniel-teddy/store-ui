@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import backgroundpattern from '../images/background-pattern.jpg'
 
 import imgLink1 from '../images/product-thumb-11.jpg'
@@ -6,10 +6,6 @@ import imgLink2 from '../images/product-thumb-12.jpg'
 import ApplyDiscount from '../components/ApplyDiscount'
 
 function CartPage() {
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
     <section className="py-5 mb-5" style={{

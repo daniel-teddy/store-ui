@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/style.css'
 import './styles/vendor.css'
@@ -15,17 +15,13 @@ import ContactPage from './pages/ContactPage';
 import EditPrductPage from './pages/EditPrductPage';
 
 function App() {
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div className="App">
       
       <Header />
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/explore/:name' element={<ProductPage />} />
+      <Route path='/explore/:id' element={<ProductPage />} />
       {/* <Route path='/product' element={<ProductPage />} /> */}
       <Route path='/cart' element={<CartPage />} />
       <Route path='/checkout' element={<CheckOut />} />

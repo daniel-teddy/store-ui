@@ -62,7 +62,7 @@ const TrendingProducts = () => {
                     
                     {selectedElementsRandom.map((item, index) => {
                       return(
-                        <Link to={`/explore/${item.ItemName}`} key={index}>
+                        <Link to={`/explore/${item.id}`} key={index}>
                         <ProductCard
                       title={item.ItemName}
                       imageUrl={item.pic}

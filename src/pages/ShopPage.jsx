@@ -1,13 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ApplyDiscount from '../components/ApplyDiscount'
 import backgroundpattern from '../images/background-pattern.jpg'
 import ProductsPageSmall from '../components/smallShop'
 
 function ShopPage() {
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
     <section className="py-5 mb-5" style={{

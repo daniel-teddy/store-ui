@@ -3,7 +3,6 @@ import Logo from '../images/logo1.png';
 import giftIcon from '../images/gift.svg';
 import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import Popup from '../pages/PopUp';
 
 const Header = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,19 +21,12 @@ const Header = ({ items }) => {
   };
 
 
-  // const handlePath = () => {
-  //   // Replace '/your-desired-route' with the actual route you want to navigate to
-  //   window.location.href = '/cart';
-  // };
-
-  const [showPopup, setShowPopup] = useState(false);
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
+  const handlePath = () => {
+    // Replace '/your-desired-route' with the actual route you want to navigate to
+    window.location.href = '/cart';
   };
 
   return (
-    <>
-    <Popup show={showPopup} handleClose={togglePopup} />
     <header>
          <div className="container-fluid">
         <div className="row py-3 border-bottom">
@@ -125,7 +117,7 @@ const Header = ({ items }) => {
             </ul>
             <div className="cart text-end d-none d-lg-block dropdown">
               <button 
-              onClick={togglePopup}
+              onClick={handlePath}
                 className="border-0 bg-transparent"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -187,7 +179,6 @@ const Header = ({ items }) => {
         </div>
       </div>
     </header>
-    </>
   );
 };
 
