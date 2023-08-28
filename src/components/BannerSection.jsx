@@ -1,5 +1,5 @@
 import React from "react";
-// import backgroundpattern from '../images/background-pattern.jpg'
+
 import productThumb1 from "../images/main-removebg-preview.png";
 
 import { Link } from "react-router-dom";
@@ -7,12 +7,7 @@ const BannerSection = () => {
   return (
     <section
       className="py-3"
-      // style={{
-      //   backgroundImage: `url(${backgroundpattern})`,
-      //   backgroundSize: 'cover',
-      //   backgroundRepeat: 'no-repeat',
-      //   backgroundPosition: 'center',
-      // }}
+     
     >
       <div className="container-fluid">
         <div className="row">
