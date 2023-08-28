@@ -21,7 +21,10 @@ function JustArrived() {
                   View All Categories →
                 </a>
                 <div className="swiper-buttons">
-                  <button className="swiper-prev products-carousel-prev btn btn-primary">
+                  <button
+                    className="swiper-prev products-carousel-prev btn btn-primary"
+                    style={{marginRight: "1rem"}}
+                  >
                     ❮
                   </button>
                   <button className="swiper-next products-carousel-next btn btn-primary">

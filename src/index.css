@@ -5,3 +5,18 @@
 .nav-links:hover{
   cursor: pointer;
 }
+
+.rfces{
+  width: fit-content;
+  background-color: rgb(243, 195, 74);
+  border: none;
+  border-radius: .5rem;
+  padding: none !important;
+  text-decoration: none !important;
+}
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
