@@ -13,35 +13,83 @@ import { Link } from "react-router-dom";
 const productsPerPage = 12;
 // const randomItems = Data.slice(0, productsPerPage);
 
-const ProductItem = ({
-  imageUrl,
-  title,
-  unit,
-  rating,
-  price,
-  initialQuantity,
-  setInitialQuantity,
-  category,
-}) => {
+function ProductItem(props) {
+  const { imageUrl, title, unit, rating, price, category } = props;
+  
+  const [initialQuantity, setInitialQuantity] = useState(1);
+
+  const handleIncrement = (e) => {
+    
+    e.preventDefault();
+    setInitialQuantity(initialQuantity + 1);
+  };
+
+  const handleDecrement = (e) => {
+    
+    e.preventDefault();
+    if (initialQuantity > 1) {
+      setInitialQuantity(initialQuantity - 1);
+    }
+  };
+const addToFavorite = (e)=>{
+  e.preventDefault();
+  const favoriteItem = {
+    name: title,
+  };
+
+  
+  const existingfavoriteItems = JSON.parse(localStorage.getItem("favoritesItems")) || [];
+
+  
+  existingfavoriteItems.push(favoriteItem);
+
+  
+  localStorage.setItem("favoritesItems", JSON.stringify(existingfavoriteItems));
+
+ 
+  alert(`${title} added to favorite`);
+  
+}
+const handleAddtoCart = (e)=>{
+  e.preventDefault();
+  const cartItem = {
+    name: title,
+    quantity: initialQuantity,
+    price: price,
+    image: imageUrl,
+  };
+
+  
+  const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  
+  existingCartItems.push(cartItem);
+
+  
+  localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
+
+ 
+  alert(`${title} added to cart`);
+  
+}
   return (
     <div className="col">
       <div className="product-item">
-        <a href="https" className="btn-wishlist">
-          <AiOutlineHeart width="24" height="24" />
-        </a>
+        <button className="btn-wishlist" onClick={addToFavorite}>
+          <AiOutlineHeart />
+        </button>
         <figure>
-          <a href="single-product.html" title={title}>
-            <img src={imageUrl} className="tab-image" alt={title} />
-          </a>
+          <div title={title}  className="overflow-none">
+            <img src={imageUrl} className="tab-image" alt="Product Thumbnail" />
+          </div>
         </figure>
         <h3>{title}</h3>
-        <p className="qty">{category}</p>
+        <h5 className="qty">{category}</h5>
         <span className="qty">{unit}</span>
         <span className="rating">
-          <AiFillStar width="24" height="24" className="text-primary" />{" "}
-          {rating}
+          <AiFillStar className="text-primary" /> {rating}
         </span>
-        <span className="price">{price}</span>
+        <span className="price">{price} TL</span>
         <div className="d-flex align-items-center justify-content-between">
           <div className="input-group product-qty">
             <span className="input-group-btn">
@@ -49,9 +97,9 @@ const ProductItem = ({
                 type="button"
                 className="quantity-left-minus btn btn-danger btn-number"
                 data-type="minus"
-                data-field=""
+                onClick={handleDecrement}
               >
-                <AiOutlineMinus width="16" height="16" />
+                <AiOutlineMinus height="16" width="16" />
               </button>
             </span>
             <input
@@ -69,23 +117,20 @@ const ProductItem = ({
                 type="button"
                 className="quantity-right-plus btn btn-success btn-number"
                 data-type="plus"
-                data-field=""
+                onClick={handleIncrement}
               >
-                <AiOutlinePlus width="16" height="16" />
+                <AiOutlinePlus height="16" width="16" />
               </button>
             </span>
           </div>
-          <a href="https" className="nav-link">
-            Add to Cart{" "}
-            <svg width="24" height="24">
-              <use xlinkHref="#cart"></use>
-            </svg>
-          </a>
+          <button className="rfces" onClick={handleAddtoCart}>
+            Add to Cart <iconify-icon icon="uil:shopping-cart"></iconify-icon>
+          </button>
         </div>
       </div>
     </div>
   );
-};
+}
 
 const ProductsPageSmall = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -114,7 +159,7 @@ const ProductsPageSmall = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  const filteredProducts = Data.filter((item) =>
+  const filteredProducts = Data?.filter((item) =>
     item.ItemName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -126,7 +171,7 @@ const ProductsPageSmall = () => {
   };
 
   const displayedProducts = filteredProducts
-  .filter((item) =>
+  ?.filter((item) =>
     (selectedCategory === 'All' || item.category === selectedCategory) &&
     (!selectedTag || (item.tags && item.tags.includes(selectedTag))) && 
     (!selectedBrand || (item.brand && item.brand.includes(selectedBrand))) &&
@@ -181,37 +226,36 @@ const ProductsPageSmall = () => {
                       selectedCategory === "All" ? "active" : ""
                     }`}
                   >
-                    <href
+                    <span
                       style={{ cursor: "pointer" }}
                       onClick={() => handleCategoryClick("All")}
                     >
                       All
-                    </href>
+                    </span>
                   </li>
                   <li
                     className={`cat-item ${
                       selectedCategory === "Phones" ? "active" : ""
                     }`}
                   >
-                    <href
+                    <span
                       style={{ cursor: "pointer" }}
                       onClick={() => handleCategoryClick("Phones")}
                     >
                       Phones
-                    </href>
+                    </span>
                   </li>
                   <li
                     className={`cat-item ${
                       selectedCategory === "Accessories" ? "active" : ""
                     }`}
                   >
-                    <a
-                      href
+                    <span
                       style={{ cursor: "pointer" }}
                       onClick={() => handleCategoryClick("Accessories")}
                     >
                       Accessories
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -220,8 +264,7 @@ const ProductsPageSmall = () => {
                 <ul className="product-tags sidebar-list list-unstyled">
                   {["White", "Cheap", "Mobile", "Modern"].map((tag) => (
                     <li className="tags-item" key={tag}>
-                      <a
-                        href
+                      <span
                         className={`nav-link ${
                           selectedTag === tag ? "active" : ""
                         }`}
@@ -229,7 +272,7 @@ const ProductsPageSmall = () => {
                         style={{ cursor: "pointer" }}
                       >
                         {tag}
-                      </a>
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -241,8 +284,7 @@ const ProductsPageSmall = () => {
               <ul className="product-tags sidebar-list list-unstyled">
                 {["Apple", "Samsung", "Huwai"].map((brand) => (
                   <li className="tags-item" key={brand}>
-                    <a
-                      href
+                    <span
                       className={`nav-link ${
                         selectedBrand === brand ? "active" : ""
                       }`}
@@ -250,7 +292,7 @@ const ProductsPageSmall = () => {
                       onClick={() => handleBrandClick(brand)}
                     >
                       {brand}
-                    </a>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -267,23 +309,22 @@ const ProductsPageSmall = () => {
                   { min: 40, max: 50 },
                 ].map((priceRange) => (
                   <li className="tags-item" key={priceRange.min}>
-                    <a
-                      href
+                    <span
                       className={`nav-link ${
                         selectedPriceRange === priceRange ? "active" : ""
                       }`}
                       onClick={() => handlePriceRangeClick(priceRange)}
                       style={{ cursor: "pointer" }}
                     >
-                      {`$${priceRange.min} - $${priceRange.max}`}
-                    </a>
+                      {`${priceRange.min}TL - ${priceRange.max}TL`}
+                    </span>
                   </li>
                 ))}
               </ul>
               {selectedPriceRange && (
                 <p>
-                  Selected Price Range: ${selectedPriceRange.min} - $
-                  {selectedPriceRange.max}
+                  Selected Price Range: {selectedPriceRange.min}TL - 
+                  {selectedPriceRange.max}TL
                 </p>
               )}
             </div>

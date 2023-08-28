@@ -11,7 +11,7 @@ const Data = [
         "id": 1
     },
     {
-        "category": "arduino",
+        "category": "Phones",
         "url": "https://www.direnc.net/cp2102-usb-uartttl-seri-donusturucu",
         "ItemName": "CP2102 USB-UART(TTL) Seri Dönüştürücü",
         "price": 123.76,
@@ -264,7 +264,7 @@ const Data = [
         "id": 24
     },
     {
-        "category": "arduino",
+        "category": "Phones",
         "url": "https://www.direnc.net/hw-069-4-digit-digital-display-modul-18473",
         "ItemName": "HW-069 4-digit Dijital Display Modül",
         "price": 21.38,
@@ -396,7 +396,7 @@ const Data = [
         "id": 36
     },
     {
-        "category": "arduino",
+        "category": "Phones",
         "url": "https://www.direnc.net/d-iot-2560-pro-db-arduino-mega-tabanli-gsm/gps-gelistirme-karti",
         "ItemName": "D-IoT 2560 DB Arduino Mega Tabanlı GSM/GPS Geliştirme Kartı",
         "price": 1930.95,

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import backgroundpattern from '../images/background-pattern.jpg'
 import MapsGoogle from '../components/mapsGoogle'
+import JustArrived from '../components/justArrived';
 
 function ContactPage() {
   useEffect(() => {
@@ -103,6 +104,7 @@ function ContactPage() {
         </div>
       </div>
     </section>
+    <JustArrived />
     <MapsGoogle />
     </>
   )

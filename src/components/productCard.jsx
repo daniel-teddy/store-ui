@@ -45,6 +45,7 @@ const handleAddtoCart = (e)=>{
     name: title,
     quantity: initialQuantity,
     price: price,
+    image: imageUrl,
   };
 
   

@@ -7,14 +7,14 @@ import Popup from './PopUp';
 
 const Header = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  //const [filteredItems, setFilteredItems] = useState(items);
-  const setFilteredItems = items;
-
+  const [filteredItems, setFilteredItems] = useState(items);
+  
+// console.log(filteredItems)
   const handleSearch = (event) => {
     const searchTerm = event.target.value;
     setSearchTerm(searchTerm);
 
-    const filtered = items.filter((item) =>
+    const filtered = items?.filter((item) =>
       item.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
