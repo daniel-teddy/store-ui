@@ -8,6 +8,7 @@ import img4 from '../images/images-tech/item4.jpg'
 import img5 from '../images/images-tech/item5.jpg'
 
 function JustArrived() {
+
   return (
     <section className="py-5 overflow-hidden">
       <div className="container-fluid">
@@ -16,22 +17,7 @@ function JustArrived() {
             <div className="section-header d-flex justify-content-between">
               <h2 className="section-title">Just arrived</h2>
 
-              <div className="d-flex align-items-center">
-                <a href="https" className="btn-link text-decoration-none">
-                  View All Categories →
-                </a>
-                <div className="swiper-buttons">
-                  <button
-                    className="swiper-prev products-carousel-prev btn btn-primary"
-                    style={{marginRight: "1rem"}}
-                  >
-                    ❮
-                  </button>
-                  <button className="swiper-next products-carousel-next btn btn-primary">
-                    ❯
-                  </button>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -45,7 +31,9 @@ function JustArrived() {
                   role="tabpanel"
                   aria-labelledby="nav-all-tab"
                 >
-                  <div className="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                  <div className="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+                  
+                  >
                   <ProductCard
                       imageUrl={img1}
                       title="iPhone XR"

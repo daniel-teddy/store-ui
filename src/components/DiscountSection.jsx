@@ -9,10 +9,10 @@ const DiscountSection = () => {
           <div className="col-md-6">
             <div className="banner-ad bg-danger" style={{ background: `url(${adImgae3}) no-repeat right bottom` }}>
               <div className="banner-content p-5">
-                <div className="categories text-primary fs-3 fw-bold">Upto 25% Off</div>
-                <h3 className="banner-title">Luxa Dark Chocolate</h3>
-                <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
-                <a href="https://teddy-webdev.click" className="btn btn-dark text-uppercase">Show Now</a>
+                <div className="categories text-primary fs-3 fw-bold">Up to 25% Off</div>
+                <h3 className="banner-title">Robotic Course</h3>
+                <p>Early bird discount for Robotic coding course</p>
+                <a href="https://teddy-webdev.click" className="btn btn-dark text-uppercase">Register Now</a>
               </div>
             </div>
           </div>

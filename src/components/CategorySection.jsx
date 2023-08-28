@@ -1,10 +1,11 @@
 import React from 'react';
-import vegies from '../images/icon-vegetables-broccoli.png';
+// import vegies from '../images/icon-vegetables-broccoli.png';
 import bread from '../images/icon-bread-baguette.png';
 import drinks from "../images/icon-soft-drinks-bottle.png";
 import wines from "../images/icon-wine-glass-bottle.png";
 import animal from "../images/icon-animal-products-drumsticks.png";
 import herbs from "../images/icon-bread-herb-flour.png";
+import { SiArduino } from 'react-icons/si'
 
 const CategorySection = () => {
   return (
@@ -36,7 +37,7 @@ const CategorySection = () => {
             <div className="category-carousel swiper">
               <div className="swiper-wrapper" style={{gap : '10px', width: '100%'}}>
                 <a href="category.html" className="nav-link category-item swiper-slide" style={{width: "237px"}}>
-                  <img src={vegies} alt="Category Icon" />
+                  <SiArduino style={{width: "8rem"}}/>
                   <h3 className="category-title">Arduino</h3>
                 </a>
                 <a href="category.html" className="nav-link category-item swiper-slide" style={{width: "237px"}}>

@@ -1,9 +1,24 @@
-import React from 'react';
-import prodThum11 from "../images/product-thumb-11.jpg"
-import prodThum12 from "../images/product-thumb-12.jpg"
-import prodThum13 from "../images/product-thumb-13.jpg"
-import prodThum14 from "../images/product-thumb-14.jpg"
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const NewlyArrivedBrands = () => {
+  const [translationX, setTranslationX] = useState(0);
+
+  // Function to increase the translation value
+  const increaseTranslation = () => {
+    if (translationX < 0) {
+      setTranslationX(translationX + 24);
+    } else if (translationX < 24) {
+      setTranslationX(0);
+    }
+  };
+
+  // Function to decrease the translation value
+  const decreaseTranslation = () => {
+    if (translationX > -74) {
+      setTranslationX(translationX - 24);
+    }
+  };
   return (
     <section className="py-5 overflow-hidden">
       <div className="container-fluid">
@@ -12,17 +27,20 @@ const NewlyArrivedBrands = () => {
             <div className="section-header d-flex justify-content-between mb-5">
               <h2 className="section-title">Newly Arrived Brands</h2>
               <div className="d-flex align-items-center">
-                <a href="https://" className="btn-link text-decoration-none">
+                <Link to="/shop" className="btn-link text-decoration-none">
                   View All Categories →
-                </a>
+                </Link>
                 <div className="swiper-buttons">
                   <button
+                  onClick={increaseTranslation}
                     className="swiper-prev products-carousel-prev btn btn-primary"
                     style={{marginRight: "1rem"}}
                   >
                     ❮
                   </button>
-                  <button className="swiper-next products-carousel-next btn btn-primary">
+                  <button
+                  onClick={decreaseTranslation} 
+                  className="swiper-next products-carousel-next btn btn-primary">
                     ❯
                   </button>
                 </div>
@@ -33,7 +51,10 @@ const NewlyArrivedBrands = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="brand-carousel swiper">
-              <div className="swiper-wrapper">
+              <div className="swiper-wrapper"
+              style={{ transform: `translate3d(${translationX}rem, 0, 0)`,
+              transition: 'transform 0.3s'}}
+              >
                 <div
                   className="swiper-slide"
                   style={{ width: "370px", marginRight: "30px" }}
@@ -42,7 +63,7 @@ const NewlyArrivedBrands = () => {
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
-                          src={prodThum11}
+                          src='https://knowhow.distrelec.com/wp-content/uploads/2023/03/iStock-458960107.jpg'
                           className="img-fluid rounded"
                           alt="Card title"
                         />
@@ -64,7 +85,7 @@ const NewlyArrivedBrands = () => {
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
-                          src={prodThum12}
+                          src='https://cz.farnell.com/wcsstore/ExtendedSitesCatalogAssetStore/cms/asset/images/common/campaign/raspberrypi/pi-4-hero.png'
                           className="img-fluid rounded"
                           alt="Card title"
                         />
@@ -86,7 +107,7 @@ const NewlyArrivedBrands = () => {
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
-                          src={prodThum13}
+                          src='https://images.crutchfieldonline.com/ImageHandler/trim/750/457/products/2019/27/880/g880SOLO3G-F.jpg'
                           className="img-fluid rounded"
                           alt="Card title"
                         />
@@ -108,14 +129,14 @@ const NewlyArrivedBrands = () => {
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
-                          src={prodThum14}
+                          src='https://simtek.com.pk/wp-content/uploads/2023/03/Simtek-MPPT-60A-K26-6.jpg'
                           className="img-fluid rounded"
                           alt="Card title"
                         />
                       </div>
                       <div className="col-md-8">
                         <div className="card-body py-0">
-                          <p className="text-muted mb-0">MiSolar</p>
+                          <p className="text-muted mb-0">Solar</p>
                           <h5 className="card-title">
                             Solar charge controller
                           </h5>

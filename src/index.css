@@ -20,3 +20,6 @@
 .display-block{
   display: block;
 }
+.white{
+  color: var(--accent-color) !important;
+}
