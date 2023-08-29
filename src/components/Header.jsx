@@ -9,17 +9,17 @@ const Header = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredItems, setFilteredItems] = useState(items);
   
-// console.log(filteredItems)
   const handleSearch = (event) => {
     const searchTerm = event.target.value;
     setSearchTerm(searchTerm);
-
+    
     const filtered = items?.filter((item) =>
-      item.toLowerCase().includes(searchTerm.toLowerCase())
+    item.toLowerCase().includes(searchTerm.toLowerCase())
     );
-
+    
     setFilteredItems(filtered);
   };
+  console.log(filteredItems)
 
 
   // const handlePath = () => {
@@ -87,12 +87,12 @@ const Header = ({ items }) => {
             </div> */}
             <ul className="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <Link to="cart" className="rounded-circle bg-light p-2 mx-1">
+                <Link to="cart" className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
                   <AiOutlineUser height="24" width="24"/>
                 </Link>
               </li>
               <li>
-                <Link to="cart" className="rounded-circle bg-light p-2 mx-1">
+                <Link to="cart" className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
                   <AiOutlineHeart height="24" width="24"/>
                 </Link>
               </li>

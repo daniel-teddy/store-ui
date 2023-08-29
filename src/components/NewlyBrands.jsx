@@ -59,7 +59,7 @@ const NewlyArrivedBrands = () => {
                   className="swiper-slide"
                   style={{ width: "370px", marginRight: "30px" }}
                 >
-                  <div className="card mb-3 p-3 rounded-4 shadow border-0">
+                  <div className="card mb-3 p-3 rounded-4 shadow border-0 qushb">
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
@@ -81,7 +81,7 @@ const NewlyArrivedBrands = () => {
                   className="swiper-slide"
                   style={{ width: "370px", marginRight: "30px" }}
                 >
-                  <div className="card mb-3 p-3 rounded-4 shadow border-0">
+                  <div className="card mb-3 p-3 rounded-4 shadow border-0 qushb">
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
@@ -103,7 +103,7 @@ const NewlyArrivedBrands = () => {
                   className="swiper-slide"
                   style={{ width: "370px", marginRight: "30px" }}
                 >
-                  <div className="card mb-3 p-3 rounded-4 shadow border-0">
+                  <div className="card mb-3 p-3 rounded-4 shadow border-0 qushb">
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img
@@ -125,7 +125,31 @@ const NewlyArrivedBrands = () => {
                   className="swiper-slide"
                   style={{ width: "370px", marginRight: "30px" }}
                 >
-                  <div className="card mb-3 p-3 rounded-4 shadow border-0">
+                  <div className="card mb-3 p-3 rounded-4 shadow border-0 qushb">
+                    <div className="row g-0">
+                      <div className="col-md-4">
+                        <img
+                          src='https://www.solarekip.com/wp-content/uploads/2021/12/abax-24v-2000w-inverter.jpg'
+                          className="img-fluid rounded"
+                          alt="Card title"
+                        />
+                      </div>
+                      <div className="col-md-8">
+                        <div className="card-body py-0">
+                          <p className="text-muted mb-0">Solar</p>
+                          <h5 className="card-title">
+                            Solar charge controller
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="swiper-slide"
+                  style={{ width: "370px", marginRight: "30px" }}
+                >
+                  <div className="card mb-3 p-3 rounded-4 shadow border-0 qushb">
                     <div className="row g-0">
                       <div className="col-md-4">
                         <img

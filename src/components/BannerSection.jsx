@@ -1,6 +1,7 @@
 import React from "react";
 
 import productThumb1 from "../images/main-removebg-preview.png";
+import productThumb2 from "../images/sensors.png"
 
 import { Link } from "react-router-dom";
 const BannerSection = () => {
@@ -31,12 +32,12 @@ const BannerSection = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Dignissim massa diam elementum.
                           </p>
-                          <a
-                            href="https://teddy-webdev.click"
+                          <Link
+                            to="/shop"
                             className="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
                           >
                             shop collection
-                          </a>
+                          </Link>
                         </div>
                         <div className="img-wrapper col-md-5">
                           <img
@@ -87,7 +88,7 @@ const BannerSection = () => {
               <div
                 className="banner-ad bg-danger block-3"
                 style={{
-                  background: `url('https://hackster.imgix.net/uploads/attachments/1473969/_Un47llkZ61.blob?auto=compress%2Cformat&w=900&h=675&fit=min') no-repeat`,
+                  background: `url(${productThumb2}) center`,
                   backgroundPosition: "right bottom",
                   backgroundSize: "55%",
                   backgroundRepeat: 'no-repeat'
@@ -95,8 +96,8 @@ const BannerSection = () => {
               >
                 <div className="row banner-content p-5">
                   <div className="content-wrapper col-md-7">
-                    <div className="categories sale mb-3 pb-3">15% off</div>
-                    <h3 className="item-title">Sensors &amp; modules</h3>
+                    <div className="categories sale mb-3 pb-3 ">15% off</div>
+                    <h3 className="item-title ">Sensors &amp; modules</h3>
                     <Link
                       to="/shop"
                       className="d-flex align-items-center nav-link white"
