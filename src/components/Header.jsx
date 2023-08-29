@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../images/logo1.png';
 import giftIcon from '../images/gift.svg';
 import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
@@ -22,10 +22,24 @@ const Header = ({ items }) => {
   console.log(filteredItems)
 
 
-  // const handlePath = () => {
-  //   // Replace '/your-desired-route' with the actual route you want to navigate to
-  //   window.location.href = '/cart';
-  // };
+  const [totalQuantity, setTotalQuantity] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
+  // const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    let quantity = 0;
+    let cost = 0;
+    storedCartItems.forEach((item) => {
+      quantity += item.quantity;
+      cost += item.quantity * item.price;
+    });
+    setTotalQuantity(quantity);
+    setTotalCost(cost);
+  }, []);
+
+
 
   const [showPopup, setShowPopup] = useState(false);
   const togglePopup = () => {
@@ -134,7 +148,7 @@ const Header = ({ items }) => {
               >
                 <span className="fs-6 text-muted dropdown-toggle">Your Cart</span>
                 <h5 className="mb-0">
-                  <span className="cart-total">$1290.00</span>
+                  <span className="cart-total">{totalCost} TL</span>
                 </h5>
               </button>
             </div>
