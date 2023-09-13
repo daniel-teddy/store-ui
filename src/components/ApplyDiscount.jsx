@@ -50,7 +50,7 @@ const ApplyDiscount = () => {
       <div className="container-fluid">
         <div
           className="bg-secondary py-5 my-5 rounded-5"
-          style={{ background: `url(${bgLeaves}) no-repeat` }}
+          // style={{ background: `url(${bgLeaves}) no-repeat` }}
         >
           <div className="container my-5">
             <div className="row">

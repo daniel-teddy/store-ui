@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import backgroundpattern from '../images/background-pattern.jpg'
+import backgroundpattern from '../images/background-pattern.png'
 
 
 import ApplyDiscount from '../components/ApplyDiscount'
@@ -34,13 +34,12 @@ function CartPage() {
     <>
     <section className="py-5 mb-5" style={{
         backgroundImage: `url(${backgroundpattern})`,
-        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}>
       <div className="container-fluid">
         <div className="d-flex justify-content-between">
-          <h1 className="page-title pb-2">Cart</h1>
+          <h1 className="page-title pb-2" style={{color: '#ffc43f'}}>Cart</h1>
           <nav className="breadcrumb fs-6">
           <Link className="breadcrumb-item nav-link" to="/">
                 Home
@@ -155,7 +154,7 @@ function CartPage() {
                 </table>
               </div>
               <div className="button-wrap row g-2">
-                <div className="col-md-6"><button className="btn btn-dark btn-lg text-uppercase btn-rounded-none w-100">Update Cart</button></div>
+                <div className="col-md-6"><button className="btn btn-dark btn-lg text-uppercase btn-rounded-none w-100">Update</button></div>
                 
                 <Link to="/shop" className="col-md-6"><button className="btn btn-dark btn-lg text-uppercase btn-rounded-none w-100">Shopping</button></Link>
                 
