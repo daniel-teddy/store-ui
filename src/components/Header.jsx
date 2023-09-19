@@ -60,9 +60,12 @@ const Header = ({ items }) => {
             </div>
           </div>
           <div className="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
-            <div className="search-bar row bg-light p-2 my-2 rounded-4">
-              <div className="col-md-4 d-none d-md-block">
-                <select className="form-select border-0 bg-transparent">
+            <div className="search-bar row  p-2 my-2 rounded-4">
+              <div className=" d-none d-md-block bg-light" style={{width: 'fit-content', textDecoration: 'none'}}>
+                <a href='http://127.0.0.1:5500/src/components/contact.html' className=" border-0 bg-transparent">
+                  Register Lab
+                </a>
+                {/* <select className="form-select border-0 bg-transparent">
                   <option>All Categories</option>
                   <option>Arduino</option>
                   <option>Adaptors</option>
@@ -71,27 +74,28 @@ const Header = ({ items }) => {
                   <option>Solar</option>
                   <option>Modules</option>
                   <option>IC</option>
-                </select>
+                </select> */}
               </div>
-              <div className="col-11 col-md-7">
+              <div className="col-11 col-md-7" style={{marginLeft: '.75rem'}}>
                 <form id="search-form" className="text-center" action="" method="">
                   <input
                     type="text"
-                    className="form-control border-0 bg-transparent"
+                    id='h_text'
+                    className="form-control border-0 bg-light"
                     placeholder="Search for more than 20,000 products"
                     value={searchTerm}
                     onChange={handleSearch}
                   />
                 </form>
               </div>
-              <div className="col-1">
+              {/* <div className="col-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
                     d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"
                   />
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
@@ -106,7 +110,7 @@ const Header = ({ items }) => {
                 </Link>
               </li>
               <li>
-                <Link to="cart" className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
+                <Link to="cart" className="rounded-circle bg-light red-hover mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
                   <AiOutlineHeart height="24" width="24"/>
                 </Link>
               </li>
