@@ -62,7 +62,7 @@ const Header = ({ items }) => {
           <div className="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
             <div className="search-bar row  p-2 my-2 rounded-4">
               <div className=" d-none d-md-block bg-light" style={{width: 'fit-content', textDecoration: 'none'}}>
-                <a href='http://127.0.0.1:5500/src/components/contact.html' className=" border-0 bg-transparent">
+                <a href='/contact.html' className=" border-0 bg-transparent">
                   Register Lab
                 </a>
                 {/* <select className="form-select border-0 bg-transparent">
