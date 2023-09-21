@@ -23,24 +23,15 @@ submit_form.addEventListener('click', () => {
 
     let isValid = true;
 
-    // inputs.forEach(input => {
-    //     if (!input.value.trim()) {
-    //         isValid = false;
-    //     }
-    // });
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            isValid = false;
+        }
+    });
 
     if (isValid) {
         // All fields are filled correctly
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzBGBNUEiRXEZ_yNeyXFc5liDfZcARlbM9KKozu6g8kHzXTYaM1-2xNUCBDC3i2zSecMQ/exec'
-      const form = document.forms['myform']
-
-      submit_form.addEventListener('click', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => alert("Thank you! your form is submitted successfully."))
-          .then(() => { window.location.reload(); })
-          .catch(error => console.error('Error!', error.message))
-      })
+       
     } else {
         alert('Please fill in all required fields. make sure you upload all ID images');
     }
