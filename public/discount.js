@@ -37,32 +37,44 @@ console.log('Input fields, textareas, and select elements names:', fieldNames);
 
 
 
-const dataItems = [
-    "f_name",
-    "l_name",
-    "email",
-    "birth_date",
-    "company",
-    "phone",
-    "street",
-    "building_name",
-    "building_number",
-    "floor",
-    "post_code",
-    "school_name",
-    "department",
-    "academic_year",
-    "student_number",
-    "student_mail",
-    "std_id",
-    "ntl_id",
-    "ntl_id_num",
-    "accept_tc",
-    "country",
-    "gender",
-    "pay_method"
-]
+// const dataItems = [
+//     "f_name",
+//     "l_name",
+//     "email",
+//     "birth_date",
+//     "company",
+//     "phone",
+//     "street",
+//     "building_name",
+//     "building_number",
+//     "floor",
+//     "post_code",
+//     "school_name",
+//     "department",
+//     "academic_year",
+//     "student_number",
+//     "student_mail",
+//     "std_id",
+//     "ntl_id",
+//     "ntl_id_num",
+//     "accept_tc",
+//     "country",
+//     "gender",
+//     "pay_method"
+// ]
 
-console.log(dataItems)
+// console.log(dataItems)
 
   
+
+
+
+
+
+
+
+
+
+
+
+
