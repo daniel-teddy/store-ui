@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import ApplyDiscount from '../components/ApplyDiscount'
-import backgroundpattern from '../images/background-pattern.jpg'
+// import backgroundpattern from '../images/background-pattern.jpg'
 import ProductsPageSmall from '../components/smallShop'
 
 function ShopPage() {
@@ -11,7 +11,7 @@ function ShopPage() {
   return (
     <>
     <section className="py-5 mb-5" style={{
-        backgroundImage: `url(${backgroundpattern})`,
+        // backgroundImage: `url(${backgroundpattern})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

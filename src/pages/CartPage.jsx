@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import backgroundpattern from '../images/background-pattern.png'
+// import backgroundpattern from '../images/background-pattern.png'
 
 
 import ApplyDiscount from '../components/ApplyDiscount'
@@ -33,7 +33,7 @@ function CartPage() {
   return (
     <>
     <section className="py-5 mb-5" style={{
-        backgroundImage: `url(${backgroundpattern})`,
+        // backgroundImage: `url(${backgroundpattern})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
       }}>

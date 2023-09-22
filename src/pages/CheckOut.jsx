@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import backgroundpattern from "../images/background-pattern.jpg";
+// import backgroundpattern from "../images/background-pattern.jpg";
 import { Link } from "react-router-dom";
 
 function CheckOut() {
@@ -66,7 +66,7 @@ function CheckOut() {
       <section
         className="py-5 mb-5"
         style={{
-          backgroundImage: `url(${backgroundpattern})`,
+          // backgroundImage: `url(${backgroundpattern})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import backgroundpattern from '../images/background-pattern.jpg'
+// import backgroundpattern from '../images/background-pattern.jpg'
 import MapsGoogle from '../components/mapsGoogle'
 import JustArrived from '../components/justArrived';
 
@@ -11,7 +11,7 @@ function ContactPage() {
   return (
     <>
     <section className="py-5 mb-5" style={{
-        backgroundImage: `url(${backgroundpattern})`,
+        // backgroundImage: `url(${backgroundpattern})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
