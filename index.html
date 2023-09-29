@@ -810,6 +810,7 @@
   </section>
  
   <script>
+
     const openCT = document.querySelector('#ReadTC');
     const closeCT = document.querySelector('#closeCT');
     const main_section = document.querySelector('#main_section');
@@ -818,6 +819,10 @@
     closeCT.addEventListener('click',  () => {
         main_section.classList.remove("none");
         condition_section.classList.add("none");
+        window.scrollTo({
+            bottom: 0,
+            behavior: 'smooth'
+        });
     });
 
     openCT.addEventListener('click',  () => {
