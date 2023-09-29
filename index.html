@@ -17,7 +17,7 @@
 
 <body class="bg-gray-100 ">
   <section id="main_section" class="flex flex-col items-center justify-center w-full h-full" >
-    <form id="myform" name="myform" class="flex flex-col items-center justify-center h-full w-full p-2" netlify>
+    <form id="myform" name="registration form almdar" class="flex flex-col items-center justify-center h-full w-full p-2" netlify>
       <div class="w-full p-4 m-2 flex items-center justify-center">
         <div class="bg-[#1897FC] w-full lg:w-[62%]  p-2 flex items-center justify-center uppercase text-white font-bold">
           <h1>Personnal Information</h1>
@@ -810,7 +810,29 @@
   </section>
  
   <script>
+document.getElementById("submit_button").addEventListener("click", function() {
+            // Get all form elements
+            var formElements = document.getElementById("myform").elements;
 
+            // Flag to check if all fields are filled
+            var allFieldsFilled = true;
+
+            // Iterate through form elements
+            for (var i = 0; i < formElements.length; i++) {
+                if (formElements[i].type !== "button" && formElements[i].value.trim() === "") {
+                    allFieldsFilled = false;
+                    break;
+                }
+            }
+
+            if (allFieldsFilled) {
+                // alert("All fields are filled. Form can be submitted.");
+                // You can submit the form here if needed.
+                document.getElementById("myform").submit();
+            } else {
+                alert("Please upload your files");
+            }
+        });
     const openCT = document.querySelector('#ReadTC');
     const closeCT = document.querySelector('#closeCT');
     const main_section = document.querySelector('#main_section');
