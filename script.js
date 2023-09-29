@@ -3,7 +3,6 @@ const closeCT = document.querySelector('#closeCT')
 const main_section = document.querySelector('#main_section')
 const condition_section = document.querySelector('#condition_section')
 
-const submit_form = document.querySelector('#submit_button')
 
 closeCT.addEventListener('click',  () => {
     main_section.classList.remove("none");
