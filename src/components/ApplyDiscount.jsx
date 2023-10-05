@@ -119,9 +119,18 @@ const ApplyDiscount = () => {
                   </div>
                 </form>
                 {isSubmitted && (
-                  <div className={`alert alert-success`} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>{successMessage}</div>
-                  )}
-                  
+                  <div
+                    className={`alert alert-success`}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginTop: "10px",
+                    }}
+                  >
+                    {successMessage}
+                  </div>
+                )}
               </div>
             </div>
           </div>

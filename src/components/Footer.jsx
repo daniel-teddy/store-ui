@@ -181,6 +181,7 @@ const Footer = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      marginTop: "10px"
                     }}
                   >
                     {successMessage}
