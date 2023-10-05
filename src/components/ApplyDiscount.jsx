@@ -1,49 +1,44 @@
 import React, { useState } from "react";
-import axios from "axios";
-import bgLeaves from "../images/bg-leaves-img-pattern.png";
+// import bgLeaves from "../images/bg-leaves-img-pattern.png";
+import { db } from "../firebase-config";
+import { collection, addDoc } from "firebase/firestore";
 
 const ApplyDiscount = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    isChecked: false, // Initialize checkbox state
-  });
+  const dataCollectionRef = collection(db, "discount-subscriptions");
+  const [username, setUsername] = useState("");
+  const [usermail, setUsermail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const fireSubmit = async (event) => {
+    event.preventDefault();
 
-  // Step 3: Event handlers to update the state on input change
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-
-    // Use a conditional to handle checkboxes differently
-    const newValue = type === 'checkbox' ? checked : value;
-
-    setFormData({
-      ...formData,
-      [name]: newValue,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    // console.log('Name:', formData.name);
-    // console.log('Email:', formData.email);
-    // console.log('Checkbox:', formData.isChecked);
-    console.log('Data:', formData);
-    const data={
-      Name: formData.name,
-      Email: formData.email,
-      Subscribe: "subscribed",
+    // Email validation
+    if (!usermail) {
+      alert("Please enter a valid email.");
+      return;
     }
-    const url = 'https://sheet.best/api/sheets/8a536518-c9c8-4983-a978-70c1480a6b98'
-    axios.post(url,data).then((response)=>{
-       console.log(response);
-       setFormData('');
-       
-    })
+
+    // Send data to Firebase
+    try {
+      await addDoc(dataCollectionRef, {
+        name: username,
+        email_field: usermail,
+        news_subscription: subscribed,
+      });
+
+      setSuccessMessage("Submition sent successfully.");
+      setIsSubmitted(true);
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
+    } catch (error) {
+      // setSuccessMessage("Error, try again or reload !");
+      console.error("Error submitting form:", error);
+    }
   };
-
- 
-
 
   return (
     <section className="py-5" id="discount">
@@ -68,7 +63,7 @@ const ApplyDiscount = () => {
                 </p>
               </div>
               <div className="col-md-6 p-5">
-                <form  method="post" id="subscribe-us" name="subscribe-us" onSubmit={handleSubmit}>
+                <form method="post" id="subscribe-us" name="subscribe-us">
                   <div className="mb-3">
                     <label htmlFor="name" className="form-label">
                       Name
@@ -77,10 +72,10 @@ const ApplyDiscount = () => {
                       type="text"
                       className="form-control form-control-lg"
                       name="name"
-            value={formData.name}
-            onChange={handleInputChange}
                       placeholder="Name"
-                      
+                      onChange={(event) => {
+                        setUsername(event.target.value);
+                      }}
                     />
                   </div>
                   <div className="mb-3">
@@ -91,10 +86,10 @@ const ApplyDiscount = () => {
                       type="email"
                       className="form-control form-control-lg"
                       name="email"
-            value={formData.email}
-            onChange={handleInputChange}
                       placeholder="abc@mail.com"
-                      
+                      onChange={(event) => {
+                        setUsermail(event.target.value);
+                      }}
                       required
                     />
                   </div>
@@ -105,27 +100,28 @@ const ApplyDiscount = () => {
                         type="checkbox"
                         id="subscribe"
                         name="isChecked"
-              checked={formData.isChecked}
-              onChange={handleInputChange}
+                        onChange={(event) => {
+                          setSubscribed(event.target.checked);
+                        }}
                       />
                       Subscribe to the newsletter
                     </label>
                   </div>
                   <div className="d-grid gap-2">
-                    <button type="submit" id="form-submit" className="btn btn-dark btn-lg">
+                    <button
+                      type="submit"
+                      id="form-submit"
+                      className="btn btn-dark btn-lg"
+                      onClick={fireSubmit}
+                    >
                       Submit
                     </button>
                   </div>
                 </form>
-                {/* {formResult && (
-        <div
-          className={`alert ${
-            formResult.success ? 'alert-success' : 'alert-danger'
-          }`}
-        >
-          {formResult.message}
-        </div>
-      )} */}
+                {isSubmitted && (
+                  <div className={`alert alert-success`} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>{successMessage}</div>
+                  )}
+                  
               </div>
             </div>
           </div>
