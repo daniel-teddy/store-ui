@@ -199,13 +199,13 @@ const FooterBottom = () => {
   return (
     <div id="footer-bottom">
       <div className="container-fluid">
-        <div className="row">
+        <div className="row col-md-6 text-center">
           <div className="col-md-6 copyright">
             <p>© 2023 alemdar teknik ltd. All rights reserved.</p>
           </div>
-          <div className="col-md-6 credit-link text-end">
+          <div className="col-md-6  text-center">
             <p>
-              made by <a href="https://templatesjungle.com/">teddy-webdev</a>
+              made by <a href="https://teddywebdev.click/">teddy-webdev</a>
             </p>
           </div>
         </div>
