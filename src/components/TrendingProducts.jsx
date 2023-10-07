@@ -18,8 +18,7 @@ const TrendingProducts = () => {
                 <h3>Trending Products</h3>
                 <nav>
                   <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a
-                      href="https://teddy-webdev.click"
+                    <Link to="/shop"
                       className="nav-link text-uppercase fs-6 active"
                       id="nav-all-tab"
                       data-bs-toggle="tab"
@@ -27,9 +26,8 @@ const TrendingProducts = () => {
                       type="button"
                     >
                       All
-                    </a>
-                    <a
-                      href="https://teddy-webdev.click"
+                    </Link>
+                    <Link to="/shop"
                       className="nav-link text-uppercase fs-6"
                       id="nav-fruits-tab"
                       data-bs-toggle="tab"
@@ -37,9 +35,8 @@ const TrendingProducts = () => {
                       type="button"
                     >
                       Arduino &amp; Raspberry
-                    </a>
-                    <a
-                      href="https://teddy-webdev.click"
+                    </Link>
+                    <Link to="/shop"
                       className="nav-link text-uppercase fs-6"
                       id="nav-juices-tab"
                       data-bs-toggle="tab"
@@ -47,7 +44,7 @@ const TrendingProducts = () => {
                       type="button"
                     >
                       Mixers
-                    </a>
+                    </Link>
                   </div>
                 </nav>
               </div>
