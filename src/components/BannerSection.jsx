@@ -37,13 +37,13 @@ const BannerSection = () => {
                             Register Now
                           </a>
                         </div>
-                        <div className="img-wrapper col-md-5">
+                        {/* <div className="img-wrapper col-md-5">
                           <img
                             src={productThumb1}
                             className="img-fluid"
                             alt="Product Thumb"
                           />
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     {/* Repeat other swiper slides for Banner Block 1 */}
