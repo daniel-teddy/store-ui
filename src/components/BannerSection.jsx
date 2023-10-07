@@ -23,21 +23,19 @@ const BannerSection = () => {
                       <div className="row banner-content p-5">
                         <div className="content-wrapper col-md-7">
                           <div className="categories mb-3 pb-3">
-                            10% discount
+                            Coding Lab
                           </div>
                           <h3 className="banner-title">
-                            On all Raspberry products
+                            Learn based on practice
                           </h3>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Dignissim massa diam elementum.
+                           We provide a great laboratory experience for electronic practice, with an amazing team of engineers and great products.
                           </p>
-                          <Link
-                            to="/shop"
+                          <a href='/register_lab.html'
                             className="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
                           >
-                            shop collection
-                          </Link>
+                            Register Now
+                          </a>
                         </div>
                         <div className="img-wrapper col-md-5">
                           <img

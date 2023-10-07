@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
-
+import { Link } from 'react-router-dom';
 import Logo from "../images/logo1.png";
 import {
   AiFillFacebook,
@@ -48,7 +48,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="footer-menu">
+              <Link to="/">
               <img src={Logo} alt="logo" />
+              </Link>
               <div className="social-links mt-5">
                 <ul className="d-flex list-unstyled gap-2">
                   <li>
@@ -82,19 +84,19 @@ const Footer = () => {
               <h5 className="widget-title">Related</h5>
               <ul className="menu-list list-unstyled">
                 <li className="menu-item">
-                  <a href="httpd" className="nav-link">
+                  <Link to="httpd" className="nav-link">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu-item">
-                  <a href="httpd" className="nav-link">
+                  <Link to="httpd" className="nav-link">
                     Affiliate Programme
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu-item">
-                  <a href="httpd" className="nav-link">
+                  <Link to="httpd" className="nav-link">
                     Ultras Press
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -105,24 +107,24 @@ const Footer = () => {
               <h5 className="widget-title">Customer Service</h5>
               <ul className="menu-list list-unstyled">
                 <li className="menu-item">
-                    <a href="httpd" className="nav-link">About us</a>
+                    <Link to="httpd" className="nav-link">About us</a>
                   </li>
-                  <li className="menu-item">
-                    <a href="httpd" className="nav-link">Conditions </a>
+                  <li classLinkame="menu-item">
+                    <Link to="httpd" className="nav-link">Conditions </a>
                   </li>
-                  <li className="menu-item">
-                    <a href="httpd" className="nav-link">Our Journals</a>
+                  <li classLinkame="menu-item">
+                    <Link to="httpd" className="nav-link">Our Journals</a>
                   </li>
-                  <li className="menu-item">
-                    <a href="httpd" className="nav-link">Careers</a>
+                  <li classLinkame="menu-item">
+                    <Link to="httpd" className="nav-link">Careers</a>
                   </li>
-                  <li className="menu-item">
-                    <a href="httpd" className="nav-link">Affiliate Programme</a>
+                  <li classLinkame="menu-item">
+                    <Link to="httpd" className="nav-link">Affiliate Programme</a>
                   </li>
-                  <li className="menu-item">
-                    <a href="httpd" className="nav-link">Ultras Press</a>
+                  <li classLinkame="menu-item">
+                    <Link to="httpd" className="nav-link">Ultras Press</a>
                   </li>
-              </ul>
+              </uLink>
             </div>
           </div> */}
 
@@ -131,19 +133,19 @@ const Footer = () => {
               <h5 className="widget-title">Customer Service</h5>
               <ul className="menu-list list-unstyled">
                 <li className="menu-item">
-                  <a href="about us" className="nav-link">
+                  <Link to="/about" className="nav-link">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu-item">
-                  <a href="conditions" className="nav-link">
+                  <Link to="conditions" className="nav-link">
                     Conditions{" "}
-                  </a>
+                  </Link>
                 </li>
                 <li className="menu-item">
-                  <a href="posts" className="nav-link">
+                  <Link to="posts" className="nav-link">
                     Our Journals
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

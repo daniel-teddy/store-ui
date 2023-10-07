@@ -5,7 +5,9 @@
 .nav-links:hover{
   cursor: pointer;
 }
-
+a{
+  text-decoration: none !important;
+}
 .rfces{
   width: fit-content;
   background-color: rgb(243, 195, 74);

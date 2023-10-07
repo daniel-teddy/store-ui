@@ -14,6 +14,7 @@ import ShopPage from './pages/ShopPage';
 import ContactPage from './pages/ContactPage';
 import EditPrductPage from './pages/EditPrductPage';
 import ShopPageSolar from './pages/solarPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
       <Route path='/shop' element={<ShopPage />} />
       <Route path='/shop/solar' element={<ShopPageSolar />} />
       <Route path='/contact' element={<ContactPage />} />
+      <Route path='/about' element={<AboutPage />} />
       <Route path='/edit-product' element={<EditPrductPage />} />
     </Routes>
       <Footer />
