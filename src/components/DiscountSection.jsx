@@ -22,7 +22,7 @@ const DiscountSection = () => {
           <div className="col-md-6">
             <div className="banner-ad bg-info" style={{ background: `url(${adImgae4}) no-repeat right bottom`, backgroundSize: "45%" }}>
               <div className="banner-content p-5">
-                <div className="categories text-primary fs-3 fw-bold">Upto 15% Off</div>
+                <div className="categories text-primary fs-3 fw-bold">Up To 15% Off</div>
                 <h3 className="banner-title">Lab Equipments</h3>
                 <p>Discount on batch purchase for Lab Equipments</p>
                 <Link to="/contact" className="btn btn-dark text-uppercase">Get Discount</Link>

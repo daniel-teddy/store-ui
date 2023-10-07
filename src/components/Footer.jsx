@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { db } from "../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import { Link } from 'react-router-dom';
-import Logo from "../images/logo1.png";
+import Logo from "../images/ALEMDAR_TEKNIK_LOGO.png";
 import {
   AiFillFacebook,
   AiFillTwitterSquare,

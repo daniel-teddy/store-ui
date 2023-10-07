@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Logo from '../images/logo1.png';
+import Logo from "../images/ALEMDAR_TEKNIK_LOGO.png";
 import giftIcon from '../images/gift.svg';
 import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
@@ -178,6 +178,7 @@ const Header = ({ items }) => {
                 </div>
                 <div className="offcanvas-body">
                   <select className="filter-categories border-0 mb-0 me-5">
+                    <option>Select an option </option>
                     <option>Electronics</option>
                     <option>Solar System</option>
                     <option>Security System</option>
