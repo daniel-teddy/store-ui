@@ -39,7 +39,7 @@ function JustArrived() {
                       title="iPhone XR"
                       unit="1 Unit"
                       rating="4.5"
-                      price="18.00"
+                      price=""
                       initialQuantity="10"
                     />
                   <ProductCard
@@ -47,7 +47,7 @@ function JustArrived() {
                       title="iPhone XR"
                       unit="1 Unit"
                       rating="4.5"
-                      price="18.00"
+                      price=""
                       initialQuantity="10"
                     />
                   <ProductCard
@@ -55,7 +55,7 @@ function JustArrived() {
                       title="iPhone XR"
                       unit="1 Unit"
                       rating="4.5"
-                      price="18.00"
+                      price=""
                       initialQuantity="10"
                     />
                   <ProductCard
@@ -63,7 +63,7 @@ function JustArrived() {
                       title="iPhone XR"
                       unit="1 Unit"
                       rating="4.5"
-                      price="18.00"
+                      price=""
                       initialQuantity="10"
                     />
                   <ProductCard
@@ -71,7 +71,7 @@ function JustArrived() {
                       title="iPhone XR"
                       unit="1 Unit"
                       rating="4.5"
-                      price="18.00"
+                      price=""
                       initialQuantity="10"
                     />
                   </div>

@@ -79,7 +79,7 @@ function CartPage() {
                             <a href="https" className="text-decoration-none">{item.name}</a>
                           </h5>
                           <div className="card-price">
-                            <span className="money text-dark" data-currency-usd="$1200.00">{item.price} TL</span>
+                            {/* <span className="money text-dark" data-currency-usd="$1200.00">{item.price} TL</span> */}
                           </div>
                         </div>
                       </div>
@@ -105,7 +105,7 @@ function CartPage() {
                       </div>
                       <div className="col-lg-8 text-center">
                         <div className="total-price">
-                          <span className="money text-dark">{item.quantity * item.price} TL</span>
+                          {/* <span className="money text-dark">{item.quantity * item.price} TL</span> */}
                         </div>
                       </div>   
                     </div>             
@@ -136,7 +136,7 @@ function CartPage() {
                       <td data-title="Subtotal">
                         <span className="price-amount amount text-dark ps-5">
                           <bdi>
-                            <span className="price-currency-symbol">{(totalCost).toFixed(2)} </span> TL
+                            {/* <span className="price-currency-symbol">{(totalCost).toFixed(2)} </span> TL */}
                           </bdi>
                         </span>
                       </td>
@@ -146,7 +146,8 @@ function CartPage() {
                       <td data-title="Total">
                         <span className="price-amount amount text-dark ps-5">
                           <bdi>
-                            <span className="price-currency-symbol">{(totalCost * 1.15).toFixed(2)} </span> TL</bdi>
+                            {/* <span className="price-currency-symbol">{(totalCost * 1.15).toFixed(2)} </span> TL */}
+                          </bdi>
                         </span>
                       </td>
                     </tr>

@@ -89,7 +89,7 @@ const handleAddtoCart = (e)=>{
         <span className="rating">
           <AiFillStar className="text-primary" /> {rating}
         </span>
-        {/* <span className="price">{price} TL</span> */}
+        <span className="price">{price} TL</span>
         <div className="d-flex align-items-center justify-content-between">
           <div className="input-group product-qty">
             <span className="input-group-btn">
@@ -132,7 +132,7 @@ const handleAddtoCart = (e)=>{
   );
 }
 
-const ProductsPageSmall = () => {
+const ProductsPageSmallSolar = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
@@ -159,7 +159,9 @@ const ProductsPageSmall = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  const filteredProducts = Data?.filter((item) =>
+  const newData = Data?.filter((item) => item.category === "solar");
+
+  const filteredProducts = newData?.filter((item) =>
     item.ItemName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -235,26 +237,26 @@ const ProductsPageSmall = () => {
                   </li>
                   <li
                     className={`cat-item ${
-                      selectedCategory === "Phones" ? "active" : ""
+                      selectedCategory === "pannels" ? "active" : ""
                     }`}
                   >
                     <span
                       style={{ cursor: "pointer" }}
-                      onClick={() => handleCategoryClick("Phones")}
+                      onClick={() => handleCategoryClick("pannels")}
                     >
-                      Phones
+                      pannels
                     </span>
                   </li>
                   <li
                     className={`cat-item ${
-                      selectedCategory === "Accessories" ? "active" : ""
+                      selectedCategory === "batteries" ? "active" : ""
                     }`}
                   >
                     <span
                       style={{ cursor: "pointer" }}
-                      onClick={() => handleCategoryClick("Accessories")}
+                      onClick={() => handleCategoryClick("batteries")}
                     >
-                      Accessories
+                      batteries
                     </span>
                   </li>
                 </ul>
@@ -282,7 +284,7 @@ const ProductsPageSmall = () => {
               <div className="widget-product-brands pt-3">
               <h5 className="widget-title">Brands</h5>
               <ul className="product-tags sidebar-list list-unstyled">
-                {["Apple", "Samsung", "Huwai"].map((brand) => (
+                {["abax", "simtek", "others"].map((brand) => (
                   <li className="tags-item" key={brand}>
                     <span
                       className={`nav-link ${
@@ -302,11 +304,11 @@ const ProductsPageSmall = () => {
               <h5 className="widget-title">Filter By Price</h5>
               <ul className="product-tags sidebar-list list-unstyled">
                 {[
-                  { min: 0, max: 10 },
-                  { min: 10, max: 20 },
-                  { min: 20, max: 30 },
-                  { min: 30, max: 40 },
-                  { min: 40, max: 50 },
+                  { min: 0, max: 100 },
+                  { min: 100, max: 300 },
+                  { min: 300, max: 500 },
+                  { min: 500, max: 700 },
+                  { min: 700, max: 1000 },
                 ].map((priceRange) => (
                   <li className="tags-item" key={priceRange.min}>
                     <span
@@ -368,14 +370,14 @@ const ProductsPageSmall = () => {
                       category={item.category}
                       unit="15 Unit"
                       rating="4.5"
-                      // price={item.price}
+                      price={item.price}
                       initialQuantity="1"
                     />
                     </Link>
                   );
                 } else if (
-                  selectedCategory === "Phones" &&
-                  item.category === "Phones"
+                  selectedCategory === "pannels" &&
+                  item.category === "pannels"
                 ) {
                   return (
                     <Link  to={`/explore/${item.ItemName}`}key={index}>
@@ -386,14 +388,14 @@ const ProductsPageSmall = () => {
                       category={item.category}
                       unit="15 Unit"
                       rating="4.5"
-                      // price={item.price}
+                      price={item.price}
                       initialQuantity="1"
                     />
                     </Link>
                   );
                 } else if (
-                  selectedCategory === "Accessories" &&
-                  item.category === "Accessories"
+                  selectedCategory === "batteries" &&
+                  item.category === "batteries"
                 ) {
                   return (
                     <Link  to={`/explore/${item.ItemName}`}key={index}>
@@ -449,4 +451,4 @@ const ProductsPageSmall = () => {
   );
 };
 
-export default ProductsPageSmall;
+export default ProductsPageSmallSolar;

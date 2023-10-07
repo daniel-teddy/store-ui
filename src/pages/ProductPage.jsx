@@ -47,9 +47,9 @@ function ProductPage() {
                 </div>
                 <div className="product-price pt-3 pb-3">
                   <strong className="text-primary display-6 fw-bold">
-                    {item.price + "TL"||"870.00 TL"}
+                    {/* {item.price + "TL"||"870.00 TL"} */}
                   </strong>
-                  <del className="ms-2">{item.discount + "TL"|| "940.00 TL"}</del>
+                  {/* <del className="ms-2">{item.discount + "TL"|| "940.00 TL"}</del> */}
                 </div>
                 <p>
                   {item.description || "Justo, cum feugiat imperdiet nulla molestie ac vulputatescelerisque amet. Bibendum adipiscing platea blandit sit sedquam semper rhoncus. Diam ultrices maecenas consequat eutortor orci, cras lectus mauris, cras egestas quam venenatisneque."}
@@ -277,7 +277,7 @@ function ProductPage() {
                       category={item.category}
                       unit="15 Unit"
                       rating="4.5"
-                      price={item.price}
+                      // price={item.price}
                       initialQuantity="1"
                     />
                         </Link>

@@ -45,9 +45,11 @@ function Popup({ handleClose, show }) {
           <li key={index} className="list-group-item d-flex justify-content-between lh-sm">
               <div>
                 <h6 className="my-0">{item.name}</h6>
-                <small className="text-body-secondary">QTY: {item.quantity} / Unit Price: {item.price} TL</small>
+                <small className="text-body-secondary">QTY: {item.quantity} 
+                {/* / Unit Price: {item.price} TL */}
+                </small>
               </div>
-              <span className="text-body-secondary">{(item.quantity * item.price).toFixed(2)} TL</span>
+              {/* <span className="text-body-secondary">{(item.quantity * item.price).toFixed(2)} TL</span> */}
             </li>
         ))}
             
@@ -75,7 +77,7 @@ function Popup({ handleClose, show }) {
 
             <li className="list-group-item d-flex justify-content-between">
               <span>Total (TRY)</span>
-              <strong>TL {totalCost}</strong>
+              {/* <strong>TL {totalCost}</strong> */}
             </li>
           </ul>
 

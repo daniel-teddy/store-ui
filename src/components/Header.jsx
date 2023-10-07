@@ -152,7 +152,7 @@ const Header = ({ items }) => {
               >
                 <span className="fs-6 text-muted dropdown-toggle">Your Cart</span>
                 <h5 className="mb-0">
-                  <span className="cart-total">{totalCost} TL</span>
+                  {/* <span className="cart-total">{totalCost} TL</span> */}
                 </h5>
               </button>
             </div>
@@ -178,19 +178,18 @@ const Header = ({ items }) => {
                 </div>
                 <div className="offcanvas-body">
                   <select className="filter-categories border-0 mb-0 me-5">
-                    <option>Shop by Departments</option>
                     <option>Electronics</option>
                     <option>Solar System</option>
                     <option>Security System</option>
                   </select>
                   <ul className="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
-                  <CustomLink to="/shop">Arduino</CustomLink>
-                  <CustomLink to="/shop">Adaptors</CustomLink>
-                  <CustomLink to="/shop">Raspberry</CustomLink>
-                  <CustomLink to="/shop">Accessories</CustomLink>
-                  <CustomLink to="/shop">Solar</CustomLink>
-                  <CustomLink to="/shop">Modules</CustomLink>
-                  <CustomLink to="/shop">IC</CustomLink>
+                  <CustomLink to="/shop/">Arduino</CustomLink>
+                  <CustomLink to="/shop/">Adaptors</CustomLink>
+                  <CustomLink to="/shop/">Raspberry</CustomLink>
+                  <CustomLink to="/shop/">Accessories</CustomLink>
+                  <CustomLink to="/shop/solar">Solar</CustomLink>
+                  <CustomLink to="/shop/">Modules</CustomLink>
+                  <CustomLink to="/shop/">IC</CustomLink>
                   </ul>
                 </div>
               </div>

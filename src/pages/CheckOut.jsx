@@ -234,9 +234,9 @@ function CheckOut() {
                             <span className="price-amount amount ps-5">
                               <bdi>
                                 <span className="price-currency-symbol">
-                                {totalCost}{" "} 
+                                {/* {totalCost}{" "}  */}
                                 </span>
-                                 TL
+                                 {/* TL */}
                               </bdi>
                             </span>
                           </td>
@@ -246,9 +246,9 @@ function CheckOut() {
                           <td data-title="Total">
                             <span className="price-amount amount ps-5">
                               <bdi>
-                                 {(totalCost * 1.15).toFixed(2)}{" "}
+                                 {/* {(totalCost * 1.15).toFixed(2)}{" "} */}
                                 <span className="price-currency-symbol">
-                                  TL
+                                  {/* TL */}
                                 </span>
                               </bdi>
                             </span>

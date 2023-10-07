@@ -78,7 +78,7 @@ const handleAddtoCart = (e)=>{
         <span className="rating">
           <AiFillStar className="text-primary" /> {rating}
         </span>
-        <span className="price">{price} TL</span>
+        <span className="price">{price}</span>
         <div className="d-flex align-items-center justify-content-between">
           <div className="input-group product-qty">
             <span className="input-group-btn">

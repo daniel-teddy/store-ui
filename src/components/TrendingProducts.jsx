@@ -69,7 +69,7 @@ const TrendingProducts = () => {
                       category={item.category}
                       unit="15 Unit"
                       rating="4.5"
-                      price={item.price}
+                      // price={item.price}
                       initialQuantity="1"
                     />
                         </Link>

@@ -13,6 +13,7 @@ import CheckOut from './pages/CheckOut';
 import ShopPage from './pages/ShopPage';
 import ContactPage from './pages/ContactPage';
 import EditPrductPage from './pages/EditPrductPage';
+import ShopPageSolar from './pages/solarPage';
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
       <Route path='/cart' element={<CartPage />} />
       <Route path='/checkout' element={<CheckOut />} />
       <Route path='/shop' element={<ShopPage />} />
+      <Route path='/shop/solar' element={<ShopPageSolar />} />
       <Route path='/contact' element={<ContactPage />} />
       <Route path='/edit-product' element={<EditPrductPage />} />
     </Routes>

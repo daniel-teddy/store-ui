@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { db } from "../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 
+import Logo from "../images/logo1.png";
 import {
   AiFillFacebook,
   AiFillTwitterSquare,
   AiFillInstagram,
   AiFillAmazonSquare,
 } from "react-icons/ai";
-import Logo from "../images/logo1.png";
+
 const Footer = () => {
   const dataCollectionRef = collection(db, "news-subscriptions");
   const [email, setEmail] = useState("");
