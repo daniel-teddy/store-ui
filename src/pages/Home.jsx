@@ -17,7 +17,7 @@ function Home() {
   return (
     <div className="">
         <BannerSection />
-        <CategorySection />
+        {/* <CategorySection /> */}
       <NewlyArrivedBrands />
       <TrendingProducts />
       <DiscountSection />
