@@ -1,24 +1,21 @@
 import React, { useEffect } from "react";
 
 function AboutPage() {
-    useEffect(() => {
-        // Scroll to the top of the page when the component mounts
-        window.scrollTo(0, 0);
-      }, []);
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <section
-        className="py-5 mb-5"
-        
-      >
+      <section className="py-5 mb-5">
         <div className="container-fluid">
           <div className="d-flex justify-content-between">
             <h1 className="page-title pb-2">About Us</h1>
             <nav className="breadcrumb fs-6">
-              <a className="breadcrumb-item nav-link" href="#">
+              <a className="breadcrumb-item nav-link" href="link">
                 Home
               </a>
-              
+
               <span className="breadcrumb-item active" aria-current="page">
                 About Us
               </span>
@@ -116,11 +113,371 @@ function AboutPage() {
           </div>
         </div>
       </section>
+      <div className="py-5">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-1.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      22 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      tips &amp; tricks
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Top 10 casual look ideas to dress up your kids
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-2.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      25 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      trending
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Latest trends of wearing street wears supremely
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-3.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      28 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      inspiration
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        10 Different Types of comfortable clothes ideas for
+                        women
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-1.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      22 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      tips &amp; tricks
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Top 10 casual look ideas to dress up your kids
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-2.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      25 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      trending
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Latest trends of wearing street wears supremely
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-3.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      28 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      inspiration
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        10 Different Types of comfortable clothes ideas for
+                        women
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-1.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      22 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      tips &amp; tricks
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Top 10 casual look ideas to dress up your kids
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-2.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      25 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      trending
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        Latest trends of wearing street wears supremely
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div className="col-md-4">
+              <article className="post-item card border-0 shadow-sm p-3">
+                <div className="image-holder zoom-effect">
+                  <a href="link">
+                    <img
+                      src="images/post-thumb-3.jpg"
+                      alt="post"
+                      className="card-img-top"
+                    />
+                  </a>
+                </div>
+                <div className="card-body">
+                  <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
+                    <div className="meta-date">
+                      <svg width="16" height="16">
+                      </svg>
+                      28 Aug 2021
+                    </div>
+                    <div className="meta-categories">
+                      <svg width="16" height="16">
+                      </svg>
+                      inspiration
+                    </div>
+                  </div>
+                  <div className="post-header">
+                    <h3 className="post-title">
+                      <a href="link" className="text-decoration-none">
+                        10 Different Types of comfortable clothes ideas for
+                        women
+                      </a>
+                    </h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      Aliquet eleifend viverra enim tincidunt donec quam. A in
+                      arcu, hendrerit neque dolor morbi...
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
       <section className="py-5 my-5 d-none">
         <div className="container-fluid">
-          <div
-            className="bg-warning py-5 rounded-5"
-          >
+          <div className="bg-warning py-5 rounded-5">
             <div className="container">
               <div className="row">
                 <div className="col-md-4">
