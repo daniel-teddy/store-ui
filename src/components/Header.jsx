@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Logo from "../images/ALEMDAR_TEKNIK_LOGO.png";
 import giftIcon from '../images/gift.svg';
-import { AiOutlineHeart, AiOutlineUser,  } from 'react-icons/ai';
+import { AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser,  } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import Popup from './PopUp';
+import SearchPop from './searchPop';
+import ShowMenu from './showMenu';
 
 const Header = ({ items }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -45,10 +47,20 @@ const Header = ({ items }) => {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   };
+  const [showPopupS, setShowPopupS] = useState(false);
+  const togglePopupS = () => {
+    setShowPopupS(!showPopupS);
+  };
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <>
     <Popup show={showPopup} handleClose={togglePopup} />
+    <SearchPop showS={showPopupS} handleCloseS={togglePopupS} />
+    <ShowMenu showM={showMenu} handleCloseM={toggleMenu} />
     <header>
          <div className="container-fluid">
         <div className="row py-3 border-bottom">
@@ -104,6 +116,11 @@ const Header = ({ items }) => {
               <h5 className="mb-0">+980-34984089</h5>
             </div> */}
             <ul className="d-flex justify-content-end list-unstyled m-0">
+              <li  className="border-0 bg-light d-lg-none">
+              <a href='/register_lab.html'>
+                  Register Lab
+                </a>
+              </li>
               <li>
                 <Link to="cart" className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
                   <AiOutlineUser height="24" width="24"/>
@@ -114,32 +131,17 @@ const Header = ({ items }) => {
                   <AiOutlineHeart height="24" width="24"/>
                 </Link>
               </li>
-              {/* <li className="d-lg-none">
-                <a
-                  href="htps://teddy-webdev.click"
-                  className="rounded-circle bg-light p-2 mx-1"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasCart"
-                  aria-controls="offcanvasCart"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlinkHref="#cart" />
-                  </svg>
-                </a>
-              </li> */}
-              {/* <li className="d-lg-none">
-                <a
-                  href="htps://teddy-webdev.click"
-                  className="rounded-circle bg-light p-2 mx-1"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasSearch"
-                  aria-controls="offcanvasSearch"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24">
-                    <use xlinkHref="#search" />
-                  </svg>
-                </a>
-              </li> */}
+              
+              <li className="">
+              <Link onClick={togglePopup} className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
+                  <AiOutlineShoppingCart height="24" width="24"/>
+                </Link>
+              </li>
+              <li className="">
+              <Link onClick={togglePopupS} className="rounded-circle bg-light  mx-1" style={{paddingLeft: "0.75rem", paddingRight: "0.75rem", paddingBottom: "0.5rem", paddingTop: "0.5rem"}}>
+                  <AiOutlineSearch height="24" width="24"/>
+                </Link>
+              </li>
             </ul>
             <div className="cart text-end d-none d-lg-block dropdown">
               <button 
@@ -164,6 +166,7 @@ const Header = ({ items }) => {
           <div className="d-flex justify-content-center justify-content-sm-between align-items-center">
             <nav className="main-menu d-flex navbar navbar-expand-lg">
               <button
+              onClick={toggleMenu}
                 className="navbar-toggler"
                 type="button"
                 data-bs-toggle="offcanvas"
@@ -211,7 +214,7 @@ const Header = ({ items }) => {
 
 export default Header;
 
-function CustomLink({ to, children, ...props }){
+export function CustomLink({ to, children, ...props }){
 
   return (
     <li className="nav-item">
