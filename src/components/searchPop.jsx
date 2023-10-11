@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import Data from "../assets/item";
+import { Link } from "react-router-dom";
 
 function SearchPop({ handleCloseS, showS }) {
   const showHideClassName = showS
     ? "modal display-block"
     : "modal display-none";
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  let filteredItems = Data.filter((item) => {
+    return (
+      item.ItemName.toLowerCase().includes(searchTerm.toLowerCase()) 
+      // || item.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
+  if (searchTerm.trim() !== "") {
+    filteredItems = filteredItems.slice(0, 12);
+  }
   return (
     <div className={showHideClassName}>
       <div
@@ -23,7 +38,7 @@ function SearchPop({ handleCloseS, showS }) {
             onClick={handleCloseS}
           ></button>
         </div>
-        <div className="offcanvas-body">
+        <div className="offcanvas-body" style={{overflow: "hidden"}}>
           <div className="order-md-last">
             <h4 className="d-flex justify-content-between align-items-center mb-3">
               <span className="text-primary">Search</span>
@@ -36,59 +51,26 @@ function SearchPop({ handleCloseS, showS }) {
             >
               <input
                 className="form-control rounded-start rounded-0 bg-light"
-                type="email"
+                type="text" // Change input type from 'email' to 'text'
                 placeholder="What are you looking for?"
                 aria-label="What are you looking for?"
+                value={searchTerm} // Controlled input
+                onChange={handleSearchChange} // Step 2: Handle input changes
               />
-              <button
-                className="btn btn-dark rounded-end rounded-0"
-                type="submit"
-              >
-                Search
-              </button>
             </form>
-            <ul className="list-group mb-3 mt-3">
-              
-              <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">
-                    BMI160 Gyro Sensör Modülü - 6 DOF - Eğim - İvmeölçer -
-                    Jiroskop
-                  </h6>
-                  <small className="text-body-secondary">QTY: 3</small>
-                </div>
-              </li>
-              <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">
-                    BMI160 Gyro Sensör Modülü - 6 DOF - Eğim - İvmeölçer -
-                    Jiroskop
-                  </h6>
-                  <small className="text-body-secondary">QTY: 2</small>
-                </div>
-              </li>
-              <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">
-                    BMI160 Gyro Sensör Modülü - 6 DOF - Eğim - İvmeölçer -
-                    Jiroskop
-                  </h6>
-                  <small className="text-body-secondary">QTY: 3</small>
-                </div>
-              </li>
-              <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">HX711 Çift Kanal Tartı Sensörü Modülü</h6>
-                  <small className="text-body-secondary">QTY: 1</small>
-                </div>
-              </li>
-              <li className="list-group-item d-flex justify-content-between lh-sm">
-                <div>
-                  <h6 className="my-0">iPhone XR</h6>
-                  <small className="text-body-secondary">QTY: 1</small>
-                </div>
-              </li>
-              
+            <ul className="list-group mb-3 mt-3" style={{maxHeight: "100vh", overflowY: "scroll"}}>
+              {searchTerm.trim() !== "" && ( // Only render list if search term is not empty
+                <ul className="list-group mb-3 mt-3">
+                  {filteredItems.map((item, index) => (
+                    <Link to={`/explore/${item.ItemName}`} key={index}>
+                      <Matched title={item.ItemName} 
+                      // price={item.price} 
+                      category={item.category}
+                      />
+                    </Link>
+                  ))}
+                </ul>
+              )}
             </ul>
           </div>
         </div>
@@ -98,3 +80,17 @@ function SearchPop({ handleCloseS, showS }) {
 }
 
 export default SearchPop;
+
+export function Matched(props) {
+  const { title, price, category } = props;
+
+  return (
+    <li className="list-group-item d-flex justify-content-between lh-sm">
+      <div>
+        <h6 className="my-0">{title}</h6>
+        <small className="text-body-secondary">{price} </small>
+        <small className="text-body-secondary">{category}</small>
+      </div>
+    </li>
+  );
+}

@@ -28,3 +28,20 @@ a{
 .qushb{
   height: 9rem !important;
 }
+.srcsrc{
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .srcsrc{
+    position: fixed;
+    top: 4.5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+  }
+  .srcsrc ul ul{
+    border: 1px solid var(--bs-light-rgb);
+  }
+}

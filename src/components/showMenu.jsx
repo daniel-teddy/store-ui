@@ -26,7 +26,7 @@ function ShowMenu({ handleCloseM, showM }) {
 
         <div className="offcanvas-body">
           <select className="filter-categories border-0 mb-0 me-5">
-            <option>Shop by Departments</option>
+            <option disabled selected hidden>Shop by Departments</option>
             <option>Groceries</option>
             <option>Drinks</option>
             <option>Chocolates</option>
