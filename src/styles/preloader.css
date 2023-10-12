@@ -55,3 +55,6 @@
    .hidder{
     display: none !important;
    }
+   .banner-ad {
+    display: block !important;
+}
