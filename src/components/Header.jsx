@@ -101,7 +101,7 @@ const Header = () => {
                   style={{ width: "fit-content", textDecoration: "none" }}
                 >
                   <a
-                    href="/register_lab.html"
+                    href="https://alemdar-registration.netlify.app"
                     className=" border-0 bg-transparent"
                   >
                     Register Lab
@@ -154,7 +154,7 @@ const Header = () => {
             </div> */}
               <ul className="d-flex justify-content-end list-unstyled m-0">
                 <li className="border-0 bg-light d-lg-none">
-                  <a href="/register_lab.html">Register Lab</a>
+                  <a href="https://alemdar-registration.netlify.app">Register Lab</a>
                 </li>
                 <li>
                   <Link

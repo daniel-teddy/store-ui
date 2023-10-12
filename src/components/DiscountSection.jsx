@@ -15,7 +15,7 @@ const DiscountSection = () => {
                 <div className="categories text-primary fs-3 fw-bold">Up to 25% Off</div>
                 <h3 className="banner-title">Robotic Course</h3>
                 <p>Early bird discount for Robotic coding course</p>
-                <Link to="/contact" className="btn btn-dark text-uppercase">Register Now</Link>
+                <a href='https://alemdar-registration.netlify.app' className="btn btn-dark text-uppercase">Register Now</a>
               </div>
             </div>
           </div>

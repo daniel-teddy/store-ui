@@ -1,6 +1,5 @@
 import React from "react";
 
-import productThumb1 from "../images/main-removebg-preview.png";
 import productThumb2 from "../images/sensors.png"
 
 import { Link } from "react-router-dom";
@@ -31,7 +30,7 @@ const BannerSection = () => {
                           <p>
                            We provide a great laboratory experience for electronic practice, with an amazing team of engineers and great products.
                           </p>
-                          <a href='/register_lab.html'
+                          <a href='https://alemdar-registration.netlify.app'
                             className="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1"
                           >
                             Register Now
