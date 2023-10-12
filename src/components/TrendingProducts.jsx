@@ -58,10 +58,14 @@ const TrendingProducts = () => {
                   <div className="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
                     
                     {selectedElementsRandom.map((item, index) => {
+                      const maxNameLength = 25;
+                      const itemName = item.ItemName.length > maxNameLength
+                        ? item.ItemName.slice(0, maxNameLength) + " ..."
+                        : item.ItemName;
                       return(
                         <Link to={`/explore/${item.ItemName}`} key={index}>
                         <ProductCard
-                      title={item.ItemName}
+                      title={itemName}
                       imageUrl={item.pic}
                       category={item.category}
                       unit="15 Unit"

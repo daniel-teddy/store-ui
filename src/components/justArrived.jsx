@@ -1,14 +1,14 @@
 import React from "react";
 
 import ProductCard from "./productCard";
-import img1 from '../images/images-tech/item1.jpg'
-import img2 from '../images/images-tech/item2.jpg'
-import img3 from '../images/images-tech/item3.jpg'
-import img4 from '../images/images-tech/item4.jpg'
-import img5 from '../images/images-tech/item5.jpg'
+import { Link } from 'react-router-dom';
+import Data from "../assets/item";
+
+
 
 function JustArrived() {
-
+  const randomItems = Data.sort(() => Math.random() - 0.5);
+  let selectedElementsRandom = randomItems.slice(0, 5);
   return (
     <section className="py-5 overflow-hidden">
       <div className="container-fluid">
@@ -34,46 +34,25 @@ function JustArrived() {
                   <div className="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
                   
                   >
-                  <ProductCard
-                      imageUrl={img1}
-                      title="iPhone XR"
-                      unit="1 Unit"
+                  {selectedElementsRandom.map((item, index) => {
+                      const maxNameLength = 25;
+                      const itemName = item.ItemName.length > maxNameLength
+                        ? item.ItemName.slice(0, maxNameLength) + " ..."
+                        : item.ItemName;
+                      return(
+                        <Link to={`/explore/${item.ItemName}`} key={index}>
+                        <ProductCard
+                      title={itemName}
+                      imageUrl={item.pic}
+                      category={item.category}
+                      unit="15 Unit"
                       rating="4.5"
-                      price=""
-                      initialQuantity="10"
+                      // price={item.price}
+                      initialQuantity="1"
                     />
-                  <ProductCard
-                      imageUrl={img2}
-                      title="iPhone XR"
-                      unit="1 Unit"
-                      rating="4.5"
-                      price=""
-                      initialQuantity="10"
-                    />
-                  <ProductCard
-                      imageUrl={img3}
-                      title="iPhone XR"
-                      unit="1 Unit"
-                      rating="4.5"
-                      price=""
-                      initialQuantity="10"
-                    />
-                  <ProductCard
-                      imageUrl={img4}
-                      title="iPhone XR"
-                      unit="1 Unit"
-                      rating="4.5"
-                      price=""
-                      initialQuantity="10"
-                    />
-                  <ProductCard
-                      imageUrl={img5}
-                      title="iPhone XR"
-                      unit="1 Unit"
-                      rating="4.5"
-                      price=""
-                      initialQuantity="10"
-                    />
+                        </Link>
+                      )
+                    })}
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import CategorySection from '../components/CategorySection';
+// import CategorySection from '../components/CategorySection';
 import NewlyArrivedBrands from '../components/NewlyBrands';
 import TrendingProducts from '../components/TrendingProducts';
 import DiscountSection from '../components/DiscountSection';

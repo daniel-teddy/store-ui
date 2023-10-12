@@ -714,6 +714,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .product-item figure img {
   max-height: 210px;
+  min-height: 210px;
   height: auto;
 }
 .product-item .btn-wishlist {
@@ -835,3 +836,5 @@ h1,h2,h3,h4,h5,h6 {
     top: 21px;
   }
 }
+
+
