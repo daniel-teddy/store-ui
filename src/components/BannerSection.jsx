@@ -14,7 +14,7 @@ const BannerSection = () => {
           <div className="col-md-12">
             <div className="banner-blocks">
               {/* Banner Block 1 */}
-              <div className="banner-ad large bg-info block-1">
+              <div className="banner-vlad large bg-info block-1">
                 <div className="swiper main-swiper">
                   <div className="swiper-wrapper">
                     {/* Swiper Slide */}
@@ -54,7 +54,7 @@ const BannerSection = () => {
 
               {/* Banner Block 2 */}
               <div
-                className="banner-ad bg-success block-2"
+                className="banner-vlad bg-success block-2"
                 style={{
                   background: `url('https://knowhow.distrelec.com/wp-content/uploads/2023/03/iStock-458960107.jpg') center`,
                   backgroundPosition: "right bottom",
@@ -83,7 +83,7 @@ const BannerSection = () => {
 
               {/* Banner Block 3 */}
               <div
-                className="banner-ad bg-danger block-3"
+                className="banner-vlad bg-danger block-3"
                 style={{
                   background: `url(${productThumb2}) center`,
                   backgroundPosition: "right bottom",

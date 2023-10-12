@@ -509,21 +509,21 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* banner ad */
-.banner-ad {
+.banner-vlad {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   display: block !important;
 }
-.banner-ad.blue {
+.banner-vlad.blue {
   background: #e6f3fb;
 }
-.banner-ad .swiper-pagination {
+.banner-vlad .swiper-pagination {
   bottom: 40px;
   left: 0;
   right: 0;
 }
-.banner-ad .swiper-pagination .swiper-pagination-bullet {
+.banner-vlad .swiper-pagination .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
   margin: 4px;
@@ -531,37 +531,37 @@ h1,h2,h3,h4,h5,h6 {
   opacity: 1;
   transition: background 0.3s ease-out;
 }
-.banner-ad .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.banner-vlad .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background: #FFC43F;
 }
-.banner-ad .swiper-slide {
+.banner-vlad .swiper-slide {
   min-height: 630px;
   display: flex;
 }
-/* .banner-ad .banner-content {
+/* .banner-vlad .banner-content {
   padding: 52px;
 }
-.banner-ad.large .banner-content {
+.banner-vlad.large .banner-content {
   padding: 90px;
 } */
-.banner-ad .banner-content .categories {
+.banner-vlad .banner-content .categories {
   font-family: 'Garamond';
   font-size: 37px;
   text-transform: capitalize;
   color: var(--dark-color);
 }
-.banner-ad .banner-content .sale {
+.banner-vlad .banner-content .sale {
   position: relative;
   display: inline-block;
 }
-.banner-ad .banner-content .sale:before {
+.banner-vlad .banner-content .sale:before {
   content: '';
   width: 80px;
   border-bottom: 1px solid #111;
   position: absolute;
   bottom: 6px;
 }
-.banner-ad .banner-content .sale:after {
+.banner-vlad .banner-content .sale:after {
   content: 'SALE';
   font-family: var(--body-font);
   position: absolute;
@@ -573,14 +573,14 @@ h1,h2,h3,h4,h5,h6 {
   bottom: 0;
   right: 0;
 }
-.banner-ad .banner-content .banner-title {
+.banner-vlad .banner-content .banner-title {
   letter-spacing: 0.02em;
   font-size: 33px;
 }
-.banner-ad.large .banner-content .categories {
+.banner-vlad.large .banner-content .categories {
   color: var(--accent-color);
 }
-.banner-ad.large .banner-content .banner-title {
+.banner-vlad.large .banner-content .banner-title {
   font-size: 54px;
 }
 

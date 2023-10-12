@@ -8,7 +8,7 @@ const DiscountSection = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
-            <div className="banner-ad bg-danger" style={{ background: `url(${adImgae3}) no-repeat right bottom`, 
+            <div className="banner-vlad bg-danger" style={{ background: `url(${adImgae3}) no-repeat right bottom`, 
           backgroundSize: "35%",
            }}>
               <div className="banner-content p-5">
@@ -20,7 +20,7 @@ const DiscountSection = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="banner-ad bg-info" style={{ background: `url(${adImgae4}) no-repeat right bottom`, backgroundSize: "45%" }}>
+            <div className="banner-vlad bg-info" style={{ background: `url(${adImgae4}) no-repeat right bottom`, backgroundSize: "45%" }}>
               <div className="banner-content p-5">
                 <div className="categories text-primary fs-3 fw-bold">Up To 15% Off</div>
                 <h3 className="banner-title">Lab Equipments</h3>
