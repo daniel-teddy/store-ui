@@ -24,7 +24,7 @@ function SearchPop({ handleCloseS, showS }) {
       <div
         className="offcanvas offcanvas-end show"
         data-bs-scroll="true"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasSearch"
         aria-modal="true"
         role="dialog"

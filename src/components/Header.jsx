@@ -264,7 +264,7 @@ const Header = () => {
                   </div>
                   <div className="offcanvas-body">
                     <select className="filter-categories border-0 mb-0 me-5">
-                      <option disabled selected hidden>Select an option </option>
+                      <option disabled defaultValue hidden>Select an option </option>
                       <option>Electronics</option>
                       <option>Solar System</option>
                       <option>Security System</option>

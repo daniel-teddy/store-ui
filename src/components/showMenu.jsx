@@ -9,7 +9,7 @@ function ShowMenu({ handleCloseM, showM }) {
     <div className={showHideClassName}>
       <div
         className="offcanvas offcanvas-end show"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasNavbar"
         aria-modal="true"
         role="dialog"
@@ -26,7 +26,7 @@ function ShowMenu({ handleCloseM, showM }) {
 
         <div className="offcanvas-body">
           <select className="filter-categories border-0 mb-0 me-5">
-            <option disabled selected hidden>Shop by Departments</option>
+            <option disabled defaultValue hidden>Shop by Departments</option>
             <option>Groceries</option>
             <option>Drinks</option>
             <option>Chocolates</option>

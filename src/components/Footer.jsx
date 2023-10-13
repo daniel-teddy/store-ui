@@ -143,8 +143,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="menu-item">
-                  <Link to="posts" className="nav-link">
-                    Our Journals
+                  <Link to="/contact" className="nav-link">
+                    Contact us
                   </Link>
                 </li>
               </ul>
