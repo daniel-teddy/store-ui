@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./styles/style.css";
 import "./styles/vendor.css";
 import "./styles/preloader.css";
@@ -20,6 +20,7 @@ import PreLoader from "./components/preLoader";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -27,7 +28,7 @@ function App() {
       setIsLoading(false);
     }, 2500);
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
   return (
     <div className="App">
       {isLoading ? (
