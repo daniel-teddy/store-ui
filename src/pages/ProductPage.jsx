@@ -167,7 +167,7 @@ function ProductPage() {
           </div>
         </div>
       </section>
-      <section className="product-info-tabs py-5">
+      <section className="product-info-tabs py-5 d-none">
       <div className="container-fluid">
         <div className="row">
           <div className="tabs-listing">
