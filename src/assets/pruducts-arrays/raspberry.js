@@ -1,4 +1,4 @@
-[
+export const raspberryData = [
     {
     "category": "raspberry-pi",
     "url": "https://www.direnc.net/sandisk-ultra-16gb-80mb",

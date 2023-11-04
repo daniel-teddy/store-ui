@@ -1,4 +1,4 @@
-[
+export const roboticData = [
     {
     "category": "robotik-drone-egitim",
     "url": "https://www.direnc.net/816b-yuksek-hizli-mini-manyetik-drone-motoru",

@@ -1,4 +1,4 @@
-[
+export const displayData = [
   {
     category: "lcd-ve-display",
     url: "https://www.direnc.net/9mm-katot-display",

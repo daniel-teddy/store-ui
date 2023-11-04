@@ -1,4 +1,4 @@
-[
+export const controllersData = [
     {
     "category": "microcontrollers",
     "url": "https://www.direnc.net/pic16f84a-20p-pdip18-8bit-20mhz-mikrodenetleyici",

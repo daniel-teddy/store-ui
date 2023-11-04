@@ -1,4 +1,4 @@
-[
+export const keypadData = [
     {
     "category": "buzzer-ve-tus-takimi",
     "url": "https://www.direnc.net/4x4-mebram-tus-takimi",

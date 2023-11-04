@@ -1,4 +1,4 @@
-[
+export const relayData = [
     {
     "category": "role",
     "url": "https://www.direnc.net/5v-1-kanal-role-karti",

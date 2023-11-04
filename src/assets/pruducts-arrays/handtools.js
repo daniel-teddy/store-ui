@@ -1,4 +1,4 @@
-[
+export const handToolsData = [
     {
     "category": "el-aletleri",
     "url": "https://www.direnc.net/mg-989-buyutecli-kafa-lambasi",

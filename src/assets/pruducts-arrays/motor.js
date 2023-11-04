@@ -1,4 +1,4 @@
-[
+export const motorData = [
     {
     "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/nema-17-42bygh34-34mm-13a-step-motor",
@@ -33,22 +33,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-1000kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-1000kv-fircasiz-motor-fircasiz-motor-xxd-59313-19-B.jpg",
-    "description": " A2212 Quadcopter 1000KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 1000KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.17mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV1000Boyut27.8 x 27mmUygun Pervane1047Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/30a-esc-fircasiz-motor-surucu",
-    "ItemName": " Stokta Yok ",
-    "price": "178,95",
-    "pic": "https://www.direnc.net/30a-esc-fircasiz-motor-surucu-drone-motor-suruculeri-topacc-44681-52-B.jpg",
-    "description": " 30A ESC Fırçasız Motor Sürücü30Ampere kadar 2, 6  ve 12 kutuplu fırçasız motorları sürebilen özellikle EMAX CF2822 1200KV fırçasız motora uygun motor sürücü. İç 5V beslemesi BEC-Battery Elimination Circuit30A ESC Fırçasız Motor Sürücü ÖzellikleriÇıkış daimi akım: 30AAnlık 10sn çıkış akımı:40AGiriş Voltajı 8,7-12,5V2-3 hücre Lityum pil5-9 hücre NiCd/NIMH pilBEC: 1A/5V linier-iç voltaj besleme devresiMaksimum hız:2 kutuplu motor: 210000 devir/dak6 kutuplu motor:  70000 devir/dak12 kutuplu motor: 35000 devir/dakBoyutlar UxExY: 45mm X 24mm X 11mmAğırlık : 25g  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/mikro-step-motor",
     "ItemName": "Mikro Step Motor",
     "price": "51,62",
@@ -73,35 +57,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30",
-    "ItemName": " Stokta Yok ",
-    "price": "516,20",
-    "pic": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30-surucu-ve-kontrol-kartlari-china-22750-97-B.jpg",
-    "description": " VNH2SP30 30A Mini Motor Sürücü ArduinoArduino Motor Sürücü Kartı VNH2SP30, VNH2SP30 tam köprü sürücülü motorları çalıştıran bir modüldür. Yükseklik akımı boşaltması gereken devre devrelerini kullanırken bir soğutucu veya fan kullanın. VNH2SP30 30a Mini Motor Sürücü Arduino Teknik ÖzellikleriMaksimum voltaj: 16VMaksimum akım derecelendirmesi: 30 APratik Sürekli Akım: 14 AAnalog pin için mevcut akım algılamaMOSFET dayanıklılığı: 19 mΩ (bacak başına)Maksimum PWM frekansı: 20 kHzTermal kapatmaDüşük Gerilim ve Aşırı Gerilim Kapatma Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/5a-90w-pwm-12v-dc-motor-hiz-kontrol-karti",
     "ItemName": "5A 90W 12V DC Motor Hız Kontrol Kartı",
     "price": "106,68",
     "pic": "https://www.direnc.net/5a-90w-pwm-12v-dc-motor-hiz-kontrol-karti-surucu-ve-kontrol-kartlari-china-34572-12-B.jpg",
     "description": " Motor Sürücü ve 12V DC Hız Kontrol Devresi - 5A 90WBu basit ve kullanımı kolay dc motor hız kontrolörü küçük boyutlu, zarif görünüm ve istikrarlı bir performans. Daha uzun bir servis ömrü sağlayan yüksek kaliteli devre ile yapılır. Özellikleri: Basit ve kullanımı kolay dc motor hız kontrolörü İyi yapılmış yüksek kaliteli devre, uzun ömürlü Küçük boyut ve zarif görünüm. Performans çok kararlı.Motor pozitif veya negatif olabilir, çalışma yönü ve beklentileri eşleşmediğinde, yönünü değiştirmek için hat siparişini ayarlayabilirsiniz. DC güç kaynağı pozitif ve negatif terminaller tersine çevirmez, aksi takdirde devre hasar görebilir. Kullanım Esnasında Dikkat Edilmesi Gerekenler: Bağlanan motorun desteklediği maksimum voltajdan daha yüksek voltaj ile kullanılmamalıdır. Ters akım bağlantısı zarar verir ve devreyi yakabilir. Desteklenen voltaj değerinden daha yüksek gerilim ile kullanılırsa bozulup ve yanabilir.Kapasitesinin üzerinde (maks. 90 watt) güç çekilirse bozulup ve yanabilir. Motor Sürücü ve 12V DC Hız Kontrol Devresi Teknik Özellikler Üretici FirmaChina Ürün KategorisiSürücü ve Kontrol Kartları Çalışma gerilimiDC5V-35V Çıkış akımı0-5A Çıkış gücü90 W (max) Sessiz akım7uA (bekleme) PWM görev döngüsü1%-100% PWM frekansı10 khz Boyut30mm x 24mm x 15mm (sapsız)Ağırlık15g Faydalı LinklerSürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.Motor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/nema23-jk57hs51-2804-step-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "550,62",
-    "pic": "https://www.direnc.net/nema23-jk57hs51-2804-step-motor-step-motor-china-44072-12-B.jpg",
-    "description": " NEMA23 57BYGH56-3004A Step motor Nema23 57BYGH56-3004A Step Motor Teknik Özellikler Üretici FirmaChina Ürün KategorisiStep MotorAdım Açısı1.8°Şaft Çapı8mmTutma Torku1.2 Paket Boyutu20cm x 15cm x 10cm Paket Ağırlığı0.2kg (0.44lb.) Faz2 TürHibridBirim Tipilot (10pieces / lot) DökümanlarNema23 57BYGH56-3004A Datasheet dosyasını inceleyiniz. Faydalı LinklerStep Motor ürünlerimizi inceleyebilirsiniz.Motor ve Motor Sürücüler ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/nvcm4v21-4-eksenli-cnc-hareket-kontrol-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "2.236,88",
-    "pic": "https://www.direnc.net/nvcm4v21-4-eksenli-cnc-hareket-kontrol-karti-cnc-tezgah-lazer-novusun-59758-19-B.jpg",
-    "description": " NVCM4V2.1 CNC Hareket Kontrol KartıNVCM hareket kontrolörü kapalı açık yapıya sahiptir, altta 4 adet ayar deliği vardır. Kabine 2 adet 3mm çapında delik takabilir ve kontrol cihazını kabine monte edebilirsiniz.Kontrolör bağlantısı, bir güç kaynağı arayüzü, bir USB bağlantı arayüzü, bir MPG arayüzü, bir Stepper / Servo kontrol çıkış arayüzü, bir iş mili kontrol çıkış arayüzü, Estop ve sınırlı bir anahtar girişi ve takım ayarları arayüzü vb. içerir.Ürün ve kullanımı ile ilgili ayrıntılı bilgiye datasheet dosyasından ulaşabilirsiniz.CNC Hareket Kontrol Kartı Teknik Özellikler4 eksen CNC kontrol desteği16 port fotoelektrik izole giriş arayüzü16 port fotoelektrik izole çıkış arayüzü1 port 0-10V mil hızı analog çıkış arayüzü (PWM çıkışına değişebilir)Ana cihaz 12V-32VDC güç kaynağı girişi (Akım 1A'dan daha yüksek olmalıdır.)ARM hareket kontrol çipiUSB DesteğiHer eksen için 6 eksenli step sistemleri ,125KHz darbe çıkışını destekleyebilirCNC Hareket Kontrol Kartı ÖzelliklerÜretici FirmaChinaÜrün KategorisiCNC Yardımcı ÜrünlerBoyutlar20 x 84 x 150mmPaket İçeriği :1 x NVCM 2.11 x USD kablo1 x Disk Dökümanlar CNC Hareket Kontrol Kartı Datasheet dosyasını inceleyiniz.Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -118,22 +78,6 @@
     "price": "1.696,58",
     "pic": "https://www.direnc.net/nvcm3v21-3-eksenli-cnc-hareket-kontrol-karti-cnc-tezgah-lazer-novusun-59756-19-B.jpg",
     "description": " NVCM3V2.1 CNC Hareket Kontrol KartıNVCM hareket kontrolörü kapalı açık yapıya sahiptir, altta 4 adet ayar deliği vardır. Kabine 2 adet 3mm çapında delik takabilir ve kontrol cihazını kabine monte edebilirsiniz.Kontrolör bağlantısı, bir güç kaynağı arayüzü, bir USB bağlantı arayüzü, bir MPG arayüzü, bir Stepper / Servo kontrol çıkış arayüzü, bir iş mili kontrol çıkış arayüzü, Estop ve sınırlı bir anahtar girişi ve takım ayarları arayüzü vb. içerir.Ürün ve kullanımı ile ilgili ayrıntılı bilgiye datasheet dosyasından ulaşabilirsiniz.CNC Hareket Kontrol Kartı Teknik Özellikler3 eksen CNC kontrol desteği16 port fotoelektrik izole giriş arayüzü16 port fotoelektrik izole çıkış arayüzü1 port 0-10V mil hızı analog çıkış arayüzü (PWM çıkışına değişebilir)Ana cihaz 12V-32VDC güç kaynağı girişi (Akım 1A'dan daha yüksek olmalıdır.)ARM hareket kontrol çipiUSB DesteğiHer eksen için 6 eksenli step sistemleri ,125KHz darbe çıkışını destekleyebilirCNC Hareket Kontrol Kartı ÖzelliklerÜretici FirmaChinaÜrün KategorisiCNC Yardımcı ÜrünlerBoyutlar20 x 84 x 150mmPaket İçeriği :1 x NVCM 2.11 x USD kablo1 x Disk Dökümanlar CNC Hareket Kontrol Kartı Datasheet dosyasını inceleyiniz.Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-1400kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-1400kv-fircasiz-motor-fircasiz-motor-xxd-59319-19-B.jpg",
-    "description": " A2212 Quadcopter 1400KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 1400KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.3mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV1400Boyut27.8 x 27mmUygun Pervane9050Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-30a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "481,79",
-    "pic": "https://www.direnc.net/skywalker-30a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-45818-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 30A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 30A akıma izin veren kartta maksimum akım limiti 40 amperdir. Skywalker 30A Teknik ÖzellikleriNormal Akım Değeri: 30AMaksimum Akım Değeri(10 saniyeden az): 40ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 2ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 37 grBoyutlar: 68x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -169,14 +113,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "1.032,40",
-    "pic": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-15419-52-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 80A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 80A akıma izin veren kartta maksimum akım limiti 100A amperdir. Skywalker 80A Teknik ÖzellikleriNormal Akım Değeri: 80AMaksimum Akım Değeri(10 saniyeden az): 100ASürücü Kartı Modu: AnahtarlıSürücü Kartı Çıkışları: 5V / 5ASürücü Kartı Kapasitesi:2S lipo: 8 Servo3S lipo: 8 Servo4S lipo: 6 Servo6S lipo: 6 ServoKullanılabilen Bataryalar:Lipo: 2S-6SNiMH: 5-18 HücreliAğırlık: 63 grBoyutlar: 77x35x14 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/mg90s-servo-motor",
     "ItemName": "MG90S Servo Motor",
     "price": "68,83",
@@ -201,27 +137,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-dc-1-4-inc-selenoid-motor-elektrikli-valf",
-    "ItemName": " Stokta Yok ",
-    "price": "481,79",
-    "pic": "https://www.direnc.net/12v-dc-1-4-inc-selenoid-motor-elektrikli-valf-solenoid-sivi-ve-hava-pompalari-china-45842-52-B.jpg",
-    "description": " 12V DC 1/4 inç Selenoid Motor (Elektrikli Valf)1/4 inç boru için 12VDC ile çalışan yağ, su, hava için uygun  elektrikli selenoid valf 12V DC 1/4 inç Selenoid Motor (Elektrikli Valf) ÖzellikleriModel : 2W-025-08Montaj boru çapı: 1/4 parmak(inç) 6,35mmUygunluk : Hava, Su, YağOperasyon metodu: Direkt aksiyonTip: Normalde KapalıAkışkan deliği: 2,5mmKullanım Basıncı: 0-0,8MPaskalMaks Basınç : 1,0MPaskalÇalışma ortamı: -10°C - +100°CÇalışma voltajı: 12VBağlantı malzemesi: Pirinç  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
     "ItemName": "Skywalker 80A Esc Fırçasız Motor Hız kontrol Sürücü devresi",
     "price": "1.032,40",
     "pic": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-15419-52-B.jpg",
     "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 80A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 80A akıma izin veren kartta maksimum akım limiti 100A amperdir. Skywalker 80A Teknik ÖzellikleriNormal Akım Değeri: 80AMaksimum Akım Değeri(10 saniyeden az): 100ASürücü Kartı Modu: AnahtarlıSürücü Kartı Çıkışları: 5V / 5ASürücü Kartı Kapasitesi:2S lipo: 8 Servo3S lipo: 8 Servo4S lipo: 6 Servo6S lipo: 6 ServoKullanılabilen Bataryalar:Lipo: 2S-6SNiMH: 5-18 HücreliAğırlık: 63 grBoyutlar: 77x35x14 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-40a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "550,62",
-    "pic": "https://www.direnc.net/skywalker-40a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-20028-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 40A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 40A akıma izin veren kartta maksimum akım limiti 55 amperdir. Skywalker 40A Teknik ÖzellikleriNormal Akım Değeri: 40AMaksimum Akım Değeri(10 saniyeden az): 55ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 3ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 39 grBoyutlar: 68x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -241,35 +161,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-sari",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-sari-solenoid-sivi-ve-hava-pompalari-grothen-36725-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-2200kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-2200kv-fircasiz-motor-fircasiz-motor-xxd-59328-19-B.jpg",
-    "description": " A2212 Quadcopter 2200KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 2200KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.3mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV2200Boyut27.8 x 27mmUygun Pervane6030Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/2-eksen-servo-motor-pan-tilt",
     "ItemName": "2 Eksen Servo Motor Pan Tilt",
     "price": "22,37",
     "pic": "https://www.direnc.net/2-eksen-servo-motor-pan-tilt-robotik-kitleri-eva-32706-11-B.jpg",
     "description": " 2 Eksen Servo Motor Pan TiltBu 2 eksenli servo motor pant tilt, 2 adet servo motor ile kullanılabilmektedir. Tutucuya kamera takarak gimbal olarak da kullanabilirsiniz. Lütfen Notu Okuyunuz.Ürün SG90 Servo motor ile uyumludur. Tek taraflı pervaneyi ürüne uygun hale getirmek için ucunu kırpmanız gerekmektedir.Faydalı LinklerServo Motor Çeşitleri ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/vnh5019-dc-motor-surucu-5-5v-24v-12a",
-    "ItemName": " Stokta Yok ",
-    "price": "2.455,45",
-    "pic": "https://www.direnc.net/vnh5019-dc-motor-surucu-5-5v-24v-12a-surucu-ve-kontrol-kartlari-stm-47094-17-B.jpg",
-    "description": " VNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A Arduino'yu hareket ettirin! Bu shield, Arduino veya Arduino uyumlu board'unuzla bir adet yüksek güçlü DC motor kontrol etmeyi kolaylaştırır.  VNH5019 motor sürücüleri 5.5 ila 24 V arasında çalışır ve  motor için sürekli 12 A (30 A pik) iletebilir. Bu harika sürücüler aynı zamanda akım duyarlı geribildirim sunar ve daha sessiz çalışma için ultrasonik PWM frekanslarını kabul eder. Varsayılanlar uygun değilse, Arduino pin eşleştirmelerini özelleştirebilir ve motor sürücüsü kontrol çizgileri, Arduino olmadan genel amaçlı bir kullanım için kartın sol tarafında bulunurlar. VNH5019 DC Motor Sürücü Teknik ÖzellikleriBoyut: 2.56 'x2.02' x 0.38 '1 (65.024x51.308x9.652mm)Ağırlık: 18 gMotor sürücüsü: VNH5019Motor kanalları: 2Minimum çalışma gerilimi: 5.5 VMaksimum çalışma gerilimi: 24 VKanal başına sürekli çıkış akımı: 12 AKanal başına pik çıkış akımı: 30 AAkım duygusu: 0,14 V / AMaksimum PWM frekansı: 20 kHzGeriye Dönük Gerilim Koruması: EvetNotlarDahili olmayan donanım24V piller ile kullanılması tavsiye edilmez.16 V'a kadar besleme gerilimi geriye doğru takıldığında, motor sürücüsüne zarar verebilir. DökümanlarVNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A - Datasheet dosyasını inceleyiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -286,14 +182,6 @@
     "price": "2.455,45",
     "pic": "https://www.direnc.net/vnh5019-dc-motor-surucu-5-5v-24v-12a-surucu-ve-kontrol-kartlari-stm-47094-17-B.jpg",
     "description": " VNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A Arduino'yu hareket ettirin! Bu shield, Arduino veya Arduino uyumlu board'unuzla bir adet yüksek güçlü DC motor kontrol etmeyi kolaylaştırır.  VNH5019 motor sürücüleri 5.5 ila 24 V arasında çalışır ve  motor için sürekli 12 A (30 A pik) iletebilir. Bu harika sürücüler aynı zamanda akım duyarlı geribildirim sunar ve daha sessiz çalışma için ultrasonik PWM frekanslarını kabul eder. Varsayılanlar uygun değilse, Arduino pin eşleştirmelerini özelleştirebilir ve motor sürücüsü kontrol çizgileri, Arduino olmadan genel amaçlı bir kullanım için kartın sol tarafında bulunurlar. VNH5019 DC Motor Sürücü Teknik ÖzellikleriBoyut: 2.56 'x2.02' x 0.38 '1 (65.024x51.308x9.652mm)Ağırlık: 18 gMotor sürücüsü: VNH5019Motor kanalları: 2Minimum çalışma gerilimi: 5.5 VMaksimum çalışma gerilimi: 24 VKanal başına sürekli çıkış akımı: 12 AKanal başına pik çıkış akımı: 30 AAkım duygusu: 0,14 V / AMaksimum PWM frekansı: 20 kHzGeriye Dönük Gerilim Koruması: EvetNotlarDahili olmayan donanım24V piller ile kullanılması tavsiye edilmez.16 V'a kadar besleme gerilimi geriye doğru takıldığında, motor sürücüsüne zarar verebilir. DökümanlarVNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A - Datasheet dosyasını inceleyiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/60x60x10mm-021a-252w-12v-4700rpm-fan",
-    "ItemName": " Stokta Yok ",
-    "price": "132,74",
-    "pic": "https://www.direnc.net/60x60x10mm-021a-252w-12v-4700rpm-fan-12v-fan-savior-21776-94-B.jpg",
-    "description": " 12V 60x60x10mm 0.21A 2.52W 4700rpm Fan12V 60x60x10mm 0.21A 2.52W 4700rpm Fan, 12V 4700Rpm değerlerine sahip fan modelidir. Kullanacağınız yere göre boyut ve değerlerine göre inceleyebilirsiniz. 12V 60x60x10mm 0.21A 2.52W 4700rpm Fan - Teknik ÖzellikleriBoyut: 60x60x10mmVoltaj: 12VDC GerilimAkım: 0.21AGüç: 2.52WFrekans: YokHız(RPM): 4700RPMSes dB: 35dB-AÇalışma Sıcaklığı: -10°C~+70°C Faydalı LinklerDiğer Fan Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -358,14 +246,6 @@
     "price": "997,99",
     "pic": "https://www.direnc.net/ds3225-su-gecirmez-servo-motor-servo-motor-yunique-62544-12-B.jpg",
     "description": " DS3225 Su Geçirmez Servo MotorDS3225 Su Geçirmez Servo Motor güç gerektiren robotik projelerinde kullanabileceğiniz servo motor çeşitlerindendir. Bu ürün toz, toprak ve yağmura dayanıklıdır. Sualtında çalıştırılmaz. DS3225 Su Geçirmez Servo Motor Teknik ÖzellikleriDurma Torku (5V): 21 kg / cmDurma Torku (6,8 V): 24,5 kg / cmHız: 0.15 sn / 60 ° (5V) / 0,13 sn / 60 ° (6,8 V)Çalışma gerilimi: 4.8 ~ 6.8 dc voltAğırlık: 60 gMotor Tipi: DC MotorDişli Türü: Bakır ve AlüminyumÇalışma sıklığı: 50-333HzBoyut: 40 x 20 x 40,5 mm Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/nvcm5v21-5-eksenli-cnc-hareket-kontrol-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "2.443,36",
-    "pic": "https://www.direnc.net/nvcm5v21-5-eksenli-cnc-hareket-kontrol-karti-cnc-tezgah-lazer-novusun-59764-19-B.jpg",
-    "description": " NVCM5V2.1 CNC Hareket Kontrol KartıNVCM hareket kontrolörü kapalı açık yapıya sahiptir, altta 4 adet ayar deliği vardır. Kabine 2 adet 3mm çapında delik takabilir ve kontrol cihazını kabine monte edebilirsiniz.Kontrolör bağlantısı, bir güç kaynağı arayüzü, bir USB bağlantı arayüzü, bir MPG arayüzü, bir Stepper / Servo kontrol çıkış arayüzü, bir iş mili kontrol çıkış arayüzü, Estop ve sınırlı bir anahtar girişi ve takım ayarları arayüzü vb. içerir.Ürün ve kullanımı ile ilgili ayrıntılı bilgiye datasheet dosyasından ulaşabilirsiniz.CNC Hareket Kontrol Kartı Teknik Özellikler5 eksen CNC kontrol desteği16 port fotoelektrik izole giriş arayüzü16 port fotoelektrik izole çıkış arayüzü1 port 0-10V mil hızı analog çıkış arayüzü (PWM çıkışına değişebilir)Ana cihaz 12V-32VDC güç kaynağı girişi (Akım 1A'dan daha yüksek olmalıdır.)ARM hareket kontrol çipiUSB DesteğiHer eksen için 6 eksenli step sistemleri ,125KHz darbe çıkışını destekleyebilirCNC Hareket Kontrol Kartı ÖzelliklerÜretici FirmaChinaÜrün KategorisiCNC Yardımcı ÜrünlerBoyutlar20 x 84 x 150mmPaket İçeriği :1 x NVCM 2.11 x USD kablo1 x Disk Dökümanlar CNC Hareket Kontrol Kartı Datasheet dosyasını inceleyiniz.Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -449,27 +329,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-1800kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-1800kv-fircasiz-motor-fircasiz-motor-xxd-59324-19-B.jpg",
-    "description": " A2212 Quadcopter 1800KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 1800KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.3mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV1800Boyut27.8 x 27mmUygun Pervane8060Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/a2212-quadcopter-1400kv-fircasiz-motor",
     "ItemName": "A2212 Quadcopter 1400KV Fırçasız Motor",
     "price": "172,07",
     "pic": "https://www.direnc.net/a2212-quadcopter-1400kv-fircasiz-motor-fircasiz-motor-xxd-59319-19-B.jpg",
     "description": " A2212 Quadcopter 1400KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 1400KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.3mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV1400Boyut27.8 x 27mmUygun Pervane9050Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-1200kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-1200kv-fircasiz-motor-fircasiz-motor-xxd-59317-19-B.jpg",
-    "description": " A2212 Quadcopter 1000KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 1000KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.17mmVerimlilik (max)% 80Hücre Sayısı2-3 Li-PolyYüksüz Akımı (10V'da)0.5AAğırlık52gKV1200Boyut27.8 x 27mmUygun Pervane1047 / 1060 / 9050Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -510,14 +374,6 @@
     "price": "455,98",
     "pic": "https://www.direnc.net/mini-dalgic-pompa-612v-solenoid-sivi-ve-hava-pompalari-dfrobot-46133-12-B.jpg",
     "description": " DC Mini Dalgıç PompaDalgıç Pompabitkilerinizi sulamak, bir çeşme veya şelale yapmak, hatta akvaryum suyunuzu değiştirmek için kullanılabilir. Giriş valfi ile birlikte gelir, su girişini manuel olarak ayarlayabilirsiniz. 40db altındaki ses seviyesi ile sessiz çalışır. Pompanın içinde bir filtrenin yanı sıra, yüzeyleri sıkıca tutturmaya yardımcı olabilecek bir vantuz vardır. Pompa sadece su altında kullanılmak üzere tasarlanmıştır. Mini Dalgıç Pompa Teknik Özellikleri Üretici FirmaDFRobot Ürün KategorisiSu Sensörleri Güç kaynağı6 ~ 12V DC, 65mA-500mAArayüzDC 5.5-2.1 Pompa kafası 0-200cmKapasite0 ~ 550L / SaatGüç aralığı4 ~ 5WBoyutlar45x43x30mm (1.77x1.69x1.18 ') Ağırlık300gKablo uzunluğu1m (39,37 ')Silikon boru uzunluğu105 cm Faydalı LinklerSolenoid / Sıvı ve Hava Pompaları ürünlerimizi inceleyebilirsiniz.Motor ve Motor Sürücüler ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/su-akis-ve-hidrolik-basinc-sensoru",
-    "ItemName": " Stokta Yok ",
-    "price": "103,24",
-    "pic": "https://www.direnc.net/su-akis-ve-hidrolik-basinc-sensoru-sivi-ve-su-sensorleri-china-21508-61-B.jpg",
-    "description": " YF-S201 - Su Akış SensörüSu akış sensörü, plastik gövdeli, içinde rotor ve hall effect sensörü barındıran bir üründür. Su sensörün içinden akmaya başladığında rotor dönmeye başlar ve hall effect sensörü rotorun dönüş hızına göre sinyal üretir. Su dağıtıcısı veya kahve makinası gibi alanlarda su akışını kontrol etmek için kullanılabilir. Su Akış Sensörü yf-s201 Teknik ÖzellikleriKolay kullanılabilirYüksek performanslı sızdırmazlıkYüksek kaliteli manyetik sensörÇalışma Gerilmi: DC 5V-24VÇalışma Akımı: 15 mA (DC 5V)Çıkış Türü: DijitalDebi: 1-30L/dakikaSu Basıncı: ≤1.75MPa DökümanlarYF-S201 Datasheet dosyasını inceleyiniz. Lütfen Notu Okuyunuz.Ürünü AC değil, DC gerilimle ve belirtilen değer aralığında çalıştırınız, kullandığınız güç kaynağı, adaptör, pil vs. gerekli gücü verdiğinden ve/veya akımı sağladığından emin olunuz.  Faydalı LinklerSu Sensörü Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -601,22 +457,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/5-eksen-cnc-kontrol-karti-step-motor-surucu",
-    "ItemName": " Stokta Yok ",
-    "price": "206,48",
-    "pic": "https://www.direnc.net/5-eksen-cnc-kontrol-karti-step-motor-surucu-surucu-ve-kontrol-kartlari-china-24650-95-B.jpg",
-    "description": " 5 Eksen CNC Kontrol Kartı (MACH3 Uyumlu)MACH3 CNC kontrol yazılımı desteği sunan bu CNC kontrol kartı ile step motorlarınızı kolaylıkla kontrol edebilirsiniz. USB port ile devreye güç verebilir ve DB35 paralel port bağlantısıyla devreyi bilgisayara bağlayabilirsiniz. 12-24 volt arasında besleme ile çalışan bu CNC kontrol kartı ile birçok giriş çıkış portuna sahip olursunuz. Step motorları sürmek için 5 adet çıkış bulunmaktadır. X-Y-Z Limit pinleri, X-Y-Z eksen yön ve hız pinleri ve birçok fonksiyonun kullanılmasını sağlan giriş çıkış pinleri bulunmaktadır.CNC kontrol kartının pin konfigürasyonu: Faydalı LinklerMotor ve Sürücü Kartları ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-20a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "447,38",
-    "pic": "https://www.direnc.net/skywalker-20a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-45820-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 20A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 20A akıma izin veren kartta maksimum akım limiti 25 amperdir. Skywalker 20A Teknik ÖzellikleriNormal Akım Değeri: 20AMaksimum Akım Değeri(10 saniyeden az): 25ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 2ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 19 grBoyutlar: 42x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/nvcm5v21-5-eksenli-cnc-hareket-kontrol-karti",
     "ItemName": "NVCM5V2.1 5 Eksenli CNC Hareket Kontrol Kartı 125KHz",
     "price": "2.443,36",
@@ -646,14 +486,6 @@
     "price": "120,45",
     "pic": "https://www.direnc.net/3a-motor-hiz-kontrol-devresi-surucu-ve-kontrol-kartlari-szeks-20358-84-B.jpg",
     "description": " Motor Sürücü ve Hız Kontrol Devresi - 6V ~ 28V DC 3A 6V ve 28V Aralığında maksimum 3A değerine kadar çalışan dc motor sürücü hız kontrol devresidir. DC Motor dışındaki yükleride sürebilirsiniz. Beslemeden voltajından yaklaşık 1V civarında düşük voltaj motor üzerine uygulanmaktadır.Motor Hız Kontrol Devresi ÖzellikleriÜretici FirmaSZEKSÜrün KategorisiSürücü ve Kontrol KartlarıGiriş besleme gerilimi6V-28VDCMaksimum çıkış gücü80 WMaksimum sürekli çıkış akımı3AGörev Döngüsü ayarlanabilir5%-100%Faydalı LinklerSürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.Motor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/dss-m15s-metal-servo-motor-15-kg",
-    "ItemName": " Stokta Yok ",
-    "price": "653,86",
-    "pic": "https://www.direnc.net/dss-m15s-metal-servo-motor-15-kg-servo-motor-dfrobot-36576-12-B.jpg",
-    "description": " DSS-M15S 270 ° 15KG DF Metal ServoDSS-M15S son derece geniş açı aralığı kontrolüne, devasa yük kapasitesine ve mükemmel kaliteye sahiptir. Yakın döngü geri besleme kontrolünü gerçekleştirmek için MCU'ya bağlayabilirsiniz. DSS-M15S 270 ° Geri beslemeli metal servo, Arduino Servo kütüphanesi ile uyumludur. Arduino Board ile sürebilir ve açı değerini analog taraftan okuyabilirsiniz.  DSS-M15S Servo Motor Teknik ÖzellikleriÇalışma voltajı: 4.8-7.2V6V İçin:Çalışma hızı (yüksüz): 0,18 sn / 60 dereceDinlenme akımı: 80mAKilitleme torku: 13,5kg * cmDurak akımı: 1.8ABekleme akımı: 4mA7V İçin:Çalışma hızı (yüksüz): 0,16 sn / 60 dereceDinlenme akımı: 100mAKilitleme torku: 15kg * cmDurak akımı: 2aBekleme akımı: 5mAMekanik özelliklerDişli malzemesi: metal dişliÇalışma açısı: 270 dereceKablo göstergesi: 28PVCVeri hattı uzunluğu: 320mmDişli braketi spline: 25T / 5.80Vites oranı: 310: 1Boyut: 54.5 * 20 * 47,5 mmKontrol özellikleriGeri bildirim sinyali: 0-3.3VKontrol sinyali: RC PWMNabız aralığı: 500-2500 usMedyan sinyal değeri: 1500usSaat yönünde döndürme: <1500usKontrol frekansı: 50-330Hz (Arduion uyumlu) Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -694,14 +526,6 @@
     "price": "172,07",
     "pic": "https://www.direnc.net/pca9685-16-kanal-12-bit-pwmservo-i2c-surucu-modul-diger-sensor-ve-moduller-hwa-yeh-45530-90-B.jpg",
     "description": " PCA9685 16 Kanal 12 Bit PWM - Servo Motor Sürücü Devresi I2C Modülü PCA9685 16-Kanallı 12 bit PWM / Servo Sürücü I2C Seri protokolünü kullanır. Bu modül ile bağımsız çalışan 16 adet PWM çıkışını sadece 2 pin ile kontrol edebilirsiniz. PCA9685 16 Kanal 12 Bit I2C PWM/Servo  Sürücü Devresi ÖzellikleriBoyutlar 62.5mm x 25.4mm x 3mmAğırlık : 5.5gramBu kart / entegre 0x60-0x80 arası I2C adresini kullanır ve bu adresler jumperlar ile seçilebilir.Terminal bloğunda ters polarite koruması vardır.4'lü gruplar halindeki 3 pinli konektörler ile tek seferde 16 servo takabilirsiniz.Zincirlenebilinir tasarım.Gerekli olması halinde voltaj girişine bağlanabilecek kondansatör yeri bulunmaktadır.I2C protokolünde kullanılacak adresler için 6 adet lehim atlama noktası.6 adres seçme pimi sayesinde tek bir i2c veri yolunda 62'ye kadar, toplam 992 adet çıkış elde edebilirsiniz.Ayarlanabilir PWM frekansı yaklaşık 1.6 KHz'e kadardır.Bu kart / entegre her çıkış için 12 bit çözünürlük sunar.60Hz güncelleme hızı.Çıkış etkinleştirme pimi ile tüm çıkışları hızlı bir şekilde devre dışı bırakabilirsiniz. Bu I2C kontrollü PWM sürücüsü TLC5940 ailesinin aksine, sürekli olarak mikro denetleyicinizden sinyale ihtiyaç duymaz. Dahili osilatörü ile kendi mikro denetleyiciden sinyal almadığında son sinyali göndermeye devam eder.Devre 5V uyumludur bu da isterseniz 3.3V ile çalışan bir mikro denetleyiciden kontrol edebileceğiniz ve 6V'a kadar güvenle çıkabileceğiniz anlamına gelir. Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/cnc-usb-mach3-kontrol-karti-100khz",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/cnc-usb-mach3-kontrol-karti-100khz-cnc-tezgah-lazer-china-59774-19-B.jpg",
-    "description": " CNC USB MACH3 Kontrol Kartı 4 Eksen Usb Kontrol Kartı kontrol yazılımı desteği sunan bu CNC kontrol kartı ile step motorlarınızı kolaylıkla kontrol edebilirsiniz. USB port ile devreye güç verebilir ve USB bağlantısıyla devreyi bilgisayara bağlayabilirsiniz. Step motorları sürmek için 4 adet çıkış bulunmaktadır. X-Y-Z Limit pinleri, X-Y-Z eksen yön ve hız pinleri ve birçok fonksiyonun kullanılmasını sağlan giriş çıkış pinleri bulunmaktadır. Kontrol Kartı Özellikler MACH3 yazılımının çeşitli sürümlerini destekleyin ve en son sürümü destekleyin.Tüm giriş sinyalleri ışıkla ayrılır ve bilgisayar güvenliğini sağlamak için acil durdurma, bıçak ayarı, limit ve sıfır dönüş bağlanabilir. Giriş mekanik bir anahtara veya bir yakınlık anahtarına bağlanabilir (normalde NPN ile açık).PWM çıkışı (5V seviyesi) sağlayın, PWM tarafından kontrol edilen mil hız kontrolörüne bağlanabilir.4 çıkış portları (5V seviyesi) sağlayın, optocoupler röle modülü, kontrol su soğutma, sprey ve benzeri ile bağlanabilir4 eksenli arayüz kablosu soketi (XH2.54) sağlar, bağlanması kolaydır.Optokuplör izole 0-10V analog voltaj çıkışı ile tüm yol, 0-10V analog voltaj giriş invertörünü kontrol edebilir, mil hızını kontrol edebilirsiniz. Kontrol Kartı Teknik Özellikler Üretici FirmaChinaÜrün KategorisiMotor SürücüleriGiriş Gerilimi12V - 24VDesteklenen SistemlerWindows XP,WIN7,WIN8,WIN10, 64 bit sistemleri içinBoyutlar18 x 60.5 x 91mm Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -750,14 +574,6 @@
     "price": "378,55",
     "pic": "https://www.direnc.net/cnc-usb-mach3-kontrol-karti-100khz-cnc-tezgah-lazer-china-59774-19-B.jpg",
     "description": " CNC USB MACH3 Kontrol Kartı 4 Eksen Usb Kontrol Kartı kontrol yazılımı desteği sunan bu CNC kontrol kartı ile step motorlarınızı kolaylıkla kontrol edebilirsiniz. USB port ile devreye güç verebilir ve USB bağlantısıyla devreyi bilgisayara bağlayabilirsiniz. Step motorları sürmek için 4 adet çıkış bulunmaktadır. X-Y-Z Limit pinleri, X-Y-Z eksen yön ve hız pinleri ve birçok fonksiyonun kullanılmasını sağlan giriş çıkış pinleri bulunmaktadır. Kontrol Kartı Özellikler MACH3 yazılımının çeşitli sürümlerini destekleyin ve en son sürümü destekleyin.Tüm giriş sinyalleri ışıkla ayrılır ve bilgisayar güvenliğini sağlamak için acil durdurma, bıçak ayarı, limit ve sıfır dönüş bağlanabilir. Giriş mekanik bir anahtara veya bir yakınlık anahtarına bağlanabilir (normalde NPN ile açık).PWM çıkışı (5V seviyesi) sağlayın, PWM tarafından kontrol edilen mil hız kontrolörüne bağlanabilir.4 çıkış portları (5V seviyesi) sağlayın, optocoupler röle modülü, kontrol su soğutma, sprey ve benzeri ile bağlanabilir4 eksenli arayüz kablosu soketi (XH2.54) sağlar, bağlanması kolaydır.Optokuplör izole 0-10V analog voltaj çıkışı ile tüm yol, 0-10V analog voltaj giriş invertörünü kontrol edebilir, mil hızını kontrol edebilirsiniz. Kontrol Kartı Teknik Özellikler Üretici FirmaChinaÜrün KategorisiMotor SürücüleriGiriş Gerilimi12V - 24VDesteklenen SistemlerWindows XP,WIN7,WIN8,WIN10, 64 bit sistemleri içinBoyutlar18 x 60.5 x 91mm Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/a2212-quadcopter-2450kv-fircasiz-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/a2212-quadcopter-2450kv-fircasiz-motor-fircasiz-motor-xxd-59337-19-B.jpg",
-    "description": " A2212 Quadcopter 2450KV Fırçasız MotorQuadcopter Yapımı, Drone Yapımı veya Multikopter Yapımı. Bunların her biri için ihtiyacınız olan en önemli parçalardan biri 'drone motoru', yani Fırçasız DC Motordur. A2212 Multikopter Motoru 2S , 3S Lipo Pil veya 4S Lipo Piller ile çalışabilmektedir.A2212 Quadcopter 2450KV Fırçasız Motor Teknik ÖzelliklerÜretici FirmaXXDÜrün KategorisiFırçasız Motor / Drone ParçalarıMil çapı3.3mmVerimlilik (max)% 80Verim Akım (max)4-10A (>% 75)Akım Kapasitesi12A / 60sYüksüz Akımı (10V'da)0.5AHücre Sayısı2-3 Li-PolyAğırlık52gKV2450Boyut27.8 x 27mmUygun Pervane6030Ürün Videosu<!--.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }--> Faydalı LinklerFırçasız Motor ve Sürücüleri ürünlerimizi inceleyebilirsiniz.Drone Parçaları ürünlerimizi inceleyebilirsiniz. "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -865,14 +681,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/pca9685-16-kanal-12-bit-pwmservo-i2c-surucu-modul",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/pca9685-16-kanal-12-bit-pwmservo-i2c-surucu-modul-diger-sensor-ve-moduller-hwa-yeh-45530-90-B.jpg",
-    "description": " PCA9685 16 Kanal 12 Bit PWM - Servo Motor Sürücü Devresi I2C Modülü PCA9685 16-Kanallı 12 bit PWM / Servo Sürücü I2C Seri protokolünü kullanır. Bu modül ile bağımsız çalışan 16 adet PWM çıkışını sadece 2 pin ile kontrol edebilirsiniz. PCA9685 16 Kanal 12 Bit I2C PWM/Servo  Sürücü Devresi ÖzellikleriBoyutlar 62.5mm x 25.4mm x 3mmAğırlık : 5.5gramBu kart / entegre 0x60-0x80 arası I2C adresini kullanır ve bu adresler jumperlar ile seçilebilir.Terminal bloğunda ters polarite koruması vardır.4'lü gruplar halindeki 3 pinli konektörler ile tek seferde 16 servo takabilirsiniz.Zincirlenebilinir tasarım.Gerekli olması halinde voltaj girişine bağlanabilecek kondansatör yeri bulunmaktadır.I2C protokolünde kullanılacak adresler için 6 adet lehim atlama noktası.6 adres seçme pimi sayesinde tek bir i2c veri yolunda 62'ye kadar, toplam 992 adet çıkış elde edebilirsiniz.Ayarlanabilir PWM frekansı yaklaşık 1.6 KHz'e kadardır.Bu kart / entegre her çıkış için 12 bit çözünürlük sunar.60Hz güncelleme hızı.Çıkış etkinleştirme pimi ile tüm çıkışları hızlı bir şekilde devre dışı bırakabilirsiniz. Bu I2C kontrollü PWM sürücüsü TLC5940 ailesinin aksine, sürekli olarak mikro denetleyicinizden sinyale ihtiyaç duymaz. Dahili osilatörü ile kendi mikro denetleyiciden sinyal almadığında son sinyali göndermeye devam eder.Devre 5V uyumludur bu da isterseniz 3.3V ile çalışan bir mikro denetleyiciden kontrol edebileceğiniz ve 6V'a kadar güvenle çıkabileceğiniz anlamına gelir. Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v-150mm-lineer-motor",
     "ItemName": "12V 150mm Lineer Motor",
     "price": "1.101,23",
@@ -945,14 +753,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/nvcm3v21-3-eksenli-cnc-hareket-kontrol-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "1.696,58",
-    "pic": "https://www.direnc.net/nvcm3v21-3-eksenli-cnc-hareket-kontrol-karti-cnc-tezgah-lazer-novusun-59756-19-B.jpg",
-    "description": " NVCM3V2.1 CNC Hareket Kontrol KartıNVCM hareket kontrolörü kapalı açık yapıya sahiptir, altta 4 adet ayar deliği vardır. Kabine 2 adet 3mm çapında delik takabilir ve kontrol cihazını kabine monte edebilirsiniz.Kontrolör bağlantısı, bir güç kaynağı arayüzü, bir USB bağlantı arayüzü, bir MPG arayüzü, bir Stepper / Servo kontrol çıkış arayüzü, bir iş mili kontrol çıkış arayüzü, Estop ve sınırlı bir anahtar girişi ve takım ayarları arayüzü vb. içerir.Ürün ve kullanımı ile ilgili ayrıntılı bilgiye datasheet dosyasından ulaşabilirsiniz.CNC Hareket Kontrol Kartı Teknik Özellikler3 eksen CNC kontrol desteği16 port fotoelektrik izole giriş arayüzü16 port fotoelektrik izole çıkış arayüzü1 port 0-10V mil hızı analog çıkış arayüzü (PWM çıkışına değişebilir)Ana cihaz 12V-32VDC güç kaynağı girişi (Akım 1A'dan daha yüksek olmalıdır.)ARM hareket kontrol çipiUSB DesteğiHer eksen için 6 eksenli step sistemleri ,125KHz darbe çıkışını destekleyebilirCNC Hareket Kontrol Kartı ÖzelliklerÜretici FirmaChinaÜrün KategorisiCNC Yardımcı ÜrünlerBoyutlar20 x 84 x 150mmPaket İçeriği :1 x NVCM 2.11 x USD kablo1 x Disk Dökümanlar CNC Hareket Kontrol Kartı Datasheet dosyasını inceleyiniz.Faydalı LinklerCNC ürünlerimizi inceleyebilirsiniz.Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/sg90-servo-motor-plastik-tutucu-baglanti-aparati",
     "ItemName": "SG90 Servo Motor Plastik Tutucu - Bağlantı Aparatı",
     "price": "27,53",
@@ -969,14 +769,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/220v-2000w-motor-hiz-kontrol-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "34,41",
-    "pic": "https://www.direnc.net/220v-2000w-motor-hiz-kontrol-karti-surucu-ve-kontrol-kartlari-gaqqee-45381-12-B.jpg",
-    "description": " 220V 2000W Motor Hız Kontrol Kartı Motor Hız Kontrol Kartı, 220 Vac giriş gerilimi ve maksimum 2000W değerlerine sahip motor sürücü - motor hız kontrol devresidir.Mavi renkli trimpot, çıkış geriliminin en düşük seviyesi için ince ayar yapmak amacıyla kullanılır. En düşük gerilim seviyesinin 30-80V arasındaki konumu mavi trimpot ile ayarlanır. Normalde 50V seviyelerine kadar gerilimi azaltabilirsiniz. Dahada düşük bir gerilime düşürmek yada daha yüksek bir gerilim seviyesine inmesini yine bu mavi trimpot ile gerçekleştirebilirsiniz.220V 2000W Motor Hız Kontrol Kartı; rezistans, elektrikli fırın, su ısıtıcı, fan, motor, lambalar vs. cihazların gerilim kontrolü için kullanılabilir.AC gerilim ile çalışan cihazlarınızın güç kontrolünde kullanabileceğiniz kontrol devresidir. Bu devreyi kullanarak normal akkor tipi ve halojen ampullerinizin parlaklığını kontrol edebilir, ısıtıcılarınızın gücünü ayarlayabilir ve tek fazlı AC motorlarınızın hızını kontrol edebilirsiniz. Max. 4000W resiztif yük ile kullanılabilir. 220VAC'yi 10-220V arasında kontrol etmenize olanak sağlar.NOT: Modül üzerinde bulunan sol 2 klemens bağantıları AC 220V giriş, Sağ 2 klemens bağlantıları ise kontrol kartı yük çıkışıdır. Multimetre ile ölçüm yaptığınızda bir değer göremezsiniz, yük altında ölçüm yapmanız gerekir.220V 2000W Motor Hız Kontrol Kartı Teknik ÖzellikleriÜretici FirmaGaqqeeÜrün KategorisiMotor ve Motor SürücülerÇalışma Gerilim Değeri220VacMax Güç Değeri2000WAyarlanabilir Gerilim Değeri50V ~ 220VÖlçü Değeri5.3cm*4.7cm*2.8cmFaydalı LinklerSürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.Motor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/80x80x25mm-220v-008a-13w-2700rpm-fan-9441",
     "ItemName": "12V 80x80x25MM 0.20A 2.4W 2500rpm Fan",
     "price": "121,92",
@@ -985,59 +777,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/tmc2208-step-motor-surucu-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "109,43",
-    "pic": "https://www.direnc.net/tmc2208-step-motor-surucu-karti-surucu-ve-kontrol-kartlari-china-36148-12-B.jpg",
-    "description": " Dilsiz Step Motor Sürücü - TMC2208TMC2208 Step Motor Sürücü Kartı genellikle 3D yazıcılarda kullanılan step motor sürücü kartı çeşitlerindendir. Yüksek kalietede ultra sessiz çalışır.SPI ve UART haberleşme protokolleri ile kontrol edilebilir. Ürün V2.0 'dir. TMC2208 Teknik ÖzellikleriHaberleşme: UARTAdım Kontrolü: 1-256Lojik Voltaj: 3-5VMotor Voltajı: 5.5-36VSürekli Motor Faz Akımı 1.2AMax. Motor faz akımı: 2ARDSon: <=0.3 ohm Faydalı LinklerMotor Sürücü Kartı Çeşitlerini inceleyebilirsiniz.3D Printer Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-60a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "1.032,40",
-    "pic": "https://www.direnc.net/skywalker-60a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-45819-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 60A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 60A akıma izin veren kartta maksimum akım limiti 80 amperdir. Skywalker 60A Teknik ÖzellikleriNormal Akım Değeri: 60AMaksimum Akım Değeri(10 saniyeden az): 80 ASürücü Kartı Modu: AnahtarlıSürücü Kartı Çıkışları: 5V / 5ASürücü Kartı Kapasitesi:2S lipo: 8 Servo3S lipo: 8 Servo4S lipo: 6 Servo6S lipo: 6 ServoKullanılabilen Bataryalar:Lipo: 2S-6SNiMH: 5-18 HücreliAğırlık: 63 grBoyutlar: 77x35x14 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-solenoid-sivi-ve-hava-pompalari-grothen-36727-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriModel: NKP-DCL-S10GVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/bts7960b-40-amper-motor-surucu-modulu-1",
     "ItemName": "BTS7960B 40 Amper Motor Sürücü Modülü",
     "price": "199,60",
     "pic": "https://www.direnc.net/bts7960b-40-amper-motor-surucu-modulu-1-surucu-ve-kontrol-kartlari-mingyuandingye-21555-52-B.jpg",
     "description": " BTS7960B 40 Amper Motor Sürücü ModülüBTS7960B 40 Amper Motor Sürücü Modülü, 40 Ampere kadar motorları sürebileceğiniz güçlü bir motor sürücü modülüdür.BTS7960B 40 Amper Motor Sürücü Modülü - Teknik Özellikleri28V’a kadar voltaj uygulayabilirsiniz.Devre iç direnci 26miliohm’dur.Büyük soğutucusuyla ek bir soğutma sistemine gerek yoktur.MCU’lara doğrudan bağlanabilir.Kullanım için pin bağlantısını şu şekilde yapınız;VCC: 5VGND: 0VR_en,L_en: Ortak PWM girişi*RPWM: Sol Yön*LPWM: Sağ YönB-: 0VB+: Maksimum 28VM+,M-: Motor Bağlantıları Faydalı LinklerDiğer Motor Sürücü Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/80x80x25mm-220v-008a-13w-2700rpm-fan-9441",
-    "ItemName": " Stokta Yok ",
-    "price": "121,92",
-    "pic": "https://www.direnc.net/80x80x25mm-220v-008a-13w-2700rpm-fan-9441-12v-fan-savior-21803-94-B.jpg",
-    "description": " 12V 80x80x25MM 0.20A 2.4W 2500rpm Fan12V 80x80x25MM 0.20A 2.4W 2500rpm Fan, 12V 2500Rpm değerlerine sahip fan modelidir. Kullanacağınız yere göre boyut ve değerlerine göre inceleyebilirsiniz. 12V 80x80x25MM 0.20A 2.4W 2500rpm Fan - Teknik ÖzellikleriBoyut: 80x80x25mmVoltaj: 12VDC GerilimAkım: 0.14AGüç: 1.68WFrekans: YokHız(RPM): 2500RPMSes dB: 25dB-AÇalışma Sıcaklığı: -10°C~+70°C Faydalı LinklerDiğer Fan Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/ld-220mg-cift-eksen-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "757,10",
-    "pic": "https://www.direnc.net/ld-220mg-cift-eksen-servo-motor-servo-motor-lewan-soul-35921-12-B.png",
-    "description": " LD-220MG Çift Eksen Servo MotorLD-220MG Çift Eksen Servo Motor güç gerektiren robotik projelerinde kullanabileceğiniz servo motor çeşitlerindendir.  LD-220MG Çift Eksen Servo Motor Teknik ÖzellikleriAğırlık: 65g (2.32OZ)Boyut: 40 * 20 * 40.5mmHız: 0.16sn / 60 ° (7.4V)Tork ： 20 kg · cm (277,6 oz · in) @ 6.6 VÇalışma Gerilimi: 6-7.4VMin Çalışma Akımı: 1AYüksüz Akım: 100mA Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/mikro-step-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "51,62",
-    "pic": "https://www.direnc.net/mikro-step-motor-step-motor-china-22013-52-B.jpg",
-    "description": " 5V DC Mikro Step Motor - 2 Fazlı6mm çap 5,5mm boy, 2,9mm şaft boyutlarında 9 diş dişlisi ile mikro boyutlarda 2 fazlı mikro step motor.5V DC Mikro Step Motor Teknik ÖzellikleriBoyutlar: Çap 6mmBoy 5,5mmDişli: 2,9mm bakır 9 diş dişli Gerilim: 5V DCBağlantı: 4 tel 2 faz (2 sarım A ve B)Bağlantı adım türleriİki Faz, Dört adım: (+A)(+B)-(-A)(+B)-(-A)(-B)-(+A)(-B)-Tek Faz Dört adım: (+A)-(+B)-(-A)-(-B)-Sekiz adım, yarım step (+A)(+B)-(+B)-(-A)(+B)-(-A)-(-A)(-B)-(-B)-(+A)(-B)-(+A)-  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1093,7 +837,7 @@
     "ItemName": "12V Su Pompası IP68",
     "price": "419,84",
     "pic": "https://www.direnc.net/12v-su-pompasi-solenoid-sivi-ve-hava-pompalari-china-35597-12-B.jpg",
-    "description": " 12V Dalgıç Su PompasıDalgıç Pompa, bitki bakım, sulama projelerinizde kullanabileceğiniz oldukça güçlü bir pompadır. 12V DC gerilim ile çalışır. 5 metre yüksekliğe kadar su aktarımı yapabilir. Pompayı çekmek istediğiniz su tankının içene daldırmanız gerekmektedir.12V Dalgıç Su Pompası Teknik ÖzellikleriModel: JT-500Boyut: 98mm (yükseklik) * 38mm (çap)Su çıkış dış çapı: 12mmSu çıkış iç çapı: 9.7mmHmax: 500cmÇalışma voltajı: 6-12Anma Akımı: 1.2AGüç: 17WMaksimum kaldırma: 5 M (uyarı: Pompaya bir plastik boru bağlanırsa suyun ulaşabileceği yükseklik anlamına gelir)Maksimum akış hızı: 300L/saatKablo uzunluğu: 1.5 mKablo çapı: 5.7mmUyarı:Suyun sıcaklığı 40 santigrat üzerinde olamazKahverengi kablo pozitif kutbu "+" bağlantısıMavi kablo negatif kutup "-" bağlantısıSarı kablo toprak kablosudur. Bağlamaya gerek yoktur. Faydalı LinklerSu Sensörü Çeşitlerini inceleyebilirsiniz.Sensör ürünlerini inceleyebilirsiniz.  "
+    "description": " 12V Dalgıç Su PompasıDalgıç Pompa, bitki bakım, sulama projelerinizde kullanabileceğiniz oldukça güçlü bir pompadır. 12V DC gerilim ile çalışır. 5 metre yüksekliğe kadar su aktarımı yapabilir. Pompayı çekmek istediğiniz su tankının içene daldırmanız gerekmektedir.12V Dalgıç Su Pompası Teknik ÖzellikleriModel: JT-500Boyut: 98mm (yükseklik) * 38mm (çap)Su çıkış dış çapı: 12mmSu çıkış iç çapı: 9.7mmHmax: 500cmÇalışma voltajı: 6-12Anma Akımı: 1.2AGüç: 17WMaksimum kaldırma: 5 M (uyarı: Pompaya bir plastik boru bağlanırsa suyun ulaşabileceği yükseklik anlamına gelir)Maksimum akış hızı: 300L/saatKablo uzunluğu: 1.5 mKablo çapı: 5.7mmUyarı:Suyun sıcaklığı 40 santigrat üzerinde olamazKahverengi kablo pozitif kutbu '+' bağlantısıMavi kablo negatif kutup "-" bağlantısıSarı kablo toprak kablosudur. Bağlamaya gerek yoktur. Faydalı LinklerSu Sensörü Çeşitlerini inceleyebilirsiniz.Sensör ürünlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1169,14 +913,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/fircasiz-mini-su-pompasi-qr30e",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/fircasiz-mini-su-pompasi-qr30e-solenoid-sivi-ve-hava-pompalari-china-36642-13-B.jpg",
-    "description": " Ultra Sessiz QR30E Mini Su PompasıUltra Sessiz Mini Su Pompası fırçasız kalıcı manyetik rotora sahiptir. 30000 saatten fazla çalışma süresi ile oldukça uzun ömürlüdür. Düşük güç tüketimi ve düşük gürültü ile çalışır. Tamamen su geçirmez tasarıma sahiptir, dalgıç pompa olarak kullanılabilir. Mini Su Pompası Teknik ÖzellikleriBoyutu: 54 (L) x37 (W) x42 (H) mmAnma Gerilimi: DC12 VAnma Akımı: 375 mAGüç Tüketimi: 4.2 WAkış Hızı: 240L/H - 4L/MMalzeme: plastikGiriş çapı: 8mmÇıkış çapı: 8mmÇalışma Ömrü: 20000 saatGürültü: ≤40DBSu Geçirmez: IP68Max. Sıvı Sıcaklığı: 60 C°Isı Direnci: 0-100 °Kablo Uzunluğu: 45 CMPaket Boyutu: 62*62*40mmGiriş / çıkış iç çapı : 6mm / 0.24inçGiriş / çıkış iç çapı : 9mm / 0.35inçRenk: siyah Faydalı LinklerPompa Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/su-akis-sensoru-yf-b2",
     "ItemName": "Su Akış Sensorü YF-B2",
     "price": "232,29",
@@ -1198,14 +934,6 @@
     "price": "280,81",
     "pic": "https://www.direnc.net/tmc2130-stepstick-step-motor-surucu-11347-surucu-ve-kontrol-kartlari-china-57851-11-B.jpg",
     "description": " TMC2130 StepStick Step Motor SürücüTMC2130 Step Motor Sürücü: TMC2130’ın diğer step motorlardan temel farkı piyasadaki benzerlerine göre çok çok sessiz çalışması ve hassasiyetinin diğer step motorlara göre daha yüksek olmasıdır. Bu özellikleri yüzünden 3D yazıcılarda çokça tercih edilen motor sürücülerindendir. TMC2130’ın benzeri step motor sürücüler göre dezavvantajı Çıkış akımının bir nebze düşük olmasıdır. TMC2130 StepStick Step Motor SürücüMotor Besleme Gerilimi: 5- 46VMikrostep; 1/256Çıkış akımı: 1.2 A StabilI2C desteği DökümanlarTMC2130 Datasheet dosyasını inceleyiniz. Faydalı LinklerMotor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/ldx-218-cift-eksen-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "669,34",
-    "pic": "https://www.direnc.net/ldx-218-cift-eksen-servo-motor-servo-motor-lobot-35913-12-B.jpg",
-    "description": " Çift Eksen Servo Motor - LDX-218LDX-218 Çift Eksen Servo Motor güç gerektiren robotik projelerinde kullanabileceğiniz servo motor çeşitlerindendir.  LDX-218 Çift Eksen Servo Motor Teknik ÖzellikleriÇalışma Hızı (7.4V): 0.16 sn / 60 ° Stall Tork (6.6V): 15 kg-cm Stall Tork (7,4V): 17 kg-cmBoyutlar: 40X20X40.5mm Ağırlık: 60g Kablo Uzunluk: 300mm Kullanım: RC Modelleri İçin  Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1281,14 +1009,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/mg996-metal-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "123,89",
-    "pic": "https://www.direnc.net/mg996-metal-servo-motor-servo-motor-china-61733-52-B.jpg",
-    "description": " MG996 Metal Servo MotorMetal Servo Motor MG996, 120 ° tarama açısı, yüksek torku ve dayanıklılığı ile metal dişlileri ile standart ebatlı bir servodur. 6V'ta 10Kg'ın üzerinde tork elde edebilen bu servo 120 ° tarama açısına sahiptir. MG996 Metal Servo Motor ÖzellikleriAğırlık: 55 gBoyut: 40,7 x 19,7 x 42,9 mm yaklaşıkSıkıştırma torku: 9,4 kgf · cm (4,8 V), 11 kgf · cm (6 V)Çalışma hızı: 4,8V ‘ta 60º/0.17s -  6V’ta 60º/0.14 sÇalışma voltajı: 4,8 V - 7,2 VAkım 500 mADurma Akımı 2,5 A (6V)Ölü bant genişliği: 5 µsIstikrarlı ve şok geçirmez çift bilyalı rulman tasarımıSıcaklık aralığı: 0 ºC - 55ºC Faydalı LinklerServo Motor Çeşitleri ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi",
     "ItemName": "12V DC Peristaltik Dozaj Su Pompası - Yeşil",
     "price": "247,78",
@@ -1321,14 +1041,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-mavi",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-mavi-solenoid-sivi-ve-hava-pompalari-grothen-36726-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/feetech-fs90r-mikro-surekli-donebilen-servo-motor-pololu",
     "ItemName": "Feetech FS90R Sürekli Dönebilen Mikro Servo Motor",
     "price": "223,69",
@@ -1343,14 +1055,6 @@
     "price": "481,79",
     "pic": "https://www.direnc.net/skywalker-30a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-45818-58-B.jpg",
     "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 30A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 30A akıma izin veren kartta maksimum akım limiti 40 amperdir. Skywalker 30A Teknik ÖzellikleriNormal Akım Değeri: 30AMaksimum Akım Değeri(10 saniyeden az): 40ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 2ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 37 grBoyutlar: 68x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/mikro-step-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "51,62",
-    "pic": "https://www.direnc.net/mikro-step-motor-step-motor-china-22013-52-B.jpg",
-    "description": " 5V DC Mikro Step Motor - 2 Fazlı6mm çap 5,5mm boy, 2,9mm şaft boyutlarında 9 diş dişlisi ile mikro boyutlarda 2 fazlı mikro step motor.5V DC Mikro Step Motor Teknik ÖzellikleriBoyutlar: Çap 6mmBoy 5,5mmDişli: 2,9mm bakır 9 diş dişli Gerilim: 5V DCBağlantı: 4 tel 2 faz (2 sarım A ve B)Bağlantı adım türleriİki Faz, Dört adım: (+A)(+B)-(-A)(+B)-(-A)(-B)-(+A)(-B)-Tek Faz Dört adım: (+A)-(+B)-(-A)-(-B)-Sekiz adım, yarım step (+A)(+B)-(+B)-(-A)(+B)-(-A)-(-A)(-B)-(-B)-(+A)(-B)-(+A)-  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1410,14 +1114,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-30a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "481,79",
-    "pic": "https://www.direnc.net/skywalker-30a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-45818-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 30A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 30A akıma izin veren kartta maksimum akım limiti 40 amperdir. Skywalker 30A Teknik ÖzellikleriNormal Akım Değeri: 30AMaksimum Akım Değeri(10 saniyeden az): 40ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 2ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 37 grBoyutlar: 68x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/dc216-92x92x25-12vdc-015a-fan",
     "ItemName": "DC216 92x92x25 12Vdc 0.15A Fan",
     "price": "123,89",
@@ -1442,14 +1138,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-sari",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-sari-solenoid-sivi-ve-hava-pompalari-grothen-36725-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
     "ItemName": "Skywalker 80A Esc Fırçasız Motor Hız kontrol Sürücü devresi",
     "price": "1.032,40",
@@ -1463,14 +1151,6 @@
     "price": "247,78",
     "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-mavi-solenoid-sivi-ve-hava-pompalari-grothen-36726-13-B.jpg",
     "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-dc-1-4-inc-selenoid-motor-elektrikli-valf",
-    "ItemName": " Stokta Yok ",
-    "price": "481,79",
-    "pic": "https://www.direnc.net/12v-dc-1-4-inc-selenoid-motor-elektrikli-valf-solenoid-sivi-ve-hava-pompalari-china-45842-52-B.jpg",
-    "description": " 12V DC 1/4 inç Selenoid Motor (Elektrikli Valf)1/4 inç boru için 12VDC ile çalışan yağ, su, hava için uygun  elektrikli selenoid valf 12V DC 1/4 inç Selenoid Motor (Elektrikli Valf) ÖzellikleriModel : 2W-025-08Montaj boru çapı: 1/4 parmak(inç) 6,35mmUygunluk : Hava, Su, YağOperasyon metodu: Direkt aksiyonTip: Normalde KapalıAkışkan deliği: 2,5mmKullanım Basıncı: 0-0,8MPaskalMaks Basınç : 1,0MPaskalÇalışma ortamı: -10°C - +100°CÇalışma voltajı: 12VBağlantı malzemesi: Pirinç  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1498,51 +1178,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/fircasiz-mini-su-pompasi-qr30e",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/fircasiz-mini-su-pompasi-qr30e-solenoid-sivi-ve-hava-pompalari-china-36642-13-B.jpg",
-    "description": " Ultra Sessiz QR30E Mini Su PompasıUltra Sessiz Mini Su Pompası fırçasız kalıcı manyetik rotora sahiptir. 30000 saatten fazla çalışma süresi ile oldukça uzun ömürlüdür. Düşük güç tüketimi ve düşük gürültü ile çalışır. Tamamen su geçirmez tasarıma sahiptir, dalgıç pompa olarak kullanılabilir. Mini Su Pompası Teknik ÖzellikleriBoyutu: 54 (L) x37 (W) x42 (H) mmAnma Gerilimi: DC12 VAnma Akımı: 375 mAGüç Tüketimi: 4.2 WAkış Hızı: 240L/H - 4L/MMalzeme: plastikGiriş çapı: 8mmÇıkış çapı: 8mmÇalışma Ömrü: 20000 saatGürültü: ≤40DBSu Geçirmez: IP68Max. Sıvı Sıcaklığı: 60 C°Isı Direnci: 0-100 °Kablo Uzunluğu: 45 CMPaket Boyutu: 62*62*40mmGiriş / çıkış iç çapı : 6mm / 0.24inçGiriş / çıkış iç çapı : 9mm / 0.35inçRenk: siyah Faydalı LinklerPompa Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-60a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "1.032,40",
-    "pic": "https://www.direnc.net/skywalker-60a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-45819-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 60A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 60A akıma izin veren kartta maksimum akım limiti 80 amperdir. Skywalker 60A Teknik ÖzellikleriNormal Akım Değeri: 60AMaksimum Akım Değeri(10 saniyeden az): 80 ASürücü Kartı Modu: AnahtarlıSürücü Kartı Çıkışları: 5V / 5ASürücü Kartı Kapasitesi:2S lipo: 8 Servo3S lipo: 8 Servo4S lipo: 6 Servo6S lipo: 6 ServoKullanılabilen Bataryalar:Lipo: 2S-6SNiMH: 5-18 HücreliAğırlık: 63 grBoyutlar: 77x35x14 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "1.032,40",
-    "pic": "https://www.direnc.net/skywalker-80a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-drone-motor-suruculeri-china-15419-52-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 80A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 80A akıma izin veren kartta maksimum akım limiti 100A amperdir. Skywalker 80A Teknik ÖzellikleriNormal Akım Değeri: 80AMaksimum Akım Değeri(10 saniyeden az): 100ASürücü Kartı Modu: AnahtarlıSürücü Kartı Çıkışları: 5V / 5ASürücü Kartı Kapasitesi:2S lipo: 8 Servo3S lipo: 8 Servo4S lipo: 6 Servo6S lipo: 6 ServoKullanılabilen Bataryalar:Lipo: 2S-6SNiMH: 5-18 HücreliAğırlık: 63 grBoyutlar: 77x35x14 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30",
     "ItemName": "VNH2SP30 - 30A Mini Arduino Motor Sürücü Kartı",
     "price": "516,20",
     "pic": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30-surucu-ve-kontrol-kartlari-china-22750-97-B.jpg",
     "description": " VNH2SP30 30A Mini Motor Sürücü ArduinoArduino Motor Sürücü Kartı VNH2SP30, VNH2SP30 tam köprü sürücülü motorları çalıştıran bir modüldür. Yükseklik akımı boşaltması gereken devre devrelerini kullanırken bir soğutucu veya fan kullanın. VNH2SP30 30a Mini Motor Sürücü Arduino Teknik ÖzellikleriMaksimum voltaj: 16VMaksimum akım derecelendirmesi: 30 APratik Sürekli Akım: 14 AAnalog pin için mevcut akım algılamaMOSFET dayanıklılığı: 19 mΩ (bacak başına)Maksimum PWM frekansı: 20 kHzTermal kapatmaDüşük Gerilim ve Aşırı Gerilim Kapatma Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-20a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "447,38",
-    "pic": "https://www.direnc.net/skywalker-20a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-45820-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 20A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 20A akıma izin veren kartta maksimum akım limiti 25 amperdir. Skywalker 20A Teknik ÖzellikleriNormal Akım Değeri: 20AMaksimum Akım Değeri(10 saniyeden az): 25ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 2ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 19 grBoyutlar: 42x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-solenoid-sivi-ve-hava-pompalari-grothen-36727-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriModel: NKP-DCL-S10GVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1674,14 +1314,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/ld-220mg-cift-eksen-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "757,10",
-    "pic": "https://www.direnc.net/ld-220mg-cift-eksen-servo-motor-servo-motor-lewan-soul-35921-12-B.png",
-    "description": " LD-220MG Çift Eksen Servo MotorLD-220MG Çift Eksen Servo Motor güç gerektiren robotik projelerinde kullanabileceğiniz servo motor çeşitlerindendir.  LD-220MG Çift Eksen Servo Motor Teknik ÖzellikleriAğırlık: 65g (2.32OZ)Boyut: 40 * 20 * 40.5mmHız: 0.16sn / 60 ° (7.4V)Tork ： 20 kg · cm (277,6 oz · in) @ 6.6 VÇalışma Gerilimi: 6-7.4VMin Çalışma Akımı: 1AYüksüz Akım: 100mA Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v-300mm-lineer-motor",
     "ItemName": "12V 300mm Lineer Motor",
     "price": "1.307,71",
@@ -1762,14 +1394,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/mg996-metal-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "123,89",
-    "pic": "https://www.direnc.net/mg996-metal-servo-motor-servo-motor-china-61733-52-B.jpg",
-    "description": " MG996 Metal Servo MotorMetal Servo Motor MG996, 120 ° tarama açısı, yüksek torku ve dayanıklılığı ile metal dişlileri ile standart ebatlı bir servodur. 6V'ta 10Kg'ın üzerinde tork elde edebilen bu servo 120 ° tarama açısına sahiptir. MG996 Metal Servo Motor ÖzellikleriAğırlık: 55 gBoyut: 40,7 x 19,7 x 42,9 mm yaklaşıkSıkıştırma torku: 9,4 kgf · cm (4,8 V), 11 kgf · cm (6 V)Çalışma hızı: 4,8V ‘ta 60º/0.17s -  6V’ta 60º/0.14 sÇalışma voltajı: 4,8 V - 7,2 VAkım 500 mADurma Akımı 2,5 A (6V)Ölü bant genişliği: 5 µsIstikrarlı ve şok geçirmez çift bilyalı rulman tasarımıSıcaklık aralığı: 0 ºC - 55ºC Faydalı LinklerServo Motor Çeşitleri ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/feetech-fs90r-mikro-surekli-donebilen-servo-motor-pololu",
     "ItemName": "Feetech FS90R Sürekli Dönebilen Mikro Servo Motor",
     "price": "223,69",
@@ -1826,14 +1450,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-24v-210rpm-42mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "688,27",
-    "pic": "https://www.direnc.net/12v-24v-210rpm-42mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22695-96-B.jpg",
-    "description": " 12V-24V 210 RPM 42mm Redüktörlü DC Motor12V 210 RPM hıza sahip bir motordur. Bu motor düşük hız ve yüksek tork sayesinde çeşitli sistemlerde ve robotlarda kullanılabilir12V-24V 210 RPM 42mm Redüktörlü DC Motor ÖzellikleriÇalışma voltaj aralığı:12-24VHız:210 RPM/DkMotor çapı: 36mmRedüktör çapı: 42mmBoşta çektiği akım: 55mAGüç: 7.5WAğırlık: 230grFaydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/5v-su-gecirmez-elektrikli-selenoid-kilit",
     "ItemName": "5V Su Geçirmez Elektrikli Selenoid Kilit",
     "price": "82,59",
@@ -1866,19 +1482,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/ldx-218-cift-eksen-servo-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "669,34",
-    "pic": "https://www.direnc.net/ldx-218-cift-eksen-servo-motor-servo-motor-lobot-35913-12-B.jpg",
-    "description": " Çift Eksen Servo Motor - LDX-218LDX-218 Çift Eksen Servo Motor güç gerektiren robotik projelerinde kullanabileceğiniz servo motor çeşitlerindendir.  LDX-218 Çift Eksen Servo Motor Teknik ÖzellikleriÇalışma Hızı (7.4V): 0.16 sn / 60 ° Stall Tork (6.6V): 15 kg-cm Stall Tork (7,4V): 17 kg-cmBoyutlar: 40X20X40.5mm Ağırlık: 60g Kablo Uzunluk: 300mm Kullanım: RC Modelleri İçin  Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v-su-pompasi",
     "ItemName": "12V Su Pompası IP68",
     "price": "419,84",
     "pic": "https://www.direnc.net/12v-su-pompasi-solenoid-sivi-ve-hava-pompalari-china-35597-12-B.jpg",
-    "description": " 12V Dalgıç Su PompasıDalgıç Pompa, bitki bakım, sulama projelerinizde kullanabileceğiniz oldukça güçlü bir pompadır. 12V DC gerilim ile çalışır. 5 metre yüksekliğe kadar su aktarımı yapabilir. Pompayı çekmek istediğiniz su tankının içene daldırmanız gerekmektedir.12V Dalgıç Su Pompası Teknik ÖzellikleriModel: JT-500Boyut: 98mm (yükseklik) * 38mm (çap)Su çıkış dış çapı: 12mmSu çıkış iç çapı: 9.7mmHmax: 500cmÇalışma voltajı: 6-12Anma Akımı: 1.2AGüç: 17WMaksimum kaldırma: 5 M (uyarı: Pompaya bir plastik boru bağlanırsa suyun ulaşabileceği yükseklik anlamına gelir)Maksimum akış hızı: 300L/saatKablo uzunluğu: 1.5 mKablo çapı: 5.7mmUyarı:Suyun sıcaklığı 40 santigrat üzerinde olamazKahverengi kablo pozitif kutbu "+" bağlantısıMavi kablo negatif kutup "-" bağlantısıSarı kablo toprak kablosudur. Bağlamaya gerek yoktur. Faydalı LinklerSu Sensörü Çeşitlerini inceleyebilirsiniz.Sensör ürünlerini inceleyebilirsiniz.  "
+    "description": " 12V Dalgıç Su PompasıDalgıç Pompa, bitki bakım, sulama projelerinizde kullanabileceğiniz oldukça güçlü bir pompadır. 12V DC gerilim ile çalışır. 5 metre yüksekliğe kadar su aktarımı yapabilir. Pompayı çekmek istediğiniz su tankının içene daldırmanız gerekmektedir.12V Dalgıç Su Pompası Teknik ÖzellikleriModel: JT-500Boyut: 98mm (yükseklik) * 38mm (çap)Su çıkış dış çapı: 12mmSu çıkış iç çapı: 9.7mmHmax: 500cmÇalışma voltajı: 6-12Anma Akımı: 1.2AGüç: 17WMaksimum kaldırma: 5 M (uyarı: Pompaya bir plastik boru bağlanırsa suyun ulaşabileceği yükseklik anlamına gelir)Maksimum akış hızı: 300L/saatKablo uzunluğu: 1.5 mKablo çapı: 5.7mmUyarı:Suyun sıcaklığı 40 santigrat üzerinde olamazKahverengi kablo pozitif kutbu '+' bağlantısıMavi kablo negatif kutup "-" bağlantısıSarı kablo toprak kablosudur. Bağlamaya gerek yoktur. Faydalı LinklerSu Sensörü Çeşitlerini inceleyebilirsiniz.Sensör ürünlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1887,14 +1495,6 @@
     "price": "688,27",
     "pic": "https://www.direnc.net/12v-24v-150rpm-42mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22693-96-B.jpg",
     "description": " 12V-24V 150 RPM 42mm Redüktörlü DC Motor12V-24V 150 RPM hıza sahip bir motordur. Bu motor düşük hız ve yüksek tork sayesinde çeşitli sistemlerde ve robotlarda kullanılabilir12V-24V 150 RPM 42mm Redüktörlü DC Motor ÖzellikleriÇalışma voltaj aralığı:12V-24VHız:150 RPM/DkMotor çapı: 36mmRedüktör çapı: 42mmBoşta çektiği akım: 55mAGüç: 7.5WAğırlık: 230grFaydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/metal-disli-servo-motor-df",
-    "ItemName": " Stokta Yok ",
-    "price": "619,44",
-    "pic": "https://www.direnc.net/metal-disli-servo-motor-df-servo-motor-dfrobot-46376-10-B.jpg",
-    "description": " DSS-M15S Metal Dişli Servo MotorDSS-M15S Metal Dişli Servo Motor, 270 ° geniş açılı, yüksek tork gücüne sahip, sağlamlığı geliştirilmiş ve uzun süreli kullanımlar için test edilmiştir.6V'ı alabilir ve 15 Kg'ın üzerinde güçlü bir tork gücü elde edebilen bu servo 270 ° 'lik geniş açısı ile, ihtiyaclarınızı karşılayacaktır. 12 saat süre ile yüksek yük kapasitesi ile test edilen bu DSS-M15S servo, çok fazla titreşim veya ısı olmadan maksimum 18 Kg'lik bir tork üretebilir.Buna ek olarak, servo performansından ödün vermemek için çeşitli aksesuarları da yanında gelmektedir. DSS-M15S Metal Dişli Servo Motor ÖzellikleriGerilim: 4.8-7.2 VoltTork: 13.5Kg * cm / 15Kg * cm (6.0V / 7.0V)Hız: 0.18 sn / 60 ° / 0.16 sn / 60 ° (6.0V / 7.0V)Serbest Çalışma Akımı: 80mA / 100mA (6.0V / 7.0V)Durma Akımı: 1.8A / 2A (6.0V / 7.0V)Bekleme Akımı: 4mA / 5mA (6.0V / 7.0V)Döndürme: 270 °Tekerlek Vites: MetalDişli Oranı: 310: 1Boyut: 54.5 x 20 x 47.5 mm (2.15 x 0.79 x 1.87 ')Sinyal: RC PWMNabız Aralığı: 500-2500 usFrekans: 50-330Hz (Arduion uyumlu) DSS-M15S Metal Dişli Servo Motor Paket İçeriği1 adet DSS-M15S Servo1 adet Metal yuvarlak servo korno1 adet X servo başlığı1 adet uzun düz servo boynuz1 adet  Düz servo korno5 adet M2 * 8 yivli vida5 adet M2 vida contası1 adet M3 * 6 vida DökümanlarDSS-M15S Metal Dişli Servo Motor Datasheet dosyasını inceleyiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -1911,14 +1511,6 @@
     "price": "344,13",
     "pic": "https://www.direnc.net/12v-10rpm-90c-reduktorlu-motor-9675-12v-reduktorlu-motorlar-china-22518-96-B.jpg",
     "description": " 12V 10RPM 90 Derece Redüktörlü Motor12V’ta 10 rpm hıza sahip 90 derece çıkışlı bu redüktörlü motoru çeşitli projelerinizde kolayca kullanabilirsiniz. 12V 10RPM 90 Derece Redüktörlü Motor ÖzelliklerÇalışma gerilimi: 12VHız: 10 rpmBoşta Çektiği Akım: 80mAZorlanma akımı 1,4AMil: Vida delikli 6mm D Şaft Uçtan Uca Uzunluk: 77mmAğırlık: 163 gr Motor Ölçüleri: Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/vnh5019-dc-motor-surucu-5-5v-24v-12a",
-    "ItemName": " Stokta Yok ",
-    "price": "2.455,45",
-    "pic": "https://www.direnc.net/vnh5019-dc-motor-surucu-5-5v-24v-12a-surucu-ve-kontrol-kartlari-stm-47094-17-B.jpg",
-    "description": " VNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A Arduino'yu hareket ettirin! Bu shield, Arduino veya Arduino uyumlu board'unuzla bir adet yüksek güçlü DC motor kontrol etmeyi kolaylaştırır.  VNH5019 motor sürücüleri 5.5 ila 24 V arasında çalışır ve  motor için sürekli 12 A (30 A pik) iletebilir. Bu harika sürücüler aynı zamanda akım duyarlı geribildirim sunar ve daha sessiz çalışma için ultrasonik PWM frekanslarını kabul eder. Varsayılanlar uygun değilse, Arduino pin eşleştirmelerini özelleştirebilir ve motor sürücüsü kontrol çizgileri, Arduino olmadan genel amaçlı bir kullanım için kartın sol tarafında bulunurlar. VNH5019 DC Motor Sürücü Teknik ÖzellikleriBoyut: 2.56 'x2.02' x 0.38 '1 (65.024x51.308x9.652mm)Ağırlık: 18 gMotor sürücüsü: VNH5019Motor kanalları: 2Minimum çalışma gerilimi: 5.5 VMaksimum çalışma gerilimi: 24 VKanal başına sürekli çıkış akımı: 12 AKanal başına pik çıkış akımı: 30 AAkım duygusu: 0,14 V / AMaksimum PWM frekansı: 20 kHzGeriye Dönük Gerilim Koruması: EvetNotlarDahili olmayan donanım24V piller ile kullanılması tavsiye edilmez.16 V'a kadar besleme gerilimi geriye doğru takıldığında, motor sürücüsüne zarar verebilir. DökümanlarVNH5019 DC Motor Sürücü - 5.5V ~ 24V 12A - Datasheet dosyasını inceleyiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2002,14 +1594,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/80x80x25mm-220v-008a-13w-2700rpm-fan-9441",
-    "ItemName": " Stokta Yok ",
-    "price": "121,92",
-    "pic": "https://www.direnc.net/80x80x25mm-220v-008a-13w-2700rpm-fan-9441-12v-fan-savior-21803-94-B.jpg",
-    "description": " 12V 80x80x25MM 0.20A 2.4W 2500rpm Fan12V 80x80x25MM 0.20A 2.4W 2500rpm Fan, 12V 2500Rpm değerlerine sahip fan modelidir. Kullanacağınız yere göre boyut ve değerlerine göre inceleyebilirsiniz. 12V 80x80x25MM 0.20A 2.4W 2500rpm Fan - Teknik ÖzellikleriBoyut: 80x80x25mmVoltaj: 12VDC GerilimAkım: 0.14AGüç: 1.68WFrekans: YokHız(RPM): 2500RPMSes dB: 25dB-AÇalışma Sıcaklığı: -10°C~+70°C Faydalı LinklerDiğer Fan Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/raspberry-pi-16-kanal-12-bit-i2c-servo-surucu-hat-b",
     "ItemName": "Raspberry Pi 16-Kanal 12-bit I2C Servo Sürücü HAT (B)",
     "price": "411,59",
@@ -2042,14 +1626,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-mavi",
-    "ItemName": " Stokta Yok ",
-    "price": "247,78",
-    "pic": "https://www.direnc.net/12v24v-dc-dozaj-su-pompasi-mavi-solenoid-sivi-ve-hava-pompalari-grothen-36726-13-B.jpg",
-    "description": " Mini Su PompasıSu pompası genellikle bitki bakım ve sulama projelerinde kullanılmaktadır. Yakıcı olmayan kimyasallar ve çeşitli sıvılar için de kullanılabilir. 5000 devirlik motorun kutuplarını değiştirerek akış yönünü kontrol edebilirsiniz. Dozaj Pompası Teknik ÖzellikleriVolt: DC 12 VAkım: 80mABağıl nem: az 80%Akış hızı: 0-100 ml/dakikaMotor RPM: 5000 RPMMotor boyutu: 27.6 x 37.9 (mm)Pompa boyutu: 31.7 x 20.1 (mm) Faydalı LinklerTuş Takımı Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/manyetik-switch",
     "ItemName": "Manyetik Switch",
     "price": "149,70",
@@ -2071,14 +1647,6 @@
     "price": "753,31",
     "pic": "https://www.direnc.net/reduktorlu-dc-motor-6v-100rpm-enkoderli-6v-reduktorlu-motorlar-dfrobot-46464-10-B.jpg",
     "description": " 6V 100RPM Enkoderli Metal Redüktörlü DC MotorBu, metal dişli DC motor enkoderlidir. 75:1 metal şanzımana sahip 6V 100RPM DC Motor ve motor şaftında devir başına 11 sayım çözünürlüğü sağlayan entegre bir enkoder bulunmaktadır, şanzımanın çıkış milindeki 1 devrinde 823.1 sayıma karşılık gelir. Bu motor 10 mm uzunluğunda, 4 mm çaplı D-şekilli çıkış mili ile donatılmıştır. Bu motor, 6V'de kullanılmak üzere tasarlanmıştır, ancak motor 1V kadar düşük voltajlarda dönmeye başlayabilir. Bu motor, mobil robot projeniz için ideal bir seçenektir. 6V 100RPM Enkoderli Metal Redüktörlü DC Motor ÖzellikleriMotor Gerilimi: 6VEnkoder  Gerilimi: 3.3 / 5VRedüktör Azaltma Oranı:  1: 75Yük Hızı: 100RPM'de 0.13AMaksimum Verim Noktası: Yük 1.0kg · cm / 80RPM / 1.7W / 0.5AMaksimum güç noktası: Yük 3.0kg · cm / 55RPM / 2.8W / 1.0ADurdurma Torku: 6.5kg · cmDurdurma Akımı: 3.0AHall Çözünürlüğü: Hall Çözünürğü 11 x Hassas Azaltma Oranı 74.83 = 823.1 Tur Başına Sayım MiktarıBoyut: 54 * Ø24.4 mmAğırlık: 96g  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zytd520-6v-12v-24v-1000-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zytd520-6v-12v-24v-1000-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22688-95-B.jpg",
-    "description": " ZYTD520 12V DC 1000RPM Redüktörlü Motor - 37mmBu Metal Redüktörlü DC Motor 12V ile çalışmakla beraber, 6V - 24V aralığında da çalışır. 37mm'lik bu redüktörlü motordan 1000 Devir / Dk çıkış alabilirsiniz. Motorun dişli kutusu silindirik olup çapı 37mmdir. Motorun çapı 36mmdir. Bu motorda çıkış mili merkezden 12mm uzaktadır. ZYTD520 12V DC 1000RPM Redüktörlü Motor ÖzellikleriRedüktör tipi: MetalHız yüksüz: 1000dev/dakÇalışma voltaj aralığı:6-24vÇalışma akımı: 580mAMotor çapı: 36mmŞaft uzunluğu: 14mmMil çapı: 6mmL: 23mm  Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2106,14 +1674,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/pca9685-16-kanal-12-bit-pwmservo-i2c-surucu-modul",
-    "ItemName": " Stokta Yok ",
-    "price": "172,07",
-    "pic": "https://www.direnc.net/pca9685-16-kanal-12-bit-pwmservo-i2c-surucu-modul-diger-sensor-ve-moduller-hwa-yeh-45530-90-B.jpg",
-    "description": " PCA9685 16 Kanal 12 Bit PWM - Servo Motor Sürücü Devresi I2C Modülü PCA9685 16-Kanallı 12 bit PWM / Servo Sürücü I2C Seri protokolünü kullanır. Bu modül ile bağımsız çalışan 16 adet PWM çıkışını sadece 2 pin ile kontrol edebilirsiniz. PCA9685 16 Kanal 12 Bit I2C PWM/Servo  Sürücü Devresi ÖzellikleriBoyutlar 62.5mm x 25.4mm x 3mmAğırlık : 5.5gramBu kart / entegre 0x60-0x80 arası I2C adresini kullanır ve bu adresler jumperlar ile seçilebilir.Terminal bloğunda ters polarite koruması vardır.4'lü gruplar halindeki 3 pinli konektörler ile tek seferde 16 servo takabilirsiniz.Zincirlenebilinir tasarım.Gerekli olması halinde voltaj girişine bağlanabilecek kondansatör yeri bulunmaktadır.I2C protokolünde kullanılacak adresler için 6 adet lehim atlama noktası.6 adres seçme pimi sayesinde tek bir i2c veri yolunda 62'ye kadar, toplam 992 adet çıkış elde edebilirsiniz.Ayarlanabilir PWM frekansı yaklaşık 1.6 KHz'e kadardır.Bu kart / entegre her çıkış için 12 bit çözünürlük sunar.60Hz güncelleme hızı.Çıkış etkinleştirme pimi ile tüm çıkışları hızlı bir şekilde devre dışı bırakabilirsiniz. Bu I2C kontrollü PWM sürücüsü TLC5940 ailesinin aksine, sürekli olarak mikro denetleyicinizden sinyale ihtiyaç duymaz. Dahili osilatörü ile kendi mikro denetleyiciden sinyal almadığında son sinyali göndermeye devam eder.Devre 5V uyumludur bu da isterseniz 3.3V ile çalışan bir mikro denetleyiciden kontrol edebileceğiniz ve 6V'a kadar güvenle çıkabileceğiniz anlamına gelir. Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v-dc-motor-350rpm-wencoder-12kgcm-dfrobot",
     "ItemName": "12V 350 RPM Enkoderli DC Motor",
     "price": "1.101,23",
@@ -2138,27 +1698,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-24v-150rpm-42mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "688,27",
-    "pic": "https://www.direnc.net/12v-24v-150rpm-42mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22693-96-B.jpg",
-    "description": " 12V-24V 150 RPM 42mm Redüktörlü DC Motor12V-24V 150 RPM hıza sahip bir motordur. Bu motor düşük hız ve yüksek tork sayesinde çeşitli sistemlerde ve robotlarda kullanılabilir12V-24V 150 RPM 42mm Redüktörlü DC Motor ÖzellikleriÇalışma voltaj aralığı:12V-24VHız:150 RPM/DkMotor çapı: 36mmRedüktör çapı: 42mmBoşta çektiği akım: 55mAGüç: 7.5WAğırlık: 230grFaydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/zytd520-12v-50-rpm-37mm-reduktorlu-dc-motor",
     "ItemName": "ZYTD52 12V 50 RPM 37mm Redüktörlü DC Motor",
     "price": "378,55",
     "pic": "https://www.direnc.net/zytd520-12v-50-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22668-95-B.jpg",
     "description": " ZYTD520 12V 50 RPM 37mm Redüktörlü DC MotorEkstra güçlü 50 dev/dak 37mm çapında kare tutucusu ile güç gerektiren ve düşük akım gerektiren yerlerde kullanıma uygunZYTD520 12V 50 RPM 37mm Redüktörlü DC Motor ÖzellikleriRedüktör tipi: MetalRedüksiyon oranı:8:1 Hız yüksüz: 50 dev/dakÇalışma voltaj aralığı:12vÇalışma akımı: 580mANominal tork: 18 Kg.cmMax tork: 0,7 Kg.cmBoyutlarMotor çapı: 37mmMotor uzunluğu: 33,3mmSanzıman uzunluğu: 33mmŞaft uzunluğu: 14mmŞaft kalınlığı: 6mmToplam uzunluk: 89mm  Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/dss-m15s-metal-servo-motor-15-kg",
-    "ItemName": " Stokta Yok ",
-    "price": "653,86",
-    "pic": "https://www.direnc.net/dss-m15s-metal-servo-motor-15-kg-servo-motor-dfrobot-36576-12-B.jpg",
-    "description": " DSS-M15S 270 ° 15KG DF Metal ServoDSS-M15S son derece geniş açı aralığı kontrolüne, devasa yük kapasitesine ve mükemmel kaliteye sahiptir. Yakın döngü geri besleme kontrolünü gerçekleştirmek için MCU'ya bağlayabilirsiniz. DSS-M15S 270 ° Geri beslemeli metal servo, Arduino Servo kütüphanesi ile uyumludur. Arduino Board ile sürebilir ve açı değerini analog taraftan okuyabilirsiniz.  DSS-M15S Servo Motor Teknik ÖzellikleriÇalışma voltajı: 4.8-7.2V6V İçin:Çalışma hızı (yüksüz): 0,18 sn / 60 dereceDinlenme akımı: 80mAKilitleme torku: 13,5kg * cmDurak akımı: 1.8ABekleme akımı: 4mA7V İçin:Çalışma hızı (yüksüz): 0,16 sn / 60 dereceDinlenme akımı: 100mAKilitleme torku: 15kg * cmDurak akımı: 2aBekleme akımı: 5mAMekanik özelliklerDişli malzemesi: metal dişliÇalışma açısı: 270 dereceKablo göstergesi: 28PVCVeri hattı uzunluğu: 320mmDişli braketi spline: 25T / 5.80Vites oranı: 310: 1Boyut: 54.5 * 20 * 47,5 mmKontrol özellikleriGeri bildirim sinyali: 0-3.3VKontrol sinyali: RC PWMNabız aralığı: 500-2500 usMedyan sinyal değeri: 1500usSaat yönünde döndürme: <1500usKontrol frekansı: 50-330Hz (Arduion uyumlu) Faydalı LinklerServo Motor Çeşitlerini inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2274,14 +1818,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-1500rpm-reduktorlu-dc-motor-20mm",
-    "ItemName": " Stokta Yok ",
-    "price": "206,48",
-    "pic": "https://www.direnc.net/12v-1500rpm-reduktorlu-dc-motor-20mm-12v-reduktorlu-motorlar-china-31393-10-B.jpg",
-    "description": " 12V 1500 RPM 20mm Redüktörlü DC MotorBu Redüktörlü DC Motor 12V’ta 1500 RPM çıkış vermektedir. 20mm çapında olan bu motor yüksüz şekilde çalıştığında 200mA akım çekmektedir. 12V 1500 RPM 20mm Redüktörlü DC Motor ÖzelliklerÇalışma Voltajı: 12VHız: 1500RpmBoşta Çektiği Akım: 200mAZorlanma Akımı: 2.5AMotor Çapı: 17mmRedüktör Çapı: 20mmMil: 4mm Ortadan Çıkışlı D Şaft Mil Uzunluğu: 15mmUçtan Uca Uzunluk: 52mmAğırlık: 45 gr Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/12v-2a-manyetik-solenoid-kilit",
     "ItemName": "12V 2A Manyetik Solenoid Kilit",
     "price": "137,65",
@@ -2298,27 +1834,11 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/12v-100rpm-90c-reduktorlu-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "344,13",
-    "pic": "https://www.direnc.net/12v-100rpm-90c-reduktorlu-motor-12v-reduktorlu-motorlar-china-22530-96-B.jpg",
-    "description": " 12V 100RPM 90 Derece Redüktörlü Motor12V’ta 100 rpm hıza sahip 90 derece çıkışlı bu redüktörlü motoru çeşitli projelerinizde kolayca kullanabilirsiniz 12V 100RPM 90 Derece Redüktörlü Motor ÖzelliklerÇalışma gerilimi: 12VHız: 100 rpmBoşta Çektiği Akım: 80mAwZorlanma akımı 1,4AMil: Vida delikli 6mm D Şaft Uçtan Uca Uzunluk: 77mmAğırlık: 151 gr Motor Ölçüleri: Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/hs311-standart-servo-motor",
     "ItemName": "HS311 Standart Servo Motor",
     "price": "722,68",
     "pic": "https://www.direnc.net/hs311-standart-servo-motor-servo-motor-china-64528-21-B.jpg",
     "description": " HS311 Standart Servo MotorHS-311 Servo Motor, ucuz uygulamalar için mükemmel bir servodur. Uygun fiyatlı olmasına rağmen bu servo, daha pahalı servoların birçok özelliğine sahiptir. Üzerinde bulunan bir devre kartı ve ona eşlik eden iç içe geçmiş dişli kutusu yüksek mukavemet sağlar. Montaj donanımına sahip çeşitli servo aparatları ve aksesuarları bulunur. Bu servo, 600us - 2400us arasında değişen bir PWM sinyali ile çalışır. 180 derecede tarama yapabilir.Hitec HS311 Standart Servo Motor ÖzellikleriHız: 4.8V'de 0,19 saniye / 60 °Hız: 6.0V'da 0,15 saniye / 60 °Tork: 4.8V'de 1.19 kgTork: 6.0 V'de 1.44 kgUzunluk: 41mm)Genişlik: 20mmYükseklik: 37mmAğırlık: 43g Faydalı LinklerServo Motor  ürünün datasheetini inceleyebilirsiniz.Servo Motor Çeşitleri ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/tmc2208-step-motor-surucu-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "109,43",
-    "pic": "https://www.direnc.net/tmc2208-step-motor-surucu-karti-surucu-ve-kontrol-kartlari-china-36148-12-B.jpg",
-    "description": " Dilsiz Step Motor Sürücü - TMC2208TMC2208 Step Motor Sürücü Kartı genellikle 3D yazıcılarda kullanılan step motor sürücü kartı çeşitlerindendir. Yüksek kalietede ultra sessiz çalışır.SPI ve UART haberleşme protokolleri ile kontrol edilebilir. Ürün V2.0 'dir. TMC2208 Teknik ÖzellikleriHaberleşme: UARTAdım Kontrolü: 1-256Lojik Voltaj: 3-5VMotor Voltajı: 5.5-36VSürekli Motor Faz Akımı 1.2AMax. Motor faz akımı: 2ARDSon: <=0.3 ohm Faydalı LinklerMotor Sürücü Kartı Çeşitlerini inceleyebilirsiniz.3D Printer Parçalarını inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2367,14 +1887,6 @@
     "price": "344,13",
     "pic": "https://www.direnc.net/12v-100rpm-90c-reduktorlu-motor-12v-reduktorlu-motorlar-china-22530-96-B.jpg",
     "description": " 12V 100RPM 90 Derece Redüktörlü Motor12V’ta 100 rpm hıza sahip 90 derece çıkışlı bu redüktörlü motoru çeşitli projelerinizde kolayca kullanabilirsiniz 12V 100RPM 90 Derece Redüktörlü Motor ÖzelliklerÇalışma gerilimi: 12VHız: 100 rpmBoşta Çektiği Akım: 80mAwZorlanma akımı 1,4AMil: Vida delikli 6mm D Şaft Uçtan Uca Uzunluk: 77mmAğırlık: 151 gr Motor Ölçüleri: Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zgb37rg-12v-500-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zgb37rg-12v-500-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22683-95-B.jpg",
-    "description": " ZYTD520 12V 500 RPM 37mm Redüktörlü DC MotorEkstra güçlü 500 dev/dak 37mm çapında kare tutucusu ile güç gerektiren ve düşük akım gerektiren yerlerde kullanıma uygunZYTD520 12V 500 RPM 37mm Redüktörlü DC Motor ÖzellikleriRedüktör tipi: MetalRedüksiyon oranı:8:1 Hız yüksüz: 500 dev/dakÇalışma voltaj aralığı:12VÇalışma akımı: 580mANominal tork: 5 Kg.cmMax tork: 0,7 Kg.cmBoyutlarMotor çapı: 37mmMotor uzunluğu: 33,3mmSanzıman uzunluğu: 33mmŞaft uzunluğu: 14mmŞaft kalınlığı: 6mmToplam uzunluk: 89mm Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2434,22 +1946,6 @@
     },
     {
     "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/skywalker-40a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi",
-    "ItemName": " Stokta Yok ",
-    "price": "550,62",
-    "pic": "https://www.direnc.net/skywalker-40a-esc-fircasiz-motor-hiz-kontrol-surucu-devresi-fircasiz-motor-surucu-kartlari-china-20028-58-B.jpg",
-    "description": " Fırçasız Motor Sürücü ve Hız Kontrol Modülü - 40A - SKYWALKERSKYWALKER Motor Sürücü Kartları hassas motor kontrolünün gerektiği drone projelerinde kullanılmak için tasarlanmıştır. Standart 40A akıma izin veren kartta maksimum akım limiti 55 amperdir. Skywalker 40A Teknik ÖzellikleriNormal Akım Değeri: 40AMaksimum Akım Değeri(10 saniyeden az): 55ASürücü Kartı Modu: DoğrusalSürücü Kartı Çıkışları: 5V / 3ASürücü Kartı Kapasitesi:2S lipo: 5 Servo3S lipo: 4 ServoKullanılabilen Bataryalar:Lipo: 2S-3SNiMH: 5-9 HücreliAğırlık: 39 grBoyutlar: 68x25x8 mm Faydalı LinklerDrone Parçalarını inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30",
-    "ItemName": " Stokta Yok ",
-    "price": "516,20",
-    "pic": "https://www.direnc.net/30a-mini-motor-surucu-arduino-vnh2sp30-surucu-ve-kontrol-kartlari-china-22750-97-B.jpg",
-    "description": " VNH2SP30 30A Mini Motor Sürücü ArduinoArduino Motor Sürücü Kartı VNH2SP30, VNH2SP30 tam köprü sürücülü motorları çalıştıran bir modüldür. Yükseklik akımı boşaltması gereken devre devrelerini kullanırken bir soğutucu veya fan kullanın. VNH2SP30 30a Mini Motor Sürücü Arduino Teknik ÖzellikleriMaksimum voltaj: 16VMaksimum akım derecelendirmesi: 30 APratik Sürekli Akım: 14 AAnalog pin için mevcut akım algılamaMOSFET dayanıklılığı: 19 mΩ (bacak başına)Maksimum PWM frekansı: 20 kHzTermal kapatmaDüşük Gerilim ve Aşırı Gerilim Kapatma Faydalı LinklerArduino Modül Çeşitlerini inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
     "url": "https://www.direnc.net/plastik-12-v-solenoid-su-valfi-1/2-inc",
     "ItemName": "Plastik 12 V Solenoid Su Valfi 1.27cm Çap",
     "price": "292,51",
@@ -2471,46 +1967,6 @@
     "price": "412,96",
     "pic": "https://www.direnc.net/elektrik-solenoid-kilidi-solenoid-sivi-ve-hava-pompalari-dfrobot-45937-14-B.jpg",
     "description": " Elektrik Solenoid KilidiElektrik Solenoid Kilidi, çelik kasa ve çelik döküm parçalara sahip yüksek kaliteli bir elektrik solenoid kilididir. 500 bin kere uzun kullanım ömrü sağlayan sağlam ve dayanıklı mandal kancası kullanır. Saf bakır elektromanyetik valf bobini, kararlı performans ve sıcaklık toleransı.Saf bakır elektromanyetik valf bobini,, Kararlı performans ve sıcaklık toleransı. Kilidi açmak için harici gücü takın. Elektrikli kilit, kilidin durumunu kolayca kontrol edebileceğiniz sinyal geri bildirimi ile birlikte gelir. Akıllı kontrol kilidi, IoT (Nesnelerin İnterneti), vb. Daha fazla işlevi gerçekleştirmek için diğer kontrol cihazlarıyla ve bağlantılarla birlikte kullanın.Uyarı, Lütfen kilidin kilidini açarken elektrikle çalıştırma süresini 5 saniye içinde daha iyi kontrol edebileceğinizi unutmayın. Uzun elektriklenme süresi solenoid valfe zarar verir.Elektrik Solenoid Kilidi Teknik ÖzellikleriÇalışma Gerilimi: 12V DCÇalışma Akımı: 1.5ABoyut: 73 * 58 * 13,3 mm / 2,87 * 2,28 * 0,52 ”Kilidi uzun süre elektriklendirmeyin (<5s) Gönderim ListesiElektrik Solenoid Kilidi Ağırlık Konnektörü Mandal  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zytd520-12v-50-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zytd520-12v-50-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22668-95-B.jpg",
-    "description": " ZYTD520 12V 50 RPM 37mm Redüktörlü DC MotorEkstra güçlü 50 dev/dak 37mm çapında kare tutucusu ile güç gerektiren ve düşük akım gerektiren yerlerde kullanıma uygunZYTD520 12V 50 RPM 37mm Redüktörlü DC Motor ÖzellikleriRedüktör tipi: MetalRedüksiyon oranı:8:1 Hız yüksüz: 50 dev/dakÇalışma voltaj aralığı:12vÇalışma akımı: 580mANominal tork: 18 Kg.cmMax tork: 0,7 Kg.cmBoyutlarMotor çapı: 37mmMotor uzunluğu: 33,3mmSanzıman uzunluğu: 33mmŞaft uzunluğu: 14mmŞaft kalınlığı: 6mmToplam uzunluk: 89mm  Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zytd520-6v-12v-24v-200-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zytd520-6v-12v-24v-200-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22678-95-B.jpg",
-    "description": " ZYTD520 12V DC 200RPM Redüktörlü Motor - 37mmBu Metal Redüktörlü DC Motor 12V ile çalışmakla beraber, 6V - 24V aralığında da çalışır. 37mm'lik bu redüktörlü motordan 200 Devir / Dk çıkış alabilirsiniz. Motorun dişli kutusu silindirik olup çapı 37mmdir. Motorun çapı 36mmdir. Bu motorda çıkış mili merkez eksendedir. 12V DC 200RPM Redüktörlü Motor ÖzellikleriRedüktör tipi: MetalHız yüksüz: 200 dev/dakÇalışma voltaj aralığı:6-24vÇalışma akımı: 580mAMotor çapı: 36mmŞaft uzunluğu: 14mmMil çapı: 6mmL: 24mm L=24mm Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/220v-2000w-motor-hiz-kontrol-karti",
-    "ItemName": " Stokta Yok ",
-    "price": "34,41",
-    "pic": "https://www.direnc.net/220v-2000w-motor-hiz-kontrol-karti-surucu-ve-kontrol-kartlari-gaqqee-45381-12-B.jpg",
-    "description": " 220V 2000W Motor Hız Kontrol Kartı Motor Hız Kontrol Kartı, 220 Vac giriş gerilimi ve maksimum 2000W değerlerine sahip motor sürücü - motor hız kontrol devresidir.Mavi renkli trimpot, çıkış geriliminin en düşük seviyesi için ince ayar yapmak amacıyla kullanılır. En düşük gerilim seviyesinin 30-80V arasındaki konumu mavi trimpot ile ayarlanır. Normalde 50V seviyelerine kadar gerilimi azaltabilirsiniz. Dahada düşük bir gerilime düşürmek yada daha yüksek bir gerilim seviyesine inmesini yine bu mavi trimpot ile gerçekleştirebilirsiniz.220V 2000W Motor Hız Kontrol Kartı; rezistans, elektrikli fırın, su ısıtıcı, fan, motor, lambalar vs. cihazların gerilim kontrolü için kullanılabilir.AC gerilim ile çalışan cihazlarınızın güç kontrolünde kullanabileceğiniz kontrol devresidir. Bu devreyi kullanarak normal akkor tipi ve halojen ampullerinizin parlaklığını kontrol edebilir, ısıtıcılarınızın gücünü ayarlayabilir ve tek fazlı AC motorlarınızın hızını kontrol edebilirsiniz. Max. 4000W resiztif yük ile kullanılabilir. 220VAC'yi 10-220V arasında kontrol etmenize olanak sağlar.NOT: Modül üzerinde bulunan sol 2 klemens bağantıları AC 220V giriş, Sağ 2 klemens bağlantıları ise kontrol kartı yük çıkışıdır. Multimetre ile ölçüm yaptığınızda bir değer göremezsiniz, yük altında ölçüm yapmanız gerekir.220V 2000W Motor Hız Kontrol Kartı Teknik ÖzellikleriÜretici FirmaGaqqeeÜrün KategorisiMotor ve Motor SürücülerÇalışma Gerilim Değeri220VacMax Güç Değeri2000WAyarlanabilir Gerilim Değeri50V ~ 220VÖlçü Değeri5.3cm*4.7cm*2.8cmFaydalı LinklerSürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.Motor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zytd520-6v-12v-24v-100-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zytd520-6v-12v-24v-100-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22673-95-B.jpg",
-    "description": " ZYTD520 12V DC 100RPM Redüktörlü Motor - 37mmBu Metal Redüktörlü DC Motor 12V ile çalışmakla beraber, 6V - 24V aralığında da çalışır. 37mm'lik bu redüktörlü motordan 100 Devir / Dk çıkış alabilirsiniz. Motorun dişli kutusu silindirik olup çapı 37mmdir. Motorun çapı 36mmdir. Bu motorda çıkış mili merkez eksendedir. ZYTD520 12V DC 100RPM Redüktörlü Motor ÖzellikleriRedüktör tipi: MetalHız yüksüz: 100dev/dakÇalışma voltaj aralığı:6-24vÇalışma akımı: 580mAMotor çapı: 36mmŞaft uzunluğu: 14mmMil çapı: 6mmL: 25mm  Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-    },
-    {
-    "category": "motor-ve-motor-suruculer",
-    "url": "https://www.direnc.net/zytd520-6v-12v-24v-30-rpm-37mm-reduktorlu-dc-motor",
-    "ItemName": " Stokta Yok ",
-    "price": "378,55",
-    "pic": "https://www.direnc.net/zytd520-6v-12v-24v-30-rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22658-95-B.jpg",
-    "description": " ZYTD520 12V DC 30RPM Redüktörlü Motor - 37mmBu Metal Redüktörlü DC Motor 12V ile çalışmakla beraber, 6V - 24V aralığında da çalışır. 37mm'lik bu redüktörlü motordan 30 Devir / Dk çıkış alabilirsiniz. Motorun dişli kutusu silindirik olup çapı 37mmdir. Motorun çapı 36mmdir. Bu motorda çıkış mili merkez eksendedir. 12V DC 30RPM Redüktörlü Motor ÖzellikleriRedüktör tipi: MetalHız yüksüz: 30 dev/dakÇalışma voltaj aralığı:6-24vÇalışma akımı: 580mAMotor çapı: 36mmŞaft uzunluğu: 14mmMil çapı: 6mmL: 30mm Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
     },
     {
     "category": "motor-ve-motor-suruculer",
@@ -2666,14 +2122,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/80x80x25mm-24v-013a-312w-3200rpm-fan",
-        "ItemName": " Stokta Yok ",
-        "price": "117,99",
-        "pic": "https://www.direnc.net/80x80x25mm-24v-013a-312w-3200rpm-fan-24v-fan-savior-21824-94-B.jpg",
-        "description": " 24v 80x80x25MM 0.13A 3.12W 3200rpm Fan24v 80x80x25MM 0.13A 3.12W 3200rpm Fan, 24V 3200Rpm değerlerine sahip fan modelidir. Kullanacağınız yere göre boyut ve değerlerine göre inceleyebilirsiniz. 220V 120x120x25MM 0.14A 18W 2400R - Teknik ÖzellikleriBoyut: 80x80x25mmVoltaj: 24VDC GerilimAkım: 0.13AGüç: 3.12WFrekans: YokHız(RPM): 3200RPMSes dB: 35dB-AÇalışma Sıcaklığı: -10°C~+70°C Faydalı LinklerDiğer Fan Çeşitlerini inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/tamiya-ikiz-motor-sanziman-seti-70097",
         "ItemName": "Tamiya İkiz Motor Şanzıman Seti 70097",
         "price": "411,59",
@@ -2794,14 +2242,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/zytd520-6v-12v-24v-10rpm-37mm-reduktorlu-dc-motor",
-        "ItemName": " Stokta Yok ",
-        "price": "378,55",
-        "pic": "https://www.direnc.net/zytd520-6v-12v-24v-10rpm-37mm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-zhengk-22663-95-B.jpg",
-        "description": " ZYTD520 6V-12V-24V 10 RPM 37mm Redüktörlü DC MotorEkstra güçlü 10 dev/dak 37mm çapında kare tutucusu ile güç gerektiren ve düşük akım gerektiren yerlerde kullanıma uygunZYTD520 6V-12V-24V 10 RPM 37mm Redüktörlü DC Motor ÖzellikleriRedüktör tipi: MetalRedüksiyon oranı:8:1 Hız yüksüz: 10 dev/dakÇalışma voltaj aralığı:6-24vÇalışma akımı: 580mANominal tork: 0,55 Kg.cmMax tork: 18 Kg.cmBoyutlarMotor çapı: 37mmMotor uzunluğu: 33,3mmSanzıman uzunluğu: 33mmŞaft uzunluğu: 14mmŞaft kalınlığı: 6mmToplam uzunluk: 89mm Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/nema-14-step-motors-celik-l-bracket-pololu",
         "ItemName": "NEMA 14 Alüminyum Step Motor Tutucu - L Braket",
         "price": "120,45",
@@ -2834,22 +2274,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/12vdc-60-rpm-cap-60mm",
-        "ItemName": " Stokta Yok ",
-        "price": "1.032,40",
-        "pic": "https://www.direnc.net/12vdc-60-rpm-cap-60mm-12v-reduktorlu-motorlar-china-21782-94-B.jpg",
-        "description": " 12-24v 50Rpm 60mm Redüktörlü Dc Motor12-24v 50Rpm 60mm Redüktörlü Dc Motor hız ve orta ölçekli tork özelliklerinin gerektiği projelerinizde kullanabileceğiniz 60mm redüktörlü dc motor çeşitlerindendir. Projelerinizde kolay kullanımı, 12-24V geniş çalışma voltaj aralığı ile projelerinizde size kolaylık sağlayacaktır. 12-24v 50Rpm 60mm Redüktörlü Dc Motor ÖzelliklerÇalışma Voltaj Aralığı: 12-24VBoşta Çektiği Akım: 120mADurduma Torku: 30kg/cmRedüktör Çapı: 60mmMotor Çapı: 42mmŞaft Çapı: 8mmMil uzunluğu: 18mm Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/usb-servo-motor-kontrol-karti-18-kanal-pololu-1354",
-        "ItemName": " Stokta Yok ",
-        "price": "1.376,54",
-        "pic": "https://www.direnc.net/usb-servo-motor-kontrol-karti-18-kanal-pololu-1354-surucu-ve-kontrol-kartlari-pololu-15551-53-B.jpg",
-        "description": " USB Servo Motor Kontrol Kartı (18 Kanal)USB Servo Motor Kontrol Kartı (18 Kanal) , 18 kanallı Mini Maestro yerel USB arayüzü ve dahili komut kontrolü gibi özellikleri ile seri servo kontrolü için performans çıtasını yükseltiyor.Bu küçük yüksek performanslı çok yönlü cihaz servo kontrolü veya genel I/O kontrolörü gibi (örneğin USB portu üzerinden bir sensör veya ESC ile arayüz kontrolü) size mükemmel bir servo kontrolü sunuyor. (Dahili hız ve ivme kontrolü ile 333Hz pals hızlarına kadar 0.25μs çözünürlük). 2.54mm erkek headerlar modül üzerine montajlı olarak pakete dahildir.Mini Maestro çok yönlü (son derece kompakt) servo kontrol ve genel amaçlı I/O kartıdır. Kendi içinde, ana bilgisayar denetleyicisi-ücretsiz uygulamalar için bir bilgisayara doğrudan bağlantı, gömülü sistemler ile kullanım için TTL seri ve iç komut dosyası için USB bağlantı yöntemlerini destekler. Kanallar dijital çıkışlar,analog girişler ya da radyo kontrol (RC) servo veya elektronik hız kontrolleri (ESC's) ile kullanılmak üzere servo çıkışı olarak konfigüre edilebilir. Son derece hassas, yüksek çözünürlüklü servo darbeleriyle robotik ve animatronik gibi yüksek performanslı uygulamalar için uygundur. Bu servo denetleyicileri 200'den az ns çıkış pulse üretmekte ve dahili her kanal için hız ve ivme kontrolü sağlamaktadır. Mini Maestro ara konum güncellemeleri akışı kontrol kaynağını gerektirmeden pürüzsüz, kesintisiz hareketleri elde etmenizi sağlar. Mini Maestro sürekli hesaplanması ve ara konum güncellemeleri akışı kontrol kaynağına gerek kalmadan sorunsuz hareketler oluşturmasını sağlar. Mini Maestro da 1'den 333 Hz aralığında yapılandırılabilir. Ara pozisyon güncelleme özelliği ve modern servolar da maksimum yanıt aralığını sağlayan darbeleri geniş bir yelpazede oluşturabilirsiniz. Birimler tek bir seri hat ile Pololu servo ve motor kontrolörleri ile zincirleme bağlantı yapabilirsiniz.USB Servo Motor Kontrol Kartı (18 Kanal) - Teknik ÖzellikleriÜç kontrol yöntemleri: USB, TTL (5V) seri ve dahili komut dosyası0.25μs çıkış darbe genişliği çözünürlüğü33 ila 100 Hz yapılandırılabilir darbe oranı64-4080 us Geniş darbe aralığıHer kanal için ayrı hız ve ivme kontrolüKanallar isteğe bağlı olarak belirtilen pozisyona gitmek veya başlangıçta hata üzerine kapatmak için yapılandırılabilir Faydalı LinklerDiğer Motor Sürücü Çeşitlerini inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/mini-vibration-motor-27mm-seeedstudio",
         "ItemName": "Mini Vibration Motor 2.7mm",
         "price": "68,83",
@@ -2863,14 +2287,6 @@
         "price": "344,13",
         "pic": "https://www.direnc.net/25mm-12v-500-rpm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-china-15617-53-B.jpg",
         "description": " 25mm 12V 500RPM Redüktörlü DC Motor25mm 12V 500 RPM Redüktörlü DC Motor hız ve orta ölçekli tork özelliklerinin gerektiği projelerinizde kullanabileceğiniz 25mm redüktörlü dc motordur. Projelerinizde kolay kullanımı, 6-12V geniş çalışma voltaj aralığı ile projelerinizde size kolaylık sağlayacaktır. 25mm 12V 500RPM Redüktörlü DC Motor ÖzelliklerrÇalışma Voltaj Aralığı: 6-12VBoşta Çektiği Akım: 110mAZorlanma Akımı: 1.75AZorlanma Torku: 0.45kg/cmDurduma Torku: 1.25kg/cmRedüktör Çapı: 25mmUçtan Uça Uzunluk: 71mmMil Çapı: 4mm D Şaft Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/micro-metal-dc-geared-motor-with-lead-screw-6v-150rpm-m455-dfrobot",
-        "ItemName": " Stokta Yok ",
-        "price": "378,55",
-        "pic": "https://www.direnc.net/micro-metal-dc-geared-motor-with-lead-screw-6v-150rpm-m455-dfrobot-6v-reduktorlu-motorlar-dfrobot-46552-74-B.jpg",
-        "description": " Vidalı Metal Redüktörlü DC Motor - Mikro DC Motor - 6V 150RPM (M4 * 55) - DFRobotBu metal redüktörlü mini DC Motor, çıkış mili olarak entegre bir M4 * 55mm dişli çubuğu vardır, doğrusal bir aktüatör haline getirin. 6V nominal voltajda, yüksüz hız 1.75mm / s'ye eşdeğer 150RPM'ye ulaşabilir. Pirinç kaplama, M1.6 vidalar için diş açılmış iki montaj deliği (1.6 mm çap, 0,35 mm diş derinliği) veya maruz kalan motorun gövdesini çevreleyerek dişli motorun güvenli bir şekilde monte edilmesi için özel olarak tasarlanmış montaj braketini veya genişletilmiş montaj braketini kullanabilirsiniz vites. Metal Redüktörlü DC Motor - Mikro DC Motor Özellikleriİndirgeme Oranı: 100: 1Anma gerilimi: 6.0 VBoşta çalışma hızı: 150 dev / dak.Nominal yük hızı: 120 dev / dak.Nominal Tork: 0.3 kg.cmNominal Akım: 160 mADurma Torku: 2.4 kg.cmDurma Akımı: 200 mAAğırlık: 16 g  "
         },
         {
         "category": "motor-ve-motor-suruculer",
@@ -2914,14 +2330,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/titresim-motoru--hilt-motor",
-        "ItemName": " Stokta Yok ",
-        "price": "60,22",
-        "pic": "https://www.direnc.net/titresim-motoru-hilt-motor-titresim-motoru-china-56079-52-B.jpg",
-        "description": " Tilt Motor (Titreşim Motoru)6.7x14.5mm boyutlarındaki bu titreşim motoru çeşitli telefonların ve titreşim özelliğine sahip ürünlerin de içinde yer alan, mil üzerindeki serbest ağırlık sayesinde dönme esnasında titreşim hareketi yapmaktadır.1.7 ile 3.6V arası bir gerilimde çalışabilmektedir. 3V gerilimde yaklaşık 14000 Rpm dönme hızına ve 1.5 gr'lık bir titreşim genliğine sahiptir. Motor uçları kablolusuzdurHilt Motor (Titreşim Motoru) Özellikleri :Boyut14.5 mm x 6.7 mm Ağırlık1.2 gÖnerilen çalışma gerilimi1.7 - 3.6 V3V'ta Titreşim genliği1.5g3V'ta Hızı14000 RPM3 V'ta Boşta Çektiği Akım160 mA (180 mA max)3 V Başlangıç akımı200 mA maxMotor direnci29 ± 6 ΩÇalışma sıcaklığı-10 ° C ile +60 ° CDepolama sıcaklığı+70 ° C ila -30 ° CFaydalı LinklerTitreşim Motoru ürünlerimizi inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/30-1-mikro-metal-reduktorlu-6v-dc-motor-hpcb-pololu-hp-1093",
         "ItemName": "HP 6V 1000RPM Mikro Metal Redüktörlü DC Motor (30:1)",
         "price": "",
@@ -2955,14 +2363,6 @@
         "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/nema11-200-adim-step-motor-bipolar",
         "ItemName": "NEMA 11 200 Adım Bipolar Step Motor 0.67A",
-        "price": "1.238,89",
-        "pic": "https://www.direnc.net/nema11-200-adim-step-motor-bipolar-step-motor-pololu-31486-10-B.jpg",
-        "description": " NEMA 11 200 Adım Bipolar Step Motor 0.67A - Pololu 1206Bu Nema 11 ebatlarındaki step motor 1.8° ‘lik adımlama ile tam bir devirde 200 adım atmaktadır. Her fazda 4.5 Volt’ta 670mA akım çeken bu step motorun zorlama torku 950gr.cm’dir. Üzerinde bulunan renkli kabloların siyah ve yeşili bir bobine bağlı iken kırmızı ve mavi renkli kabloları diğer bobinlere bağlıdır. İstenildiği taktirde uygun bir H-Bridge devresi ile kontrol edilebilininir. Fakat uygun bir bipolar step motor sürücüsü ile kullanılmasını tavsiye edilmektedir. NEMA 11 200 Adım Bipolar Step Motor ÖzellikleriBoyut: 28 mm kare × 45 mm (Şaft Hariç) (NEMA 11)Ağırlık: 140 gMil çapı: 5 mm “D”Tam devirdeki adım sayısı: 200Akım sınırı: Bobin başına 670 mAGerilim sınırı: 4,5 VDirenç: bobin başına 6.8 ΩZorlanma torku: 950 g-cm (13 oz-in)Indüktans: Bobin başına 4.9 mHKablo uzunluğu: 30 cmÇıkış şaftı 2 adet rulman ile sağlamlaştırılmıştır. DökümanlarNEMA 11 200 Adım Bipolar Step Motor Datasheet dosyasını inceleyiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/nema11-200-adim-step-motor-bipolar",
-        "ItemName": " Stokta Yok ",
         "price": "1.238,89",
         "pic": "https://www.direnc.net/nema11-200-adim-step-motor-bipolar-step-motor-pololu-31486-10-B.jpg",
         "description": " NEMA 11 200 Adım Bipolar Step Motor 0.67A - Pololu 1206Bu Nema 11 ebatlarındaki step motor 1.8° ‘lik adımlama ile tam bir devirde 200 adım atmaktadır. Her fazda 4.5 Volt’ta 670mA akım çeken bu step motorun zorlama torku 950gr.cm’dir. Üzerinde bulunan renkli kabloların siyah ve yeşili bir bobine bağlı iken kırmızı ve mavi renkli kabloları diğer bobinlere bağlıdır. İstenildiği taktirde uygun bir H-Bridge devresi ile kontrol edilebilininir. Fakat uygun bir bipolar step motor sürücüsü ile kullanılmasını tavsiye edilmektedir. NEMA 11 200 Adım Bipolar Step Motor ÖzellikleriBoyut: 28 mm kare × 45 mm (Şaft Hariç) (NEMA 11)Ağırlık: 140 gMil çapı: 5 mm “D”Tam devirdeki adım sayısı: 200Akım sınırı: Bobin başına 670 mAGerilim sınırı: 4,5 VDirenç: bobin başına 6.8 ΩZorlanma torku: 950 g-cm (13 oz-in)Indüktans: Bobin başına 4.9 mHKablo uzunluğu: 30 cmÇıkış şaftı 2 adet rulman ile sağlamlaştırılmıştır. DökümanlarNEMA 11 200 Adım Bipolar Step Motor Datasheet dosyasını inceleyiniz.  "
@@ -3056,14 +2456,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/25mm-12v-500-rpm-reduktorlu-dc-motor",
-        "ItemName": " Stokta Yok ",
-        "price": "344,13",
-        "pic": "https://www.direnc.net/25mm-12v-500-rpm-reduktorlu-dc-motor-12v-reduktorlu-motorlar-china-15617-53-B.jpg",
-        "description": " 25mm 12V 500RPM Redüktörlü DC Motor25mm 12V 500 RPM Redüktörlü DC Motor hız ve orta ölçekli tork özelliklerinin gerektiği projelerinizde kullanabileceğiniz 25mm redüktörlü dc motordur. Projelerinizde kolay kullanımı, 6-12V geniş çalışma voltaj aralığı ile projelerinizde size kolaylık sağlayacaktır. 25mm 12V 500RPM Redüktörlü DC Motor ÖzelliklerrÇalışma Voltaj Aralığı: 6-12VBoşta Çektiği Akım: 110mAZorlanma Akımı: 1.75AZorlanma Torku: 0.45kg/cmDurduma Torku: 1.25kg/cmRedüktör Çapı: 25mmUçtan Uça Uzunluk: 71mmMil Çapı: 4mm D Şaft Faydalı Linkler12V Redüktörlü Motor ürünlerimizi inceleyebilirsiniz.  "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/arduino-icin-hava-valfi-6v-2-konumlu-3-yollu",
         "ItemName": "Arduino için Hava Valfi 6V 2 Konumlu 3 Yollu",
         "price": "172,07",
@@ -3112,14 +2504,6 @@
         },
         {
         "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/blheli-30a-oneshot-rc-esc-2s-4s-fircasiz-motor-surucu",
-        "ItemName": " Stokta Yok ",
-        "price": "412,96",
-        "pic": "https://www.direnc.net/blheli-30a-oneshot-rc-esc-2s-4s-fircasiz-motor-surucu-drone-motor-suruculeri-emax-61523-20-B.jpg",
-        "description": " BLHeli 30A Oneshot Rc ESC 2S-4S Fırçasız Motor Sürücü ESC Serisi, esas olarak model uçaklar için geliştirilmiş, ancak tasarıma dayalı olarak helikopter ve drone modelleriyle çalışan, yüksek kalite güvencesine sahip fırçasız motor sürücüleridir. Güvenlik ve eğlence performansı artırmak veya basit bir başlangıç yapmak için RTF uygulamaları ve yeni başlayanlar için uygundur.Teknik ÖzellikleriÜretici FirmaEmaxSürekli maks. akım30AAnlık maks. akım40A (10sn)Çalışma voltaj aralığı2-4SBeç5V / 2AÖlçüler52 x 26 x 7 mmAğırlık28 gr Faydalı LinklerFırçasız Motor ve Sürücüler ürünlerimizi inceleyebilirsiniz. "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
         "url": "https://www.direnc.net/12v-1500rpm-rediktorlu-motor-16mm",
         "ItemName": "12V 1500RPM 16mm Redüktörlü Motor",
         "price": "275,31",
@@ -3133,14 +2517,6 @@
         "price": "757,10",
         "pic": "https://www.direnc.net/parmak-izi-okuyuculu-kilit-solenoid-sivi-ve-hava-pompalari-szkoston-64380-21-B.jpg",
         "description": " Parmak İzi Okuyuculu KilitElektronik parmak izli kilit , ofis kabini, çekmece, TV dolabı, gardırop, başucu masası, vb. Yerlerde yaygın olarak kullanılabilir. Yatak odası, çalışma, oturma odası, ofis. Anahtar kilidini açmak için güle güle deyin! 20 parmak izi kaydedebilir ve bir dosya dolabını aynı anda yönetmek için birden fazla kişiyi destekleyebilir.Kilidi, kendi kendine öğrenme algoritmasına ve verimli, istikrarlı ve güvenli bir işleme sistemine sahip gömülü bir AI akıllı çipe sahiptir. Her parmak izi tanımlamasından sonra, parmak izleri karşılaştırılacak, eklenecek ve kaydedilecektir. Tanıma olasılığını etkili bir şekilde artırabilir ve ne kadar çok kullanılırsa, daha hassas ve dayanıklıdır.Herhangi bir uygulama veya PC indirmeden ve yüklemeden parmak izi bilgilerini doğrudan saklayın ve tanımlayın. Yönetici fuction ile bu elektronik dolap kilidi, yeni parmak izini eklemeden veya tüm parmak izlerini silmeden önce yöneticinin parmak izini doğrulamalıdır. Ve bir dekoder ile donatılmıştır. Kilit açılamazsa, onu yok etmeye gerek yoktur. Parmak izini silmek ve kilidini açmak için kod çözücüyü kullanabilirsiniz.Lütfen kurulumdan önce yönetici parmak izi bilgilerini ayarlayın. Hızlı tanımlama fonksiyonu, anahtar ve RFID kartı olmayan profesyonel akıllı biyometrik teknoloji. Anahtarsız dolap kilidinin kilidini 0.5 saniye içinde kolayca ve hızlı bir şekilde açmak için parmak izinizi kullanabilirsiniz. 2 saat şarj, 180 gün boyunca kullanılabilir.USB acil durum şarj portu, kabin kilidinin panelinde tasarlanmıştır, elektronik kilit gücü tükendiğinde kalıcı kilitlenmeyi önler. Ayrıca, parmak izi üç renkli bir algılama ışığı ile donatılmıştır. (yeşil-doğru, kırmızı tanıma hatası, mavi yönetim modu tanımlayın)Eğimli Elektromanyetik Kilit Teknik ÖzelliklerÜretici FirmaSZKOSTON Kullanım YeriDolap KilidiKilit AçmaParmak İzi Kilit Gövde MalzemesiABS+PCGüç KaynağıUSB 3.7VPil KapasitesiDahili 500mAh PilKilit Açma Hızı300msESD+ / -12kv Hava, + / -8kv KontakÇalışma Sıcaklığı-20-70 ℃Kilit Gövde Boyutu65 x 87,9 x 22,2 mm/2,6 x 3,5 x 0,9 inçParmak İzi Paneli Boyutu30,2 x 30,3 x 7 mm/1,2 x 1,2 x 0,3 inç Paket İçeriği:1 x Parmak İzi Paneli1 x Kilit Gövdesi1 x Kilit Yakalama1 Paket Kurulum Aksesuarı1 x TalimatFaydalı LinklerSolenoid / Sıvı ve Hava Pompaları ürünlerimizi inceleyebilirsiniz.Motor ve Motor Sürücüler ürünlerimizi inceleyebilirsiniz. "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/serial-bus-yuksek-hassasiyetli-programlanabilir-servo-motor-30kg",
-        "ItemName": " Stokta Yok ",
-        "price": "860,34",
-        "pic": "https://www.direnc.net/serial-bus-yuksek-hassasiyetli-programlanabilir-servo-motor-30kg-servo-motor-waveshare-63032-21-B.jpg",
-        "description": " ST3215 Serial Bus Yüksek Hassasiyetli Programlanabilir Servo Motor - 30Kg​Serial Bus Servo Motoru , 360° Yüksek Torklu Programlanabilir Manyetik enkoder yapıdadır. 12V ile çalışan bu motor 30kg.Cm'ye kadar tork değerine ulaşabilir. Dört ayaklı robotlar, hexapod yürüteçler, robotik kollar ve birden fazla servo motor gerektiren robotik projelerinizde kullanabilirsiniz.Ürünün Teknik ÖzellikleriÜretici FirmaWaveShareÜrün KategorisiMotorlar ve Motor SürücülerTork Değeri30kg.cm@12VDönüş Açısı360°Çalışma Gerilimi6 ~ 12.6VYüksüz Akım180mAKilitli Rotor Akımı2.7ADökümanlarÜrünün Datasheet sayfasını inceleyiniz.Faydalı LinklerMotorlar ve Motor Sürücüler ürünlerimizi inceleyebilirsiniz. "
         },
         {
         "category": "motor-ve-motor-suruculer",
@@ -3253,14 +2629,6 @@
         "price": "225,08",
         "pic": "https://www.direnc.net/230v-120x120x38mm-014012a-2221w-fan-220v-fan-ventus-52514-18-B.jpg",
         "description": " 230V 120x120x38mm 0.14/0.12A 22/21W Fan230V 120x120x38mm 0.14/0.12A 22/21W Fan değerlerine sahip fan modelidir. Kullanacağınız yere göre boyut ve değerlerine göre inceleyebilirsiniz.Ürünün fonksiyonlarını ve işlevlerini daha detaylı görebilmek için mutlaka bu entegrenin datasheetini inceleyin.230V 0.14/0.12A 22/21W Fan Teknik ÖzelliklerÜretici FirmaVentusÜrün KategorisiFanBoyutlar120x120x38mmAnma Gerilimi230VAC/DCACAnma Akımı0.14/0.12AGüç22/21WFrekans50/60HzHız2700/3100RPMHava Akımı95/115CFMSes Seviyesi42/47dB-APin Sayısı2İstasyonKabloRulman TipiTopÇarkPlastikKanat Sayısı5Çalışma Sıcaklığı-30°C~+75°CRoHSRoHS Dökümanlar 230V Fan Datasheet dosyasını inceleyiniz.Faydalı Linkler220V Fan ürünlerimizi inceleyebilirsiniz.Fan ürünlerimizi inceleyebilirsiniz. "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/mt2204-2300kv-fircasiz-motor-ccw",
-        "ItemName": " Stokta Yok ",
-        "price": "240,89",
-        "pic": "https://www.direnc.net/mt2204-2300kv-fircasiz-motor-ccw-drone-motorlari-emax-61442-20-B.jpg",
-        "description": " Mt 2204 Fırçasız Motor CCW Kendi hava aracınızda kullanmak üzere uygun değerlerde motorları tercih edebilirsiniz.Teknik ÖzelliklerÜrün KategorisiDrone MotorlarıModelMt 2204KV2300KVVoltaj8-12VUzunluk43,16mmMil Çapı5 mmPervaneler5″ - 6' Motor Çapı28 mmAğırlık26 gMotor YönüCCWFaydalı LinklerDrone Motoru ürünlerimizi inceleyebilirsiniz. Fırçasız Motor ve Sürücü ürünlerimizi inceleyebilirsiniz. "
         },
         {
         "category": "motor-ve-motor-suruculer",
@@ -3525,14 +2893,6 @@
         "price": "381,99",
         "pic": "https://www.direnc.net/drv8874-tek-fircali-dc-motor-surucu-surucu-ve-kontrol-kartlari-pololu-62849-21-B.jpg",
         "description": " DRV8874 Tek Fırçalı DC Motor SürücüTI'nin DRV8874 motor sürücüsü için bu kompakt ara kartı, 4,5 V ila 37 arasında geniş bir çalışma voltajı aralığı sunar ve tek bir çift yönlü fırçalanmış DC motora sürekli 2,1 A (6 A tepe noktası) sağlayabilir. DRV8874 ayrıca entegre akım algılama ve düzenlemenin yanı sıra düşük voltaj, aşırı akım ve aşırı sıcaklığa karşı dahili korumaya sahiptir. Taşıyıcı kart, ters gerilime karşı koruma sağlar.Üretici FirmaPololu Ürün KategorisiMotor Sürücü Motorlu kanallar1 Motor sürücüsüDRV8874Asgari çalışma gerilimi4.5 V Maksimum çalışma voltajı37VKanal başına sürekli çıkış akımı2.1Kanal başına tepe çıkış akımı6 Maksimum PWM frekansı100kHz DökümanlarDRV8874 Datasheet dosyasını inceleyiniz. Faydalı LinklerSürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz.Motor Sürücü ve Kontrol Kartları ürünlerimizi inceleyebilirsiniz. "
-        },
-        {
-        "category": "motor-ve-motor-suruculer",
-        "url": "https://www.direnc.net/dalgic-pompa-ve-watertube-jt-180",
-        "ItemName": " Stokta Yok ",
-        "price": "495,55",
-        "pic": "https://www.direnc.net/dalgic-pompa-ve-watertube-jt-180-solenoid-sivi-ve-hava-pompalari-dfrobot-50465-18-B.jpg",
-        "description": " JT-180 Dalgıç PompaBu dalgıç pompa, bitkileri sulamak, bir çeşme veya şelale yapmak, hatta balık tankı suyunu değiştirmek için kullanılabilir. 40db'nin altındaki ses seviyesi ile sessizce çalışır.Pompanın içinde bir filtre ve yüzeyleri sıkıca düzleştirmeye yardımcı olabilecek bir vantuz vardır.Not:Bu pompa SADECE suyun ALTINDA kullanılmak üzere tasarlanmıştır! (Kahverengi / Kırmızı-Pozitif; Mavi / Siyah-Negatif) Dalgıç Pompa ve WaterTube Teknik Özellikleri Üretici FirmaDFRobot Ürün KategorisiDalgıç Pompa Güç Kaynağı 4.5 ~ 12V DCArayüzKahverengi +; Mavi - Pompalama Kafası40-220cm Kapasite100 ~ 350L / H Güç Aralığı 0.5 ~ 5WBoyutlar38 x 38 x 29mm (1.49 x 1.49 x 1.14 ') Ağırlık 125g Kablo Uzunluğu1m (39,37 inç) Paket İçeriği:Dalgıç Pompa x1Su Borusu x1 Faydalı LinklerSolenoid / Sıvı ve Hava Pompaları ürünlerimizi inceleyebilirsiniz.Motor ve Motor Sürücüler ürünlerimizi inceleyebilirsiniz. "
         },
         {
         "category": "motor-ve-motor-suruculer",

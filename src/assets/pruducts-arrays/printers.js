@@ -1,4 +1,4 @@
-[
+export const printerData = [
     {
     "category": "3d-printerler",
     "url": "https://www.direnc.net/siyah-petg-filament-175mm-1kg-tri-d",
