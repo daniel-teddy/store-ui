@@ -129,14 +129,8 @@ function AboutPage() {
                 </div>
                 <div className="card-body">
                   <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
-                    <div className="meta-date">
-                      
-                      Aeronautical Engineer
-                    </div>
-                    <div className="meta-categories">
-                      
-                      CEO - Founder
-                    </div>
+                    <div className="meta-date">Aeronautical Engineer</div>
+                    <div className="meta-categories">CEO - Founder</div>
                   </div>
                   <div className="post-header">
                     <h3 className="post-title">
@@ -166,19 +160,13 @@ function AboutPage() {
                 </div>
                 <div className="card-body">
                   <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
-                    <div className="meta-date">
-                      
-                      Aeronautical Engineer
-                    </div>
-                    <div className="meta-categories">
-                      
-                      CEO - Founder
-                    </div>
+                    <div className="meta-date">Electronic Engineer</div>
+                    <div className="meta-categories"> - </div>
                   </div>
                   <div className="post-header">
                     <h3 className="post-title">
                       <a href="link" className="text-decoration-none">
-                        Ziya Alemdar
+                        Tezcan
                       </a>
                     </h3>
                     <p>
@@ -203,19 +191,13 @@ function AboutPage() {
                 </div>
                 <div className="card-body">
                   <div className="post-meta d-flex text-uppercase gap-3 my-2 align-items-center">
-                    <div className="meta-date">
-                      
-                      Aeronautical Engineer
-                    </div>
-                    <div className="meta-categories">
-                      
-                      CEO - Founder
-                    </div>
+                    <div className="meta-date">Software Developer</div>
+                    <div className="meta-categories">CTO</div>
                   </div>
                   <div className="post-header">
                     <h3 className="post-title">
                       <a href="link" className="text-decoration-none">
-                        Ziya Alemdar
+                        Daniel Teddy
                       </a>
                     </h3>
                     <p>
@@ -228,8 +210,6 @@ function AboutPage() {
               </article>
             </div>
           </div>
-
-          
         </div>
       </div>
       <section className="py-5 my-5 d-none">

@@ -57,9 +57,7 @@ const ApplyDiscount = () => {
                   </h2>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Dictumst amet, metus, sit massa posuere maecenas. At tellus ut
-                  nunc amet vel egestas.
+                  Subscribe to our news letter and get a 25% coupon and be notified for all up coming events and campain
                 </p>
               </div>
               <div className="col-md-6 p-5">

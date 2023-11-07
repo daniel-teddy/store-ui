@@ -1,32 +1,37 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from "react";
 // import CategorySection from '../components/CategorySection';
-import NewlyArrivedBrands from '../components/NewlyBrands';
-import TrendingProducts from '../components/TrendingProducts';
-import DiscountSection from '../components/DiscountSection';
-import JustArrived from '../components/justArrived';
-import ApplyDiscount from '../components/ApplyDiscount';
-import RelatedProducts from '../components/RelatedProducts';
-import FeaturesSection from '../components/FeaturesSection';
-import BannerSection from '../components/BannerSection';
+import NewlyArrivedBrands from "../components/NewlyBrands";
+import TrendingProducts from "../components/TrendingProducts";
+import DiscountSection from "../components/DiscountSection";
+import JustArrived from "../components/justArrived";
+import ApplyDiscount from "../components/ApplyDiscount";
+import RelatedProducts from "../components/RelatedProducts";
+import FeaturesSection from "../components/FeaturesSection";
+import BannerSection from "../components/BannerSection";
+import ShowSchool from "../components/ShowSchool";
 
 function Home() {
+  const [popAdv, setPopAdv] = useState(false);
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="">
+    <>
+      <div className="">
+        {popAdv && <ShowSchool />}
         <BannerSection />
         {/* <CategorySection /> */}
-      <NewlyArrivedBrands />
-      <TrendingProducts />
-      <DiscountSection />
-      <JustArrived />
-      <ApplyDiscount />
-      <RelatedProducts />
-      <FeaturesSection />
-    </div>
-  )
+        <NewlyArrivedBrands />
+        <TrendingProducts />
+        <DiscountSection />
+        <JustArrived />
+        <ApplyDiscount />
+        <RelatedProducts />
+        <FeaturesSection />
+      </div>
+    </>
+  );
 }
 
 export default Home;
