@@ -11,7 +11,11 @@ import BannerSection from "../components/BannerSection";
 import ShowSchool from "../components/ShowSchool";
 
 function Home() {
-  const [popAdv, setPopAdv] = useState(false);
+  const [popAdv, setPopAdv] = useState(true);
+  const updatePopAdv = (newValue) => {
+    setPopAdv(newValue);
+  };
+
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
@@ -19,7 +23,7 @@ function Home() {
   return (
     <>
       <div className="">
-        {popAdv && <ShowSchool />}
+        {popAdv && <ShowSchool popAdv={popAdv} updatePopAdv={updatePopAdv} />}
         <BannerSection />
         {/* <CategorySection /> */}
         <NewlyArrivedBrands />
