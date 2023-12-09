@@ -84,7 +84,7 @@ const ApplyDiscount = () => {
                       type="email"
                       className="form-control form-control-lg"
                       name="email"
-                      placeholder="abc@mail.com"
+                      placeholder="enter your email"
                       onChange={(event) => {
                         setUsermail(event.target.value);
                       }}

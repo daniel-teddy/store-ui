@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import Logo from "../images/ALEMDAR_TEKNIK_LOGO.png";
 import giftIcon from "../images/gift.svg";
 import {
@@ -29,6 +30,18 @@ const Header = () => {
   }
 
 
+  const navigate = useNavigate();
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOptionChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+
+    // Use history.push to navigate programmatically
+    if (selectedValue) {
+      navigate(selectedValue);
+    }
+  };
 
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
@@ -101,7 +114,7 @@ const Header = () => {
                   style={{ width: "fit-content", textDecoration: "none" }}
                 >
                   <a
-                    href="https://alemdar-registration.netlify.app"
+                    href="https://alemdar-register-school.netlify.app"
                     className=" border-0 bg-transparent"
                   >
                     Register Lab
@@ -263,20 +276,24 @@ const Header = () => {
                     ></button>
                   </div>
                   <div className="offcanvas-body">
-                    <select className="filter-categories border-0 mb-0 me-5">
-                      <option disabled defaultValue hidden>Select an option </option>
-                      <option>Electronics</option>
-                      <option>Solar System</option>
-                      <option>Security System</option>
+                    <select className="filter-categories border-0 mb-0 me-5" value={selectedOption}
+      onChange={handleOptionChange}>
+                      <option disabled defaultValue value="" hidden>Select an option </option>
+                      <option value="/shop/">Electronics</option>
+                      <option value="/shop/lcd-displays">Lcd-Displays</option>
+                      <option value="/shop/buzzers">Buzzers</option>
+                      <option value="/shop/3d-printers">3D-Printers</option>
+                      <option value="/shop/robotic-drone-kits">Robotic-drones-kits</option>
+                      <option value="/shop/relay-modules">Relays-modules</option>
                     </select>
                     <ul className="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                       <CustomLink to="/shop/">Arduino</CustomLink>
-                      <CustomLink to="/shop/">Adaptors</CustomLink>
-                      <CustomLink to="/shop/">Raspberry</CustomLink>
+                      <CustomLink to="/shop/motor-motor-controllers">Motors</CustomLink>
+                      <CustomLink to="/shop/raspberry">Raspberry</CustomLink>
+                      <CustomLink to="/shop/hand-tools">Handtools</CustomLink>
+                      <CustomLink to="/shop/solar-pannels-batteries">Solar</CustomLink>
+                      <CustomLink to="/shop/microcontrollers">Microcontrollers</CustomLink>
                       <CustomLink to="/shop/">Accessories</CustomLink>
-                      <CustomLink to="/shop/solar">Solar</CustomLink>
-                      <CustomLink to="/shop/">Modules</CustomLink>
-                      <CustomLink to="/shop/">IC</CustomLink>
                     </ul>
                   </div>
                 </div>

@@ -17,6 +17,10 @@ import EditPrductPage from "./pages/EditPrductPage";
 import ShopPageSolar from "./pages/solarPage";
 import AboutPage from "./pages/AboutPage";
 import PreLoader from "./components/preLoader";
+import ShopRaspberryPage from "./pages/RaspberryPage";
+import ShopMotorPage from "./pages/MotorPage";
+import ShopHandtoolsPage from "./pages/HandtoolsPage";
+import ShopMicrocontrollersPage from "./pages/MicrocontrollersPage";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +35,7 @@ function App() {
   }, [location]);
   return (
     <div className="App">
+      
       {isLoading ? (
         <PreLoader />
       ) : (
@@ -43,7 +48,11 @@ function App() {
             <Route path="/cart" element={<CartPage />} />
             <Route path="/checkout" element={<CheckOut />} />
             <Route path="/shop" element={<ShopPage />} />
-            <Route path="/shop/solar" element={<ShopPageSolar />} />
+            <Route path="/shop/solar-pannels-batteries" element={<ShopPageSolar />} />
+            <Route path="/shop/raspberry" element={<ShopRaspberryPage />} />
+            <Route path="/shop/motor-motor-controllers" element={<ShopMotorPage />} />
+            <Route path="/shop/hand-tools" element={<ShopHandtoolsPage />} />
+            <Route path="/shop/microcontrollers" element={<ShopMicrocontrollersPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/edit-product" element={<EditPrductPage />} />

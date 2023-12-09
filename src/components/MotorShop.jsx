@@ -132,7 +132,7 @@ const handleAddtoCart = (e)=>{
   );
 }
 
-const ProductsPageSmallSolar = () => {
+const ProductsPageSmallMotor = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
@@ -159,7 +159,7 @@ const ProductsPageSmallSolar = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  const newData = Data?.filter((item) => item.category === "pil-aku-solar-panel");
+  const newData = Data?.filter((item) => item.category === "motor-ve-motor-suruculer");
 
   const filteredProducts = newData?.filter((item) =>
     item.ItemName.toLowerCase().includes(searchTerm.toLowerCase())
@@ -451,4 +451,4 @@ const ProductsPageSmallSolar = () => {
   );
 };
 
-export default ProductsPageSmallSolar;
+export default ProductsPageSmallMotor;
