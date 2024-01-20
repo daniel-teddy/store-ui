@@ -167,7 +167,7 @@ const Header = () => {
             </div> */}
               <ul className="d-flex justify-content-end list-unstyled m-0">
                 <li className="border-0 bg-light d-lg-none">
-                  <a href="https://alemdar-registration.netlify.app">Register Lab</a>
+                  <a href="https://alemdar-register-school.netlify.app/">Register Lab</a>
                 </li>
                 <li>
                   <Link
