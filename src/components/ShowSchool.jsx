@@ -21,6 +21,9 @@ function ShowSchool({ popAdv, updatePopAdv }){
           <p className="card__description">
           Here is your chance to master robotics from our hand-on learning class. From easy and intuitive face-to-face courses to engaging training courses offered both in-class and virtually by our trusted Trainers all over the island of cyprus.
           </p>
+          <div className="d-flex justify-content-center justify-content-sm-between align-items-center">
+              <a className="rfces" href="https://alemdar-register-school.netlify.app/">Register Lab</a>
+          </div>
         </div>
       </div>
     </div>
