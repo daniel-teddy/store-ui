@@ -1,13 +1,12 @@
 import React from "react";
 import ProductCard from "./productCard";
-import Data from "../assets/item"
+import Data from "../assets/item";
 import { Link } from "react-router-dom";
 
 const randomItems = Data.sort(() => Math.random() - 0.5);
 let selectedElementsRandom = randomItems.slice(0, 20);
 
 const TrendingProducts = () => {
-
   return (
     <section className="py-5">
       <div className="container-fluid">
@@ -18,7 +17,8 @@ const TrendingProducts = () => {
                 <h3>Trending Products</h3>
                 <nav>
                   <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                    <Link to="/shop"
+                    <Link
+                      to="/shop"
                       className="nav-link text-uppercase fs-6 active"
                       id="nav-all-tab"
                       data-bs-toggle="tab"
@@ -27,7 +27,8 @@ const TrendingProducts = () => {
                     >
                       All
                     </Link>
-                    <Link to="/shop"
+                    <Link
+                      to="/shop"
                       className="nav-link text-uppercase fs-6"
                       id="nav-fruits-tab"
                       data-bs-toggle="tab"
@@ -36,7 +37,8 @@ const TrendingProducts = () => {
                     >
                       Arduino &amp; Raspberry
                     </Link>
-                    <Link to="/shop"
+                    <Link
+                      to="/shop"
                       className="nav-link text-uppercase fs-6"
                       id="nav-juices-tab"
                       data-bs-toggle="tab"
@@ -56,27 +58,26 @@ const TrendingProducts = () => {
                   aria-labelledby="nav-all-tab"
                 >
                   <div className="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                    
                     {selectedElementsRandom.map((item, index) => {
                       const maxNameLength = 25;
-                      const itemName = item.ItemName.length > maxNameLength
-                        ? item.ItemName.slice(0, maxNameLength) + " ..."
-                        : item.ItemName;
-                      return(
+                      const itemName =
+                        item.ItemName.length > maxNameLength
+                          ? item.ItemName.slice(0, maxNameLength) + " ..."
+                          : item.ItemName;
+                      return (
                         <Link to={`/explore/${item.ItemName}`} key={index}>
-                        <ProductCard
-                      title={itemName}
-                      imageUrl={item.pic}
-                      category={item.category}
-                      unit="15 Unit"
-                      rating="4.5"
-                      // price={item.price}
-                      initialQuantity="1"
-                    />
+                          <ProductCard
+                            title={itemName}
+                            imageUrl={item.pic}
+                            category={item.category}
+                            unit="15 Unit"
+                            rating="4.5"
+                            price={item.price}
+                            initialQuantity="1"
+                          />
                         </Link>
-                      )
+                      );
                     })}
-                    
                   </div>
                 </div>
               </div>

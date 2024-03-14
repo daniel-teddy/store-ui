@@ -15,63 +15,56 @@ const productsPerPage = 12;
 
 function ProductItem(props) {
   const { imageUrl, title, unit, rating, price, category } = props;
-  
+
   const [initialQuantity, setInitialQuantity] = useState(1);
 
   const handleIncrement = (e) => {
-    
     e.preventDefault();
     setInitialQuantity(initialQuantity + 1);
   };
 
   const handleDecrement = (e) => {
-    
     e.preventDefault();
     if (initialQuantity > 1) {
       setInitialQuantity(initialQuantity - 1);
     }
   };
-const addToFavorite = (e)=>{
-  e.preventDefault();
-  const favoriteItem = {
-    name: title,
+  const addToFavorite = (e) => {
+    e.preventDefault();
+    const favoriteItem = {
+      name: title,
+    };
+
+    const existingfavoriteItems =
+      JSON.parse(localStorage.getItem("favoritesItems")) || [];
+
+    existingfavoriteItems.push(favoriteItem);
+
+    localStorage.setItem(
+      "favoritesItems",
+      JSON.stringify(existingfavoriteItems)
+    );
+
+    alert(`${title} added to favorite`);
   };
+  const handleAddtoCart = (e) => {
+    e.preventDefault();
+    const cartItem = {
+      name: title,
+      quantity: initialQuantity,
+      price: price,
+      image: imageUrl,
+    };
 
-  
-  const existingfavoriteItems = JSON.parse(localStorage.getItem("favoritesItems")) || [];
+    const existingCartItems =
+      JSON.parse(localStorage.getItem("cartItems")) || [];
 
-  
-  existingfavoriteItems.push(favoriteItem);
+    existingCartItems.push(cartItem);
 
-  
-  localStorage.setItem("favoritesItems", JSON.stringify(existingfavoriteItems));
+    localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
 
- 
-  alert(`${title} added to favorite`);
-  
-}
-const handleAddtoCart = (e)=>{
-  e.preventDefault();
-  const cartItem = {
-    name: title,
-    quantity: initialQuantity,
-    price: price,
-    image: imageUrl,
+    alert(`${title} added to cart`);
   };
-
-  
-  const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-
-  
-  existingCartItems.push(cartItem);
-
-  
-  localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
-
- 
-  alert(`${title} added to cart`);
-  
-}
   return (
     <div className="col">
       <div className="product-item">
@@ -79,7 +72,7 @@ const handleAddtoCart = (e)=>{
           <AiOutlineHeart />
         </button>
         <figure>
-          <div title={title}  className="overflow-none">
+          <div title={title} className="overflow-none">
             <img src={imageUrl} className="tab-image" alt="Product Thumbnail" />
           </div>
         </figure>
@@ -134,10 +127,10 @@ const handleAddtoCart = (e)=>{
 
 const ProductsPageSmallMotor = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedTag, setSelectedTag] = useState('');
-  const [selectedBrand, setSelectedBrand] = useState('');
-  const [selectedPriceRange, setSelectedPriceRange] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedTag, setSelectedTag] = useState("");
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedPriceRange, setSelectedPriceRange] = useState("");
   const totalProducts = Data.length;
   const totalPages = Math.ceil(totalProducts / productsPerPage);
 
@@ -159,40 +152,47 @@ const ProductsPageSmallMotor = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
-  const newData = Data?.filter((item) => item.category === "motor-ve-motor-suruculer");
+  const newData = Data?.filter(
+    (item) => item.category === "motor-ve-motor-suruculer"
+  );
 
   const filteredProducts = newData?.filter((item) =>
     item.ItemName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
-    setSelectedTag('');
+    setSelectedTag("");
   };
 
   const displayedProducts = filteredProducts
-  ?.filter((item) =>
-    (selectedCategory === 'All' || item.category === selectedCategory) &&
-    (!selectedTag || (item.tags && item.tags.includes(selectedTag))) && 
-    (!selectedBrand || (item.brand && item.brand.includes(selectedBrand))) &&
-    (!selectedPriceRange || (item.price >= selectedPriceRange.min && item.price <= selectedPriceRange.max)))
+    ?.filter(
+      (item) =>
+        (selectedCategory === "All" || item.category === selectedCategory) &&
+        (!selectedTag || (item.tags && item.tags.includes(selectedTag))) &&
+        (!selectedBrand ||
+          (item.brand && item.brand.includes(selectedBrand))) &&
+        (!selectedPriceRange ||
+          (item.price >= selectedPriceRange.min &&
+            item.price <= selectedPriceRange.max))
+    )
     .slice(startIndex, endIndex);
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag);
   };
-  const handleBrandClick = (brand) => { 
+  const handleBrandClick = (brand) => {
     setSelectedBrand(brand);
-    setSelectedCategory('All');
-    setSelectedTag(''); 
+    setSelectedCategory("All");
+    setSelectedTag("");
   };
   const handlePriceRangeClick = (priceRange) => {
     setSelectedPriceRange(priceRange);
-    setSelectedCategory('All'); 
-    setSelectedTag(''); 
-    setSelectedBrand(''); 
+    setSelectedCategory("All");
+    setSelectedTag("");
+    setSelectedBrand("");
   };
   return (
     <div className="shopify-grid">
@@ -282,56 +282,55 @@ const ProductsPageSmallMotor = () => {
               </div>
 
               <div className="widget-product-brands pt-3">
-              <h5 className="widget-title">Brands</h5>
-              <ul className="product-tags sidebar-list list-unstyled">
-                {["abax", "simtek", "others"].map((brand) => (
-                  <li className="tags-item" key={brand}>
-                    <span
-                      className={`nav-link ${
-                        selectedBrand === brand ? "active" : ""
-                      }`}
-                      style={{ cursor: "pointer" }}
-                      onClick={() => handleBrandClick(brand)}
-                    >
-                      {brand}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              {selectedBrand && <p>Selected Brand: {selectedBrand}</p>}
+                <h5 className="widget-title">Brands</h5>
+                <ul className="product-tags sidebar-list list-unstyled">
+                  {["abax", "simtek", "others"].map((brand) => (
+                    <li className="tags-item" key={brand}>
+                      <span
+                        className={`nav-link ${
+                          selectedBrand === brand ? "active" : ""
+                        }`}
+                        style={{ cursor: "pointer" }}
+                        onClick={() => handleBrandClick(brand)}
+                      >
+                        {brand}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                {selectedBrand && <p>Selected Brand: {selectedBrand}</p>}
+              </div>
+              <div className="widget-price-filter pt-3">
+                <h5 className="widget-title">Filter By Price</h5>
+                <ul className="product-tags sidebar-list list-unstyled">
+                  {[
+                    { min: 0, max: 100 },
+                    { min: 100, max: 300 },
+                    { min: 300, max: 500 },
+                    { min: 500, max: 700 },
+                    { min: 700, max: 1000 },
+                  ].map((priceRange) => (
+                    <li className="tags-item" key={priceRange.min}>
+                      <span
+                        className={`nav-link ${
+                          selectedPriceRange === priceRange ? "active" : ""
+                        }`}
+                        onClick={() => handlePriceRangeClick(priceRange)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        {`${priceRange.min}USD - ${priceRange.max}USD`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                {selectedPriceRange && (
+                  <p>
+                    Selected Price Range: {selectedPriceRange.min}TL -
+                    {selectedPriceRange.max}TL
+                  </p>
+                )}
+              </div>
             </div>
-            <div className="widget-price-filter pt-3">
-              <h5 className="widget-title">Filter By Price</h5>
-              <ul className="product-tags sidebar-list list-unstyled">
-                {[
-                  { min: 0, max: 100 },
-                  { min: 100, max: 300 },
-                  { min: 300, max: 500 },
-                  { min: 500, max: 700 },
-                  { min: 700, max: 1000 },
-                ].map((priceRange) => (
-                  <li className="tags-item" key={priceRange.min}>
-                    <span
-                      className={`nav-link ${
-                        selectedPriceRange === priceRange ? "active" : ""
-                      }`}
-                      onClick={() => handlePriceRangeClick(priceRange)}
-                      style={{ cursor: "pointer" }}
-                    >
-                      {`${priceRange.min}USD - ${priceRange.max}USD`}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              {selectedPriceRange && (
-                <p>
-                  Selected Price Range: {selectedPriceRange.min}TL - 
-                  {selectedPriceRange.max}TL
-                </p>
-              )}
-            </div>
-          </div>
-          
           </aside>
           <main className="col-md-9">
             <div className="filter-shop d-flex justify-content-between">
@@ -357,22 +356,22 @@ const ProductsPageSmallMotor = () => {
                 </select>
               </div>
             </div>
-            
+
             <div className="product-grid row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
               {displayedProducts.map((item, index) => {
                 if (selectedCategory === "All") {
                   return (
-                    <Link  to={`/explore/${item.ItemName}`}key={index}>
-                    <ProductItem
-                      key={index}
-                      title={item.ItemName}
-                      imageUrl={item.pic}
-                      category={item.category}
-                      unit="15 Unit"
-                      rating="4.5"
-                      price={item.price}
-                      initialQuantity="1"
-                    />
+                    <Link to={`/explore/${item.ItemName}`} key={index}>
+                      <ProductItem
+                        key={index}
+                        title={item.ItemName}
+                        imageUrl={item.pic}
+                        category={item.category}
+                        unit="15 Unit"
+                        rating="4.5"
+                        price={item.price}
+                        initialQuantity="1"
+                      />
                     </Link>
                   );
                 } else if (
@@ -380,17 +379,17 @@ const ProductsPageSmallMotor = () => {
                   item.category === "pannels"
                 ) {
                   return (
-                    <Link  to={`/explore/${item.ItemName}`}key={index}>
-                    <ProductItem
-                      key={index}
-                      title={item.ItemName}
-                      imageUrl={item.pic}
-                      category={item.category}
-                      unit="15 Unit"
-                      rating="4.5"
-                      price={item.price}
-                      initialQuantity="1"
-                    />
+                    <Link to={`/explore/${item.ItemName}`} key={index}>
+                      <ProductItem
+                        key={index}
+                        title={item.ItemName}
+                        imageUrl={item.pic}
+                        category={item.category}
+                        unit="15 Unit"
+                        rating="4.5"
+                        price={item.price}
+                        initialQuantity="1"
+                      />
                     </Link>
                   );
                 } else if (
@@ -398,17 +397,17 @@ const ProductsPageSmallMotor = () => {
                   item.category === "batteries"
                 ) {
                   return (
-                    <Link  to={`/explore/${item.ItemName}`}key={index}>
-                    <ProductItem
-                      key={index}
-                      title={item.ItemName}
-                      imageUrl={item.pic}
-                      category={item.category}
-                      unit="15 Unit"
-                      rating="4.5"
-                      // price={item.price}
-                      initialQuantity="1"
-                    />
+                    <Link to={`/explore/${item.ItemName}`} key={index}>
+                      <ProductItem
+                        key={index}
+                        title={item.ItemName}
+                        imageUrl={item.pic}
+                        category={item.category}
+                        unit="15 Unit"
+                        rating="4.5"
+                        price={item.price}
+                        initialQuantity="1"
+                      />
                     </Link>
                   );
                 }
